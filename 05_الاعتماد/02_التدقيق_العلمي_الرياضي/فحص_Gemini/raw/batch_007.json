@@ -1,0 +1,176 @@
+{
+ "batch": 7,
+ "ids": [
+  "M8-A5-009",
+  "M8-A5-010",
+  "M8-A5-011",
+  "M8-A5-012",
+  "M8-A5-013",
+  "M8-A5-014",
+  "M8-A5-015",
+  "M8-A5-016",
+  "M8-A6-001",
+  "M8-A6-002",
+  "M8-A6-003",
+  "M8-A6-004"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 26338,
+  "output_tokens": 10876,
+  "thinking_tokens": 8996,
+  "cache_read_tokens": 29876,
+  "total_tokens": 37214
+ },
+ "results": [
+  {
+   "id": "M8-A5-009",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A5",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A5-010",
+   "answer": "D",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A5",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A5-011",
+   "answer": [
+    [
+     0,
+     4
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     4,
+     -4
+    ]
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A5",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A5-012",
+   "answer": "المعادلة هي y = 2x + 4، وطول المشوار 13 كيلومتراً.",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A5",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A5-013",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A4",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A5-014",
+   "answer": 20,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A5",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A5-015",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A5",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A5-016",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A5",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A6-001",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A6",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A6-002",
+   "answer": 144,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A1",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A6-003",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A6",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A6-004",
+   "answer": [
+    10,
+    2,
+    17
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A6",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  }
+ ]
+}

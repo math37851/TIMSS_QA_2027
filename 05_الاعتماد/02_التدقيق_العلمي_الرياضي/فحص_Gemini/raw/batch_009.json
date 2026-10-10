@@ -1,0 +1,176 @@
+{
+ "batch": 9,
+ "ids": [
+  "M8-D1-001",
+  "M8-D1-002",
+  "M8-D1-003",
+  "M8-D1-004",
+  "M8-D1-005",
+  "M8-D1-006",
+  "M8-D1-007",
+  "M8-D1-008",
+  "M8-D1-009",
+  "M8-D1-010",
+  "M8-D1-011",
+  "M8-D1-012"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 21041,
+  "output_tokens": 9047,
+  "thinking_tokens": 7025,
+  "cache_read_tokens": 29903,
+  "total_tokens": 30088
+ },
+ "results": [
+  {
+   "id": "M8-D1-001",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D1",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D1-002",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D1",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D1-003",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D2",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D1-004",
+   "answer": {
+    "c1": "ترابط سالب",
+    "c2": "ترابط موجب",
+    "c3": "لا يوجد ترابط",
+    "c4": "ترابط موجب",
+    "c5": "ترابط سالب",
+    "c6": "لا يوجد ترابط"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D2",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D1-005",
+   "answer": 230,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D1",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D1-006",
+   "answer": 20,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D1",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D1-007",
+   "answer": "D",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D1",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D1-008",
+   "answer": {
+    "1": "c6",
+    "2": "c3",
+    "3": "c2",
+    "4": "c1"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D1",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D1-009",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D1",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D1-010",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D1",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D1-011",
+   "answer": "D",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D1",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D1-012",
+   "answer": {
+    "1": "c1",
+    "2": "c6",
+    "3": "c5",
+    "4": "c4"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D1",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  }
+ ]
+}

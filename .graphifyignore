@@ -1,0 +1,12 @@
+# graphify: index only the project's own code (scripts + platform source)
+00_المدخلات/
+01_المصادر_والإطار/مراجع_رسمية/
+02_بنك_الأسئلة/build/
+02_بنك_الأسئلة/reports/
+03_منصة_التدريب_eTIMSS/src/vendor/
+03_منصة_التدريب_eTIMSS/*.html
+04_غراف_المعرفة_Obsidian/
+graphify-out/
+*.pdf
+*.xlsx
+*.png

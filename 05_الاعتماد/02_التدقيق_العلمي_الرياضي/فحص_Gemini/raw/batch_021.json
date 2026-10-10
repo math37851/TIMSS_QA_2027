@@ -1,0 +1,170 @@
+{
+ "batch": 21,
+ "ids": [
+  "M8-G3-019",
+  "M8-G3-020",
+  "M8-G3-021",
+  "M8-G4-001",
+  "M8-G4-002",
+  "M8-G4-003",
+  "M8-G4-004",
+  "M8-G4-005",
+  "M8-G4-006",
+  "M8-G4-007",
+  "M8-G4-008",
+  "M8-G4-009"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 20516,
+  "output_tokens": 7531,
+  "thinking_tokens": 5482,
+  "cache_read_tokens": 29447,
+  "total_tokens": 28047
+ },
+ "results": [
+  {
+   "id": "M8-G3-019",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G3-020",
+   "answer": "لا، الشعار الجديد يشابه الشعار الأصلي ولكنه لا يطابقه لأن أطوال أضلاعه اختلفت (أصبحت 9 و 12 و 15 سم) بالرغم من أن قياسات الزوايا لم تتغير.",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G3",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G3-021",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G3",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G4-001",
+   "answer": 141.3,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G4",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G4-002",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G4",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G4-003",
+   "answer": {
+    "c1": "كل أوجهه مستوية",
+    "c2": "كل أوجهه مستوية",
+    "c3": "كل أوجهه مستوية",
+    "c4": "له سطح منحنٍ",
+    "c5": "له سطح منحنٍ",
+    "c6": "له سطح منحنٍ"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G4",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G4-004",
+   "answer": [
+    5,
+    8,
+    5
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G4",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G4-005",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G4",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G4-006",
+   "answer": "D",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G4",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G4-007",
+   "answer": 30,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G4",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G4-008",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G4",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G4-009",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G4",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  }
+ ]
+}

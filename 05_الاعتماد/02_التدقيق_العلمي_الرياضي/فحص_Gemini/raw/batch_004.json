@@ -1,0 +1,175 @@
+{
+ "batch": 4,
+ "ids": [
+  "M8-A3-005",
+  "M8-A3-006",
+  "M8-A3-007",
+  "M8-A3-008",
+  "M8-A3-009",
+  "M8-A3-010",
+  "M8-A3-011",
+  "M8-A3-012",
+  "M8-A3-013",
+  "M8-A3-014",
+  "M8-A3-015",
+  "M8-A3-016"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 25819,
+  "output_tokens": 10427,
+  "thinking_tokens": 8279,
+  "cache_read_tokens": 25665,
+  "total_tokens": 36246
+ },
+ "results": [
+  {
+   "id": "M8-A3-005",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A3-006",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A3-007",
+   "answer": [
+    3,
+    6
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A3-008",
+   "answer": 6,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A3-009",
+   "answer": {
+    "1": "c1",
+    "2": "c2",
+    "3": "c3"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A3-010",
+   "answer": "D",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A5",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A3-011",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A3-012",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A3",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A3-013",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A5",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A3-014",
+   "answer": {
+    "1": "k1",
+    "2": "k2",
+    "3": "k3",
+    "4": "k4",
+    "5": "k5",
+    "6": "k6"
+   },
+   "confidence": 1.0,
+   "unambiguous": false,
+   "topic": "A3",
+   "cognitive": "applying",
+   "issues": [
+    "عملية الجمع إبدالية، لذا يمكن للطالب وضع المتغيرات بترتيب مختلف (مثل c + a أو 15c + 30a) مما قد يؤدي إلى اعتبار الإجابة الصحيحة خاطئة في التصحيح الآلي."
+   ],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A3-015",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A3",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A3-016",
+   "answer": "المتباينة هي 15n - 600 \\ge 1800، وبحلها نجد أن n \\ge 160، لذا فإن المعلم غير محق لأن 150 تذكرة لا تكفي.",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A3",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  }
+ ]
+}

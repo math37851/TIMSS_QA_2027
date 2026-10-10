@@ -1,0 +1,873 @@
+# ============================================================================
+# الأعداد ← الأعداد الصحيحة | N1 خصائص الأعداد والعمليات · N2 جمع الأعداد الموجبة والسالبة وطرحها
+# الأهداف: 16 بنداً لكل موضوع (معرفة 5 / تطبيق 6 / استدلال 5 — تأسيسي 2 / سهل 5 / متوسط 5 / صعب 4)
+# ============================================================================
+
+# ---------------------------------------------------------------- N1
+- id: M8-N1-001
+  topic: N1
+  cognitive: applying
+  area: formulate
+  difficulty: medium
+  benchmark: intermediate
+  format: dragdrop_slots
+  context: pure
+  time: 90
+  stem: |
+    اسحب أربع بطاقات إلى الخانات لتصبح الجملة العددية صحيحة.
+    تُستعمل كل بطاقة مرة واحدة على الأكثر، وستبقى بطاقة واحدة دون استعمال.
+  cards: ['2', '3', '4', '5', '6']
+  template: '[[1]] $\times$ [[2]] $=$ [[3]] $\times$ [[4]]'
+  key: {1: '2', 2: '6', 3: '3', 4: '4'}
+  check: "s1 * s2 == s3 * s4"
+  solution: |
+    نبحث عن حاصلَي ضرب متساويين باستعمال أربعة أعداد مختلفة: $2 \times 6 = 12$ و $3 \times 4 = 12$.
+    العدد $5$ لا يمكن استعماله، لأن أي حاصل ضرب فيه مضاعف للعدد $5$، ولا يوجد حاصل ضرب آخر من البطاقات الباقية يساويه.
+    تُقبل أي ترتيبات أخرى صحيحة مثل $3 \times 4 = 6 \times 2$.
+  remediation: |
+    اطلب من الطلاب كتابة كل حواصل الضرب الممكنة لعددين من البطاقات في جدول، ثم البحث عن ناتجين متساويين.
+    ناقش لماذا يستبعد العدد الأولي $5$ (ليس عاملاً لأي حاصل ضرب آخر).
+  misconceptions: [guess-and-fill, prime-factor-structure]
+  qatar_link: "الصف السادس/السابع — العوامل والمضاعفات"
+
+- id: M8-N1-002
+  topic: N1
+  cognitive: reasoning
+  area: justify
+  difficulty: hard
+  benchmark: high
+  format: cr_explain
+  context: pure
+  time: 150
+  stem: |
+    قال خالد: «مجموع أي عددين أوليين يكون دائماً عدداً زوجياً».
+    هل خالد على صواب؟ وضّح إجابتك.
+  rubric:
+    codes:
+      - {code: 10, points: 1, desc: 'يذكر أن خالداً ليس على صواب، ويقدّم مثالاً مضاداً صحيحاً يتضمن العدد $2$ (مثل $2 + 3 = 5$ وهو عدد فردي)، أو يوضح أن $2$ عدد أولي زوجي فمجموعه مع أي عدد أولي فردي يكون فردياً.'}
+      - {code: 70, points: 0, desc: 'يقول إن خالداً على صواب، أو يقول إنه ليس على صواب دون مثال مضاد صحيح أو تبرير صحيح.'}
+      - {code: 79, points: 0, desc: 'إجابة أخرى غير صحيحة أو غير مرتبطة بالسؤال.'}
+    examples:
+      correct: ['ليس على صواب، لأن $2 + 5 = 7$ عدد فردي.', 'لا؛ العدد $2$ أولي، و $2 + 3 = 5$ فردي.']
+      incorrect: ['نعم على صواب، لأن $3 + 5 = 8$ و $5 + 7 = 12$.', 'لا، لأن بعض الأعداد فردية.']
+  model_answer: 'ليس على صواب؛ العدد $2$ أولي وزوجي، و $2 + 3 = 5$ عدد فردي، فالعبارة غير صحيحة دائماً.'
+  solution: |
+    معظم الأعداد الأولية فردية، ومجموع عددين فرديين زوجي؛ لذلك يبدو الادعاء صحيحاً في أمثلة كثيرة.
+    لكن العدد $2$ أولي وزوجي، فعند جمعه مع عدد أولي فردي يكون المجموع فردياً: $2 + 3 = 5$.
+    يكفي مثال مضاد واحد لإثبات أن العبارة «دائماً» غير صحيحة.
+  remediation: |
+    درّب الطلاب على اختبار العبارات العامة («دائماً»، «كل») بالبحث عن مثال مضاد، وابدأ بالحالات الخاصة (العدد $2$، الصفر، العدد $1$).
+  misconceptions: [examples-prove-general, all-primes-odd]
+  verify: "isprime(2) and isprime(3) and (2 + 3) % 2 == 1"
+  qatar_link: "الأعداد الأولية — الصف السادس"
+
+- id: M8-N1-003
+  topic: N1
+  cognitive: knowing
+  area: recall
+  difficulty: foundation
+  benchmark: low
+  format: mc
+  context: pure
+  time: 45
+  stem: |
+    أيّ الأعداد الآتية عدد أولي؟
+  options: ['$21$', '$27$', '$29$', '$33$']
+  key: C
+  verify: "isprime(29) and not isprime(21) and not isprime(27) and not isprime(33)"
+  rationale:
+    A: 'العدد $21$ فردي لكنه يقبل القسمة على $3$ و $7$.'
+    B: 'العدد $27 = 3 \times 9$، فهو يقبل القسمة على $3$.'
+    D: 'العدد $33 = 3 \times 11$.'
+  solution: |
+    العدد الأولي له عاملان فقط: $1$ والعدد نفسه.
+    $21 = 3 \times 7$ و $27 = 3 \times 9$ و $33 = 3 \times 11$، أما $29$ فلا يقبل القسمة إلا على $1$ و $29$.
+  remediation: |
+    ذكّر الطلاب بأنه ليس كل عدد فردي أولياً، واستعمل قاعدة القسمة على $3$ (مجموع الأرقام يقبل القسمة على $3$).
+  misconceptions: [odd-means-prime]
+  qatar_link: "الأعداد الأولية والمؤلفة — الصف السادس"
+
+- id: M8-N1-004
+  topic: N1
+  cognitive: reasoning
+  area: justify
+  difficulty: medium
+  benchmark: high
+  format: select_explain
+  context: pure
+  time: 120
+  stem: |
+    كتب فهد: $\sqrt{9} + \sqrt{16} = \sqrt{25}$ ، لأن $9 + 16 = 25$.
+    هل ما كتبه فهد صحيح؟ اختر، ثم برّر إجابتك.
+  options: ["نعم، صحيح", "لا، غير صحيح"]
+  key: B
+  points: 1
+  rubric:
+    full: 'يختار «لا، غير صحيح» ويبرّر بحساب الطرفين: $\sqrt{9} + \sqrt{16} = 3 + 4 = 7$ بينما $\sqrt{25} = 5$، أو يوضح أن الجذر التربيعي لمجموع عددين لا يساوي مجموع جذريهما.'
+    zero: 'يختار «نعم»، أو يختار «لا» دون تبرير صحيح، أو بعبارة عامة لا تحسب الطرفين ولا تذكر القاعدة (مثل «لا نجمع ما داخل الجذر هكذا»).'
+    examples:
+      correct: ['لا، لأن $\sqrt{9} + \sqrt{16} = 3 + 4 = 7$ و $\sqrt{25} = 5$.']
+      incorrect: ['نعم، لأن $9 + 16 = 25$.', 'لا، لأن الجذور لا تُجمع.']
+  verify: "sqrt(9) + sqrt(16) == 7 and sqrt(25) == 5"
+  solution: |
+    $\sqrt{9} + \sqrt{16} = 3 + 4 = 7$ ، أما $\sqrt{25} = 5$.
+    بما أن $7 \neq 5$ فما كتبه فهد غير صحيح: الجذر التربيعي لا يتوزع على الجمع.
+  remediation: |
+    اطلب من الطلاب اختبار أي «قاعدة» بأعداد بسيطة قبل استعمالها.
+    قارن بين $\sqrt{9 \times 16} = \sqrt{9} \times \sqrt{16}$ (صحيحة) و $\sqrt{9 + 16}$ (لا تساوي $\sqrt{9} + \sqrt{16}$).
+  misconceptions: [root-distributes-over-addition]
+  qatar_link: "الصف الثامن — الجذور التربيعية"
+
+- id: M8-N1-005
+  topic: N1
+  cognitive: knowing
+  area: order
+  difficulty: easy
+  benchmark: intermediate
+  format: dragdrop_order
+  context: pure
+  time: 80
+  stem: |
+    اسحب البطاقات لترتيب القيم من الأصغر إلى الأكبر.
+  cards: ['$2^5$', '$5^2$', '$3^3$', '$4^2$']
+  key: ['$4^2$', '$5^2$', '$3^3$', '$2^5$']
+  direction: asc
+  solution: |
+    $4^2 = 16$ ، $5^2 = 25$ ، $3^3 = 27$ ، $2^5 = 32$.
+    الترتيب: $4^2 < 5^2 < 3^3 < 2^5$.
+  remediation: |
+    الخطأ الشائع: حساب $2^5$ على أنه $2 \times 5 = 10$.
+    اكتب القوة على صورة ضرب متكرر: $2^5 = 2 \times 2 \times 2 \times 2 \times 2 = 32$.
+  misconceptions: [power-as-multiplication]
+  hint: "احسب قيمة كل قوة أولاً."
+  qatar_link: "الصف الثامن — الأسس"
+
+- id: M8-N1-006
+  topic: N1
+  cognitive: knowing
+  area: identify
+  difficulty: medium
+  benchmark: high
+  format: mc
+  context: pure
+  time: 60
+  stem: |
+    أيّ مما يأتي يساوي $2^3 \times 2^4$ ؟
+  options: ['$2^7$', '$2^{12}$', '$4^7$', '$4^{12}$']
+  option_values: ["2**7", "2**12", "4**7", "4**12"]
+  key: A
+  verify: "2**3 * 2**4"
+  rationale:
+    B: "ضرب الأسّين بدلاً من جمعهما."
+    C: "ضرب الأساسين، مع أن الأساس يبقى كما هو."
+    D: "ضرب الأساسين وضرب الأسّين معاً."
+  solution: |
+    $2^3 \times 2^4 = (2 \times 2 \times 2) \times (2 \times 2 \times 2 \times 2) = 2^7$.
+    عند ضرب قوتين لهما الأساس نفسه نجمع الأسّين: $2^{3 + 4} = 2^7$.
+  remediation: |
+    اكتب القوتين على صورة ضرب متكرر وعُدّ العوامل، ثم استنتج القاعدة $a^m \times a^n = a^{m + n}$.
+  misconceptions: [multiply-exponents, multiply-bases]
+  qatar_link: "الصف الثامن — قوانين الأسس"
+
+- id: M8-N1-007
+  topic: N1
+  cognitive: knowing
+  area: order
+  difficulty: easy
+  benchmark: low
+  format: dragdrop_categorize
+  context: real
+  time: 90
+  stem: |
+    هذه أرقام قمصان ستة لاعبين في فريق كرة القدم المدرسي.
+    اسحب كل رقم إلى المجموعة المناسبة.
+  categories: ["عدد أولي", "عدد غير أولي"]
+  cards: ['2', '9', '17', '21', '23', '27']
+  key:
+    '2': "عدد أولي"
+    '17': "عدد أولي"
+    '23': "عدد أولي"
+    '9': "عدد غير أولي"
+    '21': "عدد غير أولي"
+    '27': "عدد غير أولي"
+  verify: "all(isprime(n) for n in [2, 17, 23]) and not any(isprime(n) for n in [9, 21, 27])"
+  solution: |
+    الأعداد الأولية: $2$ (العدد الأولي الزوجي الوحيد) و $17$ و $23$.
+    غير الأولية: $9 = 3 \times 3$ و $21 = 3 \times 7$ و $27 = 3 \times 9$.
+  remediation: |
+    نبّه إلى خطأين شائعين: اعتبار العدد $2$ غير أولي لأنه زوجي، واعتبار كل عدد فردي أولياً.
+  misconceptions: [two-not-prime, odd-means-prime]
+  qatar_link: "الأعداد الأولية والمؤلفة — الصف السادس"
+
+- id: M8-N1-008
+  topic: N1
+  cognitive: applying
+  area: implement
+  difficulty: medium
+  benchmark: intermediate
+  format: mc
+  context: qatar
+  time: 100
+  stem: |
+    في إحدى محطات مترو الدوحة، ينطلق قطار كل 12 دقيقة، وتنطلق حافلة كل 18 دقيقة.
+    انطلق القطار والحافلة معاً الساعة 7:00 صباحاً. متى ينطلقان معاً مرة أخرى لأول مرة؟
+  options: ["7:06", "7:30", "7:36", "10:36"]
+  key: C
+  verify: "lcm(12, 18) == 36"
+  rationale:
+    A: 'طرح الزمنين ($18 - 12 = 6$).'
+    B: 'جمع الزمنين ($12 + 18 = 30$).'
+    D: 'ضرب الزمنين ($12 \times 18 = 216$ دقيقة) بدلاً من إيجاد المضاعف المشترك الأصغر.'
+  solution: |
+    مضاعفات $12$: $12, 24, 36, 48, \ldots$ ومضاعفات $18$: $18, 36, 54, \ldots$
+    أول مضاعف مشترك هو $36$ دقيقة، إذن ينطلقان معاً الساعة 7:36.
+  remediation: |
+    استعمل قوائم المضاعفات أو خطاً زمنياً يوضح انطلاق كل منهما، ثم اربط الفكرة بالمضاعف المشترك الأصغر.
+  misconceptions: [lcm-as-product, lcm-as-sum]
+  qatar_link: "المضاعف المشترك الأصغر — الصف السادس"
+
+- id: M8-N1-009
+  topic: N1
+  cognitive: applying
+  area: formulate
+  difficulty: easy
+  benchmark: intermediate
+  format: mc
+  context: qatar
+  time: 90
+  stem: |
+    تجهّز معلمة أكياس ضيافة لرحلة إلى متحف قطر الوطني. لديها 24 علبة عصير و36 قطعة كعك،
+    وتريد توزيعها كلها على الأكياس بالتساوي دون أن يبقى شيء. ما أكبر عدد ممكن من الأكياس؟
+  options: ['$6$', '$12$', '$60$', '$72$']
+  option_values: [6, 12, 60, 72]
+  key: B
+  verify: "gcd(24, 36)"
+  rationale:
+    A: "عامل مشترك صحيح لكنه ليس الأكبر."
+    C: 'جمع العددين ($24 + 36$).'
+    D: "المضاعف المشترك الأصغر للعددين بدلاً من القاسم المشترك الأكبر."
+  solution: |
+    عوامل $24$: $1, 2, 3, 4, 6, 8, 12, 24$ ، وعوامل $36$: $1, 2, 3, 4, 6, 9, 12, 18, 36$.
+    أكبر عامل مشترك هو $12$، فيكون في كل كيس علبتا عصير و 3 قطع كعك.
+  remediation: |
+    فرّق بين مسائل «أكبر عدد يقسم الكميتين» (القاسم المشترك الأكبر) ومسائل «أول مرة يتكرر فيها الحدثان معاً» (المضاعف المشترك الأصغر).
+  misconceptions: [gcf-lcm-confusion]
+  qatar_link: "القاسم المشترك الأكبر — الصف السادس"
+
+- id: M8-N1-010
+  topic: N1
+  cognitive: applying
+  area: implement
+  difficulty: medium
+  benchmark: high
+  format: numeric
+  context: real
+  time: 100
+  stem: |
+    في تجربة علمية، تنقسم خلية بكتيرية إلى خليتين كل 20 دقيقة، وتنقسم كل خلية جديدة بالطريقة نفسها.
+    بدأت التجربة بخلية واحدة. كم خلية سيكون العدد بعد ساعتين؟
+  answer: {value: 64, unit: "خلية"}
+  verify: "2**(120 // 20)"
+  solution: |
+    ساعتان $= 120$ دقيقة، أي $120 \div 20 = 6$ انقسامات.
+    يتضاعف عدد الخلايا في كل انقسام: $2^6 = 64$ خلية.
+  remediation: |
+    ارسم جدولاً: الزمن بالدقائق ($0, 20, 40, \ldots$) وعدد الخلايا ($1, 2, 4, 8, \ldots$) ليلاحظ الطلاب التضاعف، ثم اكتبه قوةً للعدد $2$.
+  misconceptions: [doubling-as-adding, count-intervals-wrong]
+  hint: "كم مرة تنقسم الخلايا خلال ساعتين؟"
+  qatar_link: "الصف الثامن — الأسس"
+
+- id: M8-N1-011
+  topic: N1
+  cognitive: applying
+  area: implement
+  difficulty: foundation
+  benchmark: low
+  format: mc
+  context: qatar
+  time: 60
+  stem: |
+    ساحة مربعة الشكل في حديقة أسباير مساحتها $81\,\text{m}^2$. ما طول ضلعها؟
+  figure:
+    type: polygon
+    points: [[0, 0], [3, 0], [3, 3], [0, 3]]
+    side_labels: [null, null, null, '?']
+    unit: 46
+    extra: [{text: [1.5, 1.5], s: '81 m²', size: 17, color: '#8A1538', weight: bold}]
+    alt: "مربع مساحته 81 متراً مربعاً وطول ضلعه مجهول"
+  options: ['$9\,\text{m}$', '$20.25\,\text{m}$', '$40.5\,\text{m}$', '$81\,\text{m}$']
+  option_values: [9, 20.25, 40.5, 81]
+  key: A
+  verify: "sqrt(81)"
+  rationale:
+    B: "قسم المساحة على 4 كما لو كانت محيطاً."
+    C: "قسم المساحة على 2 بدلاً من إيجاد الجذر التربيعي."
+    D: "اعتبر طول الضلع مساوياً للمساحة."
+  solution: |
+    مساحة المربع = طول الضلع × طول الضلع. العدد الذي مربعه $81$ هو $9$، لأن $9 \times 9 = 81$.
+    إذن طول الضلع $9\,\text{m}$.
+  remediation: |
+    اربط الجذر التربيعي بمساحة المربع باستعمال شبكة مربعات، وميّز بين قسمة المحيط على 4 وإيجاد الجذر التربيعي للمساحة.
+  misconceptions: [area-perimeter-confusion, sqrt-as-half]
+  qatar_link: "الجذور التربيعية — الصف الثامن"
+
+- id: M8-N1-012
+  topic: N1
+  cognitive: applying
+  area: formulate
+  difficulty: easy
+  benchmark: intermediate
+  format: numeric
+  context: qatar
+  time: 100
+  stem: |
+    في إحدى مدارس الدوحة 261 طالباً في الصف الثامن. يريد المدير توزيعهم على فصول متساوية في العدد،
+    بحيث يكون في كل فصل أكثر من 20 طالباً وأقل من 30 طالباً. كم طالباً سيكون في كل فصل؟
+  answer: {value: 29, unit: "طالباً"}
+  verify: "(lambda L: L[0] if len(L) == 1 else -1)([d for d in divisors(261) if 20 < d < 30])"
+  solution: |
+    نبحث عن عامل للعدد $261$ بين $20$ و $30$: $261 = 9 \times 29$.
+    إذن في كل فصل $29$ طالباً (9 فصول). لا يوجد عامل آخر للعدد $261$ بين $20$ و $30$.
+  remediation: |
+    علّم الطلاب اختبار القسمة على الأعداد المرشحة بالحاسبة ($21, 22, \ldots, 29$) وتسجيل ما يعطي ناتجاً صحيحاً.
+  misconceptions: [guess-without-checking]
+  hint: "جرّب قسمة 261 على الأعداد من 21 إلى 29."
+  qatar_link: "العوامل وقابلية القسمة — الصف السادس"
+
+- id: M8-N1-013
+  topic: N1
+  cognitive: knowing
+  area: compute
+  difficulty: easy
+  benchmark: intermediate
+  format: multi_numeric
+  context: pure
+  time: 100
+  stem: |
+    يمكن كتابة العدد 360 على صورة حاصل ضرب قوى أعداد أولية:
+    $360 = 2^a \times 3^b \times 5^c$
+    ما قيم $a$ و $b$ و $c$ ؟
+  fields:
+    - {label: '$a$', value: 3}
+    - {label: '$b$', value: 2}
+    - {label: '$c$', value: 1}
+  scoring: {mode: all}
+  verify: "(lambda f: [f[2], f[3], f[5]])(factorint(360))"
+  solution: |
+    $360 = 2 \times 180 = 2 \times 2 \times 90 = 2 \times 2 \times 2 \times 45 = 2^3 \times 45$ ، و $45 = 3^2 \times 5$.
+    إذن $360 = 2^3 \times 3^2 \times 5^1$ ، أي $a = 3$ ، $b = 2$ ، $c = 1$.
+  remediation: |
+    استعمل شجرة العوامل، ثم تحقق بضرب الناتج: $8 \times 9 \times 5 = 360$.
+  misconceptions: [incomplete-factorization]
+  qatar_link: "التحليل إلى العوامل الأولية — الصف السادس"
+
+- id: M8-N1-014
+  topic: N1
+  cognitive: reasoning
+  area: analyze
+  difficulty: hard
+  benchmark: advanced
+  format: mc
+  context: pure
+  time: 120
+  stem: |
+    إذا كان $n$ أي عدد صحيح موجب، فأيّ العبارات الآتية صحيحة **دائماً**؟
+  options: ['$n^2$ عدد زوجي', '$n(n + 1)$ عدد زوجي', '$n + 1$ عدد فردي', '$2n + 1$ عدد أولي']
+  key: B
+  verify: "all((k*(k + 1)) % 2 == 0 for k in range(1, 200)) and any((k*k) % 2 == 1 for k in range(1, 5)) and any((k + 1) % 2 == 0 for k in range(1, 5)) and any(not isprime(2*k + 1) for k in range(1, 10))"
+  rationale:
+    A: 'صحيحة فقط عندما يكون $n$ زوجياً؛ مثلاً $3^2 = 9$ عدد فردي.'
+    C: 'صحيحة فقط عندما يكون $n$ زوجياً؛ مثلاً $3 + 1 = 4$ عدد زوجي.'
+    D: 'غير صحيحة دائماً؛ مثلاً عندما $n = 4$ يكون $2n + 1 = 9$ وهو غير أولي.'
+  solution: |
+    العددان $n$ و $n + 1$ متتاليان، فأحدهما زوجي دائماً، وحاصل ضرب أي عدد في عدد زوجي يكون زوجياً.
+    إذن $n(n + 1)$ زوجي دائماً، أما العبارات الأخرى فلكل منها مثال مضاد.
+  remediation: |
+    درّب الطلاب على اختبار العبارات العامة بقيم زوجية وفردية، وعلى أن مثالاً مضاداً واحداً يكفي لنفي كلمة «دائماً».
+  misconceptions: [examples-prove-general]
+  qatar_link: "خصائص الأعداد — الصفوف 6–8"
+
+- id: M8-N1-015
+  topic: N1
+  cognitive: reasoning
+  area: generalize
+  difficulty: hard
+  benchmark: advanced
+  format: mc
+  context: pure
+  time: 120
+  stem: |
+    يبيّن الجدول قوى العدد 3. لاحظ رقم الآحاد في كل قيمة.
+    ما رقم الآحاد في $3^{20}$ ؟
+  table:
+    headers: ['القوة', '$3^1$', '$3^2$', '$3^3$', '$3^4$', '$3^5$', '$3^6$']
+    rows: [['القيمة', '3', '9', '27', '81', '243', '729']]
+    row_headers: true
+  options: ['$1$', '$3$', '$7$', '$9$']
+  option_values: [1, 3, 7, 9]
+  key: A
+  verify: "(3**20) % 10"
+  rationale:
+    B: "افترض أن رقم الآحاد يبقى 3 لأن الأساس 3."
+    C: "لاحظ الدورة (3، 9، 7، 1) لكنه أخطأ في تحديد موقع القوة 20 فيها."
+    D: "لاحظ الدورة لكنه أخطأ في تحديد موقع القوة 20 فيها."
+  solution: |
+    أرقام الآحاد تتكرر كل 4 قوى: $3, 9, 7, 1, 3, 9, 7, 1, \ldots$
+    بما أن $20 = 4 \times 5$ فإن $3^{20}$ يقع في نهاية دورة، فرقم آحاده $1$ مثل $3^4$ و $3^8$.
+  remediation: |
+    اطلب من الطلاب إكمال الجدول حتى $3^8$ وتلوين الأنماط المتكررة، ثم استعمال باقي قسمة الأس على 4 للتعميم.
+  misconceptions: [pattern-not-extended, base-digit-constant]
+  qatar_link: "الأسس والأنماط — الصف الثامن"
+
+- id: M8-N1-016
+  topic: N1
+  cognitive: reasoning
+  area: analyze
+  difficulty: hard
+  benchmark: high
+  format: numeric
+  context: real
+  time: 130
+  stem: |
+    يريد سعيد ترتيب 48 كرسياً في صفوف متساوية، بحيث يكون في كل صف أكثر من كرسي واحد، ويكون عدد الصفوف أكثر من صف واحد.
+    كم طريقة مختلفة يمكنه أن يرتب بها الكراسي؟
+    (مثال: 6 صفوف في كل منها 8 كراسٍ طريقة، و 8 صفوف في كل منها 6 كراسٍ طريقة أخرى.)
+  answer: {value: 8, unit: "طرق"}
+  verify: "len([d for d in divisors(48) if 1 < d < 48])"
+  solution: |
+    عدد الكراسي في الصف يجب أن يكون عاملاً للعدد $48$ غير $1$ وغير $48$:
+    $2, 3, 4, 6, 8, 12, 16, 24$ ، أي $8$ طرق.
+  remediation: |
+    اطلب كتابة أزواج العوامل بشكل منظم: $1 \times 48$ ، $2 \times 24$ ، $3 \times 16$ ، $4 \times 12$ ، $6 \times 8$،
+    ثم ناقش أيها مستبعد ولماذا يُعدّ $6 \times 8$ و $8 \times 6$ طريقتين مختلفتين.
+  misconceptions: [missing-factor-pairs, count-pairs-once]
+  qatar_link: "العوامل — الصف السادس"
+
+# ---------------------------------------------------------------- N2
+- id: M8-N2-001
+  topic: N2
+  cognitive: applying
+  area: implement
+  difficulty: easy
+  benchmark: intermediate
+  format: mc
+  context: real
+  time: 60
+  stem: |
+    أقلعت طائرة من الدوحة عندما كانت درجة الحرارة $22\,^\circ\text{C}$، وهبطت في مدينة كانت درجة الحرارة فيها $-6\,^\circ\text{C}$.
+    بكم درجة تقلّ درجة الحرارة في تلك المدينة عنها في الدوحة؟
+  figure:
+    - {type: thermometer, min: -10, max: 30, step: 5, value: 22, unit: '°C', caption: "الدوحة", height: 260}
+    - {type: thermometer, min: -10, max: 30, step: 5, value: -6, unit: '°C', caption: "المدينة", height: 260}
+  options: ['$16\,^\circ\text{C}$', '$28\,^\circ\text{C}$', '$-28\,^\circ\text{C}$', '$-16\,^\circ\text{C}$']
+  option_values: [16, 28, -28, -16]
+  key: B
+  verify: "22 - (-6)"
+  rationale:
+    A: "طرح 6 من 22 متجاهلاً أن درجة الحرارة في المدينة تحت الصفر."
+    C: "حسب التغير بإشارة سالبة، مع أن السؤال عن مقدار الفرق (عدد الدرجات)."
+    D: "جمع خطأين: تجاهل الإشارة ثم وضع إشارة سالبة للناتج."
+  solution: |
+    الفرق $= 22 - (-6) = 22 + 6 = 28$، أي أن درجة الحرارة في المدينة أقل بـ $28$ درجة.
+    يمكن التحقق على خط الأعداد: من $-6$ إلى $0$ تكون $6$ درجات، ومن $0$ إلى $22$ تكون $22$ درجة، والمجموع $28$.
+  remediation: |
+    استعمل مقياس الحرارة كخط أعداد رأسي: عدّ الدرجات من القراءة الأدنى إلى الصفر، ثم من الصفر إلى القراءة الأعلى.
+    ذكّر الطلاب بأن طرح عدد سالب يساوي جمع معكوسه.
+  misconceptions: [ignore-negative-sign, difference-as-signed-change]
+  qatar_link: "الصف السابع — الوحدة 1: الدرس 1-4 طرح الأعداد الصحيحة (7.1.1)"
+
+- id: M8-N2-002
+  topic: N2
+  cognitive: knowing
+  area: compute
+  difficulty: foundation
+  benchmark: low
+  format: numeric
+  context: pure
+  time: 40
+  stem: |
+    ما ناتج $-8 + 13$ ؟
+  answer: {value: 5}
+  verify: "-8 + 13"
+  solution: |
+    على خط الأعداد نبدأ من $-8$ ونتحرك $13$ وحدة إلى اليمين: $8$ وحدات للوصول إلى الصفر، ثم $5$ وحدات أخرى.
+    إذن $-8 + 13 = 5$.
+  remediation: |
+    استعمل خط الأعداد أو نموذج «المكسب والخسارة»: خسارة 8 ثم مكسب 13 تعني مكسباً صافياً قدره 5.
+  misconceptions: [sign-of-larger-ignored]
+  qatar_link: "الصف السابع — الدرس 1-3 جمع الأعداد الصحيحة (7.1.1)"
+
+- id: M8-N2-003
+  topic: N2
+  cognitive: knowing
+  area: identify
+  difficulty: foundation
+  benchmark: low
+  format: mc
+  context: real
+  time: 45
+  stem: |
+    يبيّن مقياس الحرارة درجة الحرارة في إحدى المدن صباح يوم شتوي.
+    ما درجة الحرارة التي يبيّنها المقياس؟
+  figure: {type: thermometer, min: -10, max: 10, step: 1, label_every: 2, value: -3, unit: '°C', height: 320, alt: "مقياس حرارة يشير إلى 3 درجات تحت الصفر"}
+  options: ['$3\,^\circ\text{C}$', '$-3\,^\circ\text{C}$', '$-2\,^\circ\text{C}$', '$-7\,^\circ\text{C}$']
+  option_values: [3, -3, -2, -7]
+  key: B
+  verify: "-3"
+  rationale:
+    A: "تجاهل أن المؤشر تحت الصفر."
+    C: "أخطأ في عدّ التدريجات تحت الصفر."
+    D: "عدّ التدريجات من أسفل المقياس بدلاً من الصفر."
+  solution: |
+    المؤشر يقع 3 تدريجات تحت الصفر، وكل تدريج يمثل درجة واحدة، إذن درجة الحرارة $-3\,^\circ\text{C}$.
+  remediation: |
+    ابدأ العدّ دائماً من الصفر، وذكّر الطلاب بأن الأعداد تحت الصفر سالبة.
+  misconceptions: [ignore-negative-sign, count-from-wrong-origin]
+  qatar_link: "الصف السابع — الدرس 1-1 الأعداد الصحيحة ومعكوساتها"
+
+- id: M8-N2-004
+  topic: N2
+  cognitive: knowing
+  area: compute
+  difficulty: easy
+  benchmark: intermediate
+  format: mc
+  context: pure
+  time: 50
+  stem: |
+    ما ناتج $-7 - (-12)$ ؟
+  options: ['$-19$', '$-5$', '$5$', '$19$']
+  option_values: [-19, -5, 5, 19]
+  key: C
+  verify: "-7 - (-12)"
+  rationale:
+    A: 'عامل طرح العدد السالب كأنه جمع عدد سالب: $-7 + (-12)$.'
+    B: 'طرح العددين ووضع إشارة العدد الأول: $-(12 - 7)$.'
+    D: "جمع القيمتين المطلقتين متجاهلاً الإشارات."
+  solution: |
+    طرح عدد سالب يساوي جمع معكوسه: $-7 - (-12) = -7 + 12 = 5$.
+  remediation: |
+    استعمل نموذج خط الأعداد: الطرح يعني «كم يلزم للوصول من $-12$ إلى $-7$؟» والجواب $5$ خطوات إلى اليمين.
+  misconceptions: [subtract-negative-as-add-negative]
+  qatar_link: "الصف السابع — الدرس 1-4 طرح الأعداد الصحيحة"
+
+- id: M8-N2-005
+  topic: N2
+  cognitive: knowing
+  area: order
+  difficulty: easy
+  benchmark: intermediate
+  format: dragdrop_order
+  context: real
+  time: 80
+  stem: |
+    يبيّن الجدول درجات الحرارة الصغرى في أربع مدن في ليلة شتوية.
+    اسحب البطاقات لترتيب المدن من الأبرد إلى الأدفأ.
+  table:
+    headers: ['المدينة', 'الدوحة', 'موسكو', 'أوسلو', 'أنقرة']
+    rows: [['درجة الحرارة', '$14\,^\circ\text{C}$', '$-9\,^\circ\text{C}$', '$-4\,^\circ\text{C}$', '$-1\,^\circ\text{C}$']]
+    row_headers: true
+  cards:
+    - {id: doha, text: 'الدوحة', value: 14}
+    - {id: moscow, text: 'موسكو', value: -9}
+    - {id: oslo, text: 'أوسلو', value: -4}
+    - {id: ankara, text: 'أنقرة', value: -1}
+  key: [moscow, oslo, ankara, doha]
+  direction: asc
+  order_labels: ["الأبرد", "الأدفأ"]
+  solution: |
+    الأبرد هو الأصغر: $-9 < -4 < -1 < 14$.
+    الترتيب: موسكو، أوسلو، أنقرة، الدوحة.
+  remediation: |
+    ضع درجات الحرارة على خط أعداد: كلما اتجهنا يساراً قلّت القيمة، لذا $-9$ أصغر من $-4$ رغم أن $9 > 4$.
+  misconceptions: [negative-magnitude-order]
+  qatar_link: "الصف السابع — الدرس 1-1 مقارنة الأعداد الصحيحة وترتيبها"
+
+- id: M8-N2-006
+  topic: N2
+  cognitive: knowing
+  area: identify
+  difficulty: medium
+  benchmark: high
+  format: mc
+  context: pure
+  time: 60
+  stem: |
+    أيّ مما يأتي يساوي $-4 - 6$ ؟
+  options: ['$-4 + (-6)$', '$-4 + 6$', '$4 - 6$', '$-(4 - 6)$']
+  option_values: ["-4 + (-6)", "-4 + 6", "4 - 6", "-(4 - 6)"]
+  key: A
+  verify: "-4 - 6"
+  rationale:
+    B: 'ناتجه $2$ وليس $-10$.'
+    C: 'ناتجه $-2$؛ أهمل إشارة العدد الأول.'
+    D: 'ناتجه $2$؛ وضع الإشارة السالبة خارج القوسين خطأً.'
+  solution: |
+    طرح عدد يساوي جمع معكوسه: $-4 - 6 = -4 + (-6) = -10$.
+  remediation: |
+    اكتب مع الطلاب كل عملية طرح على صورة جمع للمعكوس، وتحقق من الناتج بخط الأعداد.
+  misconceptions: [subtraction-as-adding-opposite]
+  qatar_link: "الصف السابع — الدرس 1-4"
+
+- id: M8-N2-007
+  topic: N2
+  cognitive: applying
+  area: implement
+  difficulty: easy
+  benchmark: intermediate
+  format: numeric
+  context: qatar
+  time: 70
+  stem: |
+    غاص غوّاص لؤلؤ إلى عمق $12\,\text{m}$ تحت سطح البحر، ثم صعد $5\,\text{m}$.
+    ما موقعه الآن بالنسبة إلى سطح البحر؟ (استعمل عدداً سالباً للموقع تحت سطح البحر.)
+  answer: {value: -7, unit: "m"}
+  verify: "-12 + 5"
+  solution: |
+    الموقع تحت سطح البحر سالب: يبدأ الغواص عند $-12$ ثم يصعد $5$، أي $-12 + 5 = -7$.
+    إذن هو على عمق $7\,\text{m}$ تحت سطح البحر ($-7\,\text{m}$).
+  remediation: |
+    استعمل خط أعداد رأسياً يمثل سطح البحر بالصفر. الصعود حركة إلى الأعلى (جمع) والنزول حركة إلى الأسفل (طرح).
+  misconceptions: [ignore-negative-sign, direction-confusion]
+  hint: "سطح البحر هو الصفر، وتحته أعداد سالبة."
+  qatar_link: "الصف السابع — الدرس 1-3"
+
+- id: M8-N2-008
+  topic: N2
+  cognitive: applying
+  area: formulate
+  difficulty: medium
+  benchmark: intermediate
+  format: mc
+  context: qatar
+  time: 80
+  stem: |
+    في محل للأسماك في سوق الوكرة، درجة حرارة المجمّد $-18\,^\circ\text{C}$، ودرجة حرارة المحل $24\,^\circ\text{C}$.
+    أيّ العمليات الآتية تعطي عدد الدرجات التي تزيد بها درجة حرارة المحل على درجة حرارة المجمّد؟
+  options: ['$24 - 18$', '$24 + (-18)$', '$24 - (-18)$', '$18 - 24$']
+  option_values: ["24 - 18", "24 + (-18)", "24 - (-18)", "18 - 24"]
+  key: C
+  verify: "24 - (-18)"
+  rationale:
+    A: "تجاهل أن درجة حرارة المجمّد سالبة."
+    B: 'تساوي $24 - 18$ ، أي تجاهل الإشارة السالبة أيضاً.'
+    D: "طرح العددين دون إشاراتهما وبترتيب معكوس."
+  solution: |
+    الفرق = الأعلى − الأدنى $= 24 - (-18) = 24 + 18 = 42$ درجة.
+  remediation: |
+    مثّل الموقف على مقياس حرارة: المسافة من $-18$ إلى $0$ هي $18$، ومن $0$ إلى $24$ هي $24$، والمجموع $42$.
+  misconceptions: [ignore-negative-sign]
+  qatar_link: "الصف السابع — الدرس 1-4"
+
+- id: M8-N2-009
+  topic: N2
+  cognitive: applying
+  area: implement
+  difficulty: medium
+  benchmark: intermediate
+  format: numeric
+  context: real
+  time: 90
+  stem: |
+    كان رصيد حساب محل صغير في بداية الشهر $-350$ ريالاً (أي أن على صاحبه 350 ريالاً للبنك).
+    أودع صاحب المحل 1200 ريال، ثم سحب 480 ريالاً. كم أصبح رصيد الحساب؟
+  answer: {value: 370, unit: "ريالاً"}
+  verify: "-350 + 1200 - 480"
+  solution: |
+    الرصيد $= -350 + 1200 - 480 = 850 - 480 = 370$ ريالاً.
+  remediation: |
+    استعمل نموذج «الديون والمدخرات»: الإيداع يضيف، والسحب يطرح، والرصيد السالب دين.
+  misconceptions: [ignore-negative-sign]
+  qatar_link: "الصف السابع — الدرس 1-5"
+
+- id: M8-N2-010
+  topic: N2
+  cognitive: applying
+  area: represent
+  difficulty: medium
+  benchmark: intermediate
+  format: dragdrop_slots
+  context: pure
+  time: 90
+  stem: |
+    يمثّل السهم على خط الأعداد عملية جمع تبدأ من العدد الأول.
+    اسحب البطاقات لتكتب العملية التي يمثّلها خط الأعداد.
+  figure: {type: number_line, min: -4, max: 7, jumps: [{from: -2, to: 5, label: "?"}], points: [{x: -2}, {x: 5}], alt: "خط أعداد عليه سهم من −2 إلى 5"}
+  cards: ['$-2$', '$7$', '$5$', '$-7$', '$3$', '$2$']
+  template: '[[1]] $+$ [[2]] $=$ [[3]]'
+  key: {1: '$-2$', 2: '$7$', 3: '$5$'}
+  verify: "s1 + s2 == s3 and s1 == -2 and s3 == 5"
+  solution: |
+    يبدأ السهم عند $-2$ وينتهي عند $5$، فطول القفزة $5 - (-2) = 7$ وحدات إلى اليمين.
+    العملية: $-2 + 7 = 5$.
+  remediation: |
+    اطلب من الطلاب تسمية نقطة البداية ونقطة النهاية، ثم عدّ الخطوات بين النقطتين مع تحديد الاتجاه (اليمين موجب).
+  misconceptions: [jump-length-miscounted, start-end-confusion]
+  qatar_link: "الصف السابع — الدرس 1-3 (نمذجة الجمع على خط الأعداد)"
+
+- id: M8-N2-011
+  topic: N2
+  cognitive: applying
+  area: implement
+  difficulty: easy
+  benchmark: low
+  format: mc
+  context: real
+  time: 60
+  stem: |
+    في لعبة إلكترونية، كان لدى مريم 15 نقطة. خسرت 20 نقطة، ثم ربحت 8 نقاط.
+    كم نقطة أصبحت لديها؟
+  options: ['$-13$', '$3$', '$13$', '$43$']
+  option_values: [-13, 3, 13, 43]
+  key: B
+  verify: "15 - 20 + 8"
+  rationale:
+    A: 'حسب $15 - 20 - 8$؛ طرح الربح بدلاً من جمعه.'
+    C: 'حسب $20 - 15 + 8$؛ بدأ من الخسارة.'
+    D: "جمع كل الأعداد متجاهلاً الخسارة."
+  solution: |
+    $15 - 20 = -5$ ، ثم $-5 + 8 = 3$ نقاط.
+  remediation: |
+    استعمل نموذج المكسب (+) والخسارة (−) على خط أعداد خطوة بخطوة.
+  misconceptions: [sign-confusion-multistep]
+  qatar_link: "الصف السابع — الدرس 1-5"
+
+- id: M8-N2-012
+  topic: N2
+  cognitive: reasoning
+  area: analyze
+  difficulty: hard
+  benchmark: high
+  format: mc
+  context: pure
+  time: 100
+  stem: |
+    النقطة A على خط الأعداد تمثل العدد $-7$. النقطة B تبعد 12 وحدة عن النقطة A.
+    ما العدد الذي يمكن أن تمثله النقطة B؟
+  options: ['$5$ فقط', '$-19$ فقط', '$5$ أو $-19$', '$19$ أو $-5$']
+  key: C
+  verify: "-7 + 12 == 5 and -7 - 12 == -19"
+  rationale:
+    A: "افترض أن النقطة B تقع يمين A فقط."
+    B: "افترض أن النقطة B تقع يسار A فقط."
+    D: "أخطأ في إشارات العددين."
+  solution: |
+    يمكن أن تقع B على يمين A أو على يسارها:
+    يميناً: $-7 + 12 = 5$ ، يساراً: $-7 - 12 = -19$. إذن B تمثل $5$ أو $-19$.
+  remediation: |
+    اطلب من الطلاب رسم خط الأعداد وتحديد جميع المواقع الممكنة قبل الإجابة، وناقش كلمة «تبعد» (لا تحدد الاتجاه).
+  misconceptions: [single-direction-assumption]
+  qatar_link: "الصف السابع — الدرس 1-1 (المسافة على خط الأعداد)"
+
+- id: M8-N2-013
+  topic: N2
+  cognitive: reasoning
+  area: justify
+  difficulty: medium
+  benchmark: high
+  format: select_explain
+  context: real
+  time: 120
+  stem: |
+    قال علي: «عندما نطرح عدداً سالباً من عدد ما، يكون الناتج دائماً أصغر من ذلك العدد».
+    هل علي على صواب؟ اختر، ثم برّر إجابتك بمثال.
+  options: ["نعم، على صواب", "لا، ليس على صواب"]
+  key: B
+  points: 1
+  rubric:
+    full: 'يختار «لا» ويقدّم مثالاً صحيحاً يبيّن أن الناتج أكبر، مثل $5 - (-3) = 8$ و $8 > 5$، أو يوضح أن طرح عدد سالب يساوي جمع عدد موجب فيزداد الناتج.'
+    zero: 'يختار «نعم»، أو يختار «لا» دون مثال أو تبرير صحيح، أو يكتفي بقاعدة عامة غير دقيقة مثل «سالب وسالب يصير موجب» دون مثال.'
+    examples:
+      correct: ['لا، لأن $10 - (-2) = 12$ وهو أكبر من $10$.']
+      incorrect: ['نعم، لأن الطرح يصغّر العدد دائماً.']
+  verify: "5 - (-3) == 8"
+  solution: |
+    طرح عدد سالب يساوي جمع معكوسه الموجب، فيزداد الناتج: $5 - (-3) = 5 + 3 = 8$ و $8 > 5$.
+    إذن علي ليس على صواب.
+  remediation: |
+    اعرض أمثلة على خط الأعداد، واطلب من الطلاب صياغة قاعدة: «طرح عدد سالب يزيد العدد».
+  misconceptions: [subtraction-always-decreases]
+  qatar_link: "الصف السابع — الدرس 1-4"
+
+- id: M8-N2-014
+  topic: N2
+  cognitive: reasoning
+  area: integrate
+  difficulty: hard
+  benchmark: high
+  format: numeric
+  context: qatar
+  time: 130
+  stem: |
+    يبلغ ارتفاع قرين أبو البول، أعلى نقطة في قطر، نحو $103\,\text{m}$ فوق سطح البحر.
+    غوّاص على عمق $25\,\text{m}$ تحت سطح البحر. طار طائر إلى نقطة تقع في منتصف المسافة الرأسية بين قمة القرين والغوّاص تماماً.
+    كم يبلغ ارتفاع الطائر فوق سطح البحر؟
+  answer: {value: 39, unit: "m"}
+  verify: "(103 + (-25)) / 2"
+  solution: |
+    نمثّل الموقعين بالأعداد $103$ و $-25$.
+    المسافة الرأسية بينهما $103 - (-25) = 128\,\text{m}$ ، ونصفها $64\,\text{m}$.
+    الطائر عند $-25 + 64 = 39$ ، أي $39\,\text{m}$ فوق سطح البحر.
+    (أو مباشرة: $\frac{103 + (-25)}{2} = \frac{78}{2} = 39$.)
+  remediation: |
+    ارسم خط أعداد رأسياً يوضح سطح البحر (0) والقمة والغوّاص، واحسب المسافة الكلية أولاً ثم منتصفها.
+  misconceptions: [ignore-negative-sign, midpoint-of-magnitudes]
+  hint: "احسب أولاً المسافة الرأسية بين القمة والغوّاص."
+  qatar_link: "الصف السابع — الوحدة 1"
+
+- id: M8-N2-015
+  topic: N2
+  cognitive: reasoning
+  area: generalize
+  difficulty: hard
+  benchmark: advanced
+  format: mc
+  context: pure
+  time: 110
+  stem: |
+    إذا كان $a$ و $b$ عددين سالبين، فأيّ المقادير الآتية يكون موجباً **دائماً**؟
+  options: ['$a + b$', '$a - b$', '$b - a$', '$-a - b$']
+  key: D
+  verify: "all(-p - q > 0 for p in range(-9, 0) for q in range(-9, 0)) and any(p - q <= 0 for p in range(-9, 0) for q in range(-9, 0)) and any(q - p <= 0 for p in range(-9, 0) for q in range(-9, 0)) and all(p + q < 0 for p in range(-9, 0) for q in range(-9, 0))"
+  rationale:
+    A: 'مجموع عددين سالبين سالب دائماً، مثل $-2 + (-3) = -5$.'
+    B: 'يعتمد على القيمتين: $-2 - (-5) = 3$ لكن $-5 - (-2) = -3$.'
+    C: 'يعتمد على القيمتين كذلك، مثل $-3 - (-1) = -2$.'
+  solution: |
+    $-a - b = -(a + b)$. بما أن $a + b$ سالب دائماً، فإن معكوسه $-(a + b)$ موجب دائماً.
+    مثال: $a = -2$ ، $b = -3$ ⇐ $-a - b = 2 + 3 = 5$.
+  remediation: |
+    اطلب من الطلاب تجريب أزواج مختلفة من الأعداد السالبة في جدول، ثم ملاحظة أي المقادير لا تتغير إشارته.
+  misconceptions: [examples-prove-general, negative-of-negative]
+  qatar_link: "الصف السابع — الوحدة 1"
+
+- id: M8-N2-016
+  topic: N2
+  cognitive: reasoning
+  area: justify
+  difficulty: hard
+  benchmark: high
+  format: cr_explain
+  context: real
+  time: 150
+  stem: |
+    قال كريم: «الفرق بين درجتي الحرارة $8\,^\circ\text{C}$ و $-3\,^\circ\text{C}$ هو 5 درجات».
+    اشرح الخطأ الذي وقع فيه كريم، ثم اكتب الفرق الصحيح.
+  points: 2
+  rubric:
+    codes:
+      - {code: 20, points: 2, desc: 'يوضح الخطأ (طرح 3 من 8 متجاهلاً أن $-3$ تحت الصفر، أو حسب $8 - 3$ بدلاً من $8 - (-3)$) ويكتب الفرق الصحيح $11$ درجة.'}
+      - {code: 10, points: 1, desc: 'يكتب الفرق الصحيح $11$ دون توضيح الخطأ، أو يوضح الخطأ دون الوصول إلى $11$.'}
+      - {code: 70, points: 0, desc: 'يوافق كريماً، أو يكتب فرقاً غير صحيح دون توضيح صحيح.'}
+    examples:
+      correct: ['نسي كريم أن $-3$ تحت الصفر؛ الفرق $8 - (-3) = 11$ درجة.']
+      incorrect: ['الفرق 5 لأن $8 - 3 = 5$.']
+  model_answer: 'أخطأ كريم لأنه طرح $3$ من $8$ متجاهلاً أن $-3$ تحت الصفر. الفرق الصحيح: $8 - (-3) = 8 + 3 = 11$ درجة.'
+  verify: "8 - (-3) == 11"
+  solution: |
+    من $-3$ إلى $0$ ثلاث درجات، ومن $0$ إلى $8$ ثماني درجات، فالفرق $3 + 8 = 11$ درجة.
+    أي $8 - (-3) = 11$ ، وليس $8 - 3 = 5$.
+  remediation: |
+    استعمل مقياس الحرارة لتوضيح أن المسافة بين عددين على جانبي الصفر تساوي مجموع بعديهما عن الصفر.
+  misconceptions: [ignore-negative-sign]
+  qatar_link: "الصف السابع — الدرس 1-4"

@@ -1,0 +1,163 @@
+{
+ "batch": 30,
+ "ids": [
+  "M8-N6-005",
+  "M8-N6-006",
+  "M8-N6-007",
+  "M8-N6-008",
+  "M8-N6-009",
+  "M8-N6-010",
+  "M8-N6-011",
+  "M8-N6-012",
+  "M8-N6-013",
+  "M8-N6-014",
+  "M8-N6-015",
+  "M8-N6-016"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 19148,
+  "output_tokens": 5640,
+  "thinking_tokens": 3546,
+  "cache_read_tokens": 25085,
+  "total_tokens": 24788
+ },
+ "results": [
+  {
+   "id": "M8-N6-005",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N6",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N6-006",
+   "answer": 25,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N6",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N6-007",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N6",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N6-008",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N6",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N6-009",
+   "answer": 600,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N6",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [
+    "استخدام مصطلح 'فائدة' (الربا) يتعارض مع القيم الإسلامية والثقافية في قطر؛ يُفضّل استبداله بمصطلح 'أرباح' أو صياغة السؤال حول استثمار تجاري أو مرابحة إسلامية."
+   ]
+  },
+  {
+   "id": "M8-N6-010",
+   "answer": 84,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N6",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N6-011",
+   "answer": 288,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N6",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N6-012",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N6",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N6-013",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N6",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [
+    "عبارة 'اختار 12 طالباً من 30 نادي الروبوت' قد تسبب بعض اللبس في القراءة. الأفضل صياغتها: 'اختار 12 طالباً من أصل 30 الانضمام إلى نادي الروبوت'."
+   ],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N6-014",
+   "answer": 2,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N6",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N6-015",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N6",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N6-016",
+   "answer": "نعم، العرضان متساويان لأن التكلفة الإجمالية في كلتا الحالتين تبلغ 60 ريالاً.",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N6",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  }
+ ]
+}

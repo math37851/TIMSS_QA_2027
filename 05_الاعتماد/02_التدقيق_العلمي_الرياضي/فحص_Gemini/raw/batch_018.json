@@ -1,0 +1,181 @@
+{
+ "batch": 18,
+ "ids": [
+  "M8-G2-004",
+  "M8-G2-005",
+  "M8-G2-006",
+  "M8-G2-007",
+  "M8-G2-008",
+  "M8-G2-009",
+  "M8-G2-010",
+  "M8-G2-011",
+  "M8-G2-012",
+  "M8-G2-013",
+  "M8-G2-014",
+  "M8-G2-015"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 20684,
+  "output_tokens": 8363,
+  "thinking_tokens": 6209,
+  "cache_read_tokens": 29700,
+  "total_tokens": 29047
+ },
+ "results": [
+  {
+   "id": "M8-G2-004",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G2",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G2-005",
+   "answer": {
+    "c1": "أضلاعه الأربعة متساوية دائماً",
+    "c2": "أضلاعه الأربعة متساوية دائماً",
+    "c3": "أضلاعه الأربعة ليست متساوية دائماً",
+    "c4": "أضلاعه الأربعة ليست متساوية دائماً",
+    "c5": "أضلاعه الأربعة ليست متساوية دائماً"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G2",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G2-006",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G2",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G2-007",
+   "answer": "D",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G2-008",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G2-009",
+   "answer": 56,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G2-010",
+   "answer": [
+    "trap",
+    "circ",
+    "tri",
+    "par"
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G2-011",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G2-012",
+   "answer": {
+    "1": "x2",
+    "2": "a2",
+    "3": "h2"
+   },
+   "confidence": 1.0,
+   "unambiguous": false,
+   "topic": "G2",
+   "cognitive": "applying",
+   "issues": [
+    "عملية الجمع تبديلية، مما يسمح بوضع البطاقتين x2 و a2 في الفراغين الأول والثاني بأي ترتيب، وهذا ينتج عنه أكثر من إجابة صحيحة."
+   ],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G2-013",
+   "answer": [
+    [
+     1,
+     5
+    ]
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G2",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G2-014",
+   "answer": 13,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G2-015",
+   "answer": 60,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  }
+ ]
+}

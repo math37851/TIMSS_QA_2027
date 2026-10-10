@@ -1,0 +1,191 @@
+{
+ "batch": 6,
+ "ids": [
+  "M8-A4-013",
+  "M8-A4-014",
+  "M8-A4-015",
+  "M8-A4-016",
+  "M8-A5-001",
+  "M8-A5-002",
+  "M8-A5-003",
+  "M8-A5-004",
+  "M8-A5-005",
+  "M8-A5-006",
+  "M8-A5-007",
+  "M8-A5-008"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 11901,
+  "output_tokens": 6215,
+  "thinking_tokens": 5385,
+  "cache_read_tokens": 8127,
+  "total_tokens": 18116
+ },
+ "results": [
+  {
+   "answer": "B",
+   "cognitive": "reasoning",
+   "confidence": 1,
+   "id": "M8-A4-013",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "A4",
+   "unambiguous": true
+  },
+  {
+   "answer": "B",
+   "cognitive": "reasoning",
+   "confidence": 1,
+   "id": "M8-A4-014",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "A4",
+   "unambiguous": true
+  },
+  {
+   "answer": "لا، مريم ليست على صواب لأن التكلفة متساوية (18 ريالاً) عند 6 رحلات، وأقل عدد من الرحلات ليكون الخيار الثاني أرخص هو 7 رحلات.",
+   "cognitive": "reasoning",
+   "confidence": 1,
+   "id": "M8-A4-015",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "A4",
+   "unambiguous": true
+  },
+  {
+   "answer": 9,
+   "cognitive": "applying",
+   "confidence": 1,
+   "id": "M8-A4-016",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "A4",
+   "unambiguous": true
+  },
+  {
+   "answer": "C",
+   "cognitive": "knowing",
+   "confidence": 1,
+   "id": "M8-A5-001",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "A5",
+   "unambiguous": true
+  },
+  {
+   "answer": "A",
+   "cognitive": "applying",
+   "confidence": 1,
+   "id": "M8-A5-002",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "A5",
+   "unambiguous": true
+  },
+  {
+   "answer": [
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     7
+    ]
+   ],
+   "cognitive": "knowing",
+   "confidence": 1,
+   "id": "M8-A5-003",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "A5",
+   "unambiguous": true
+  },
+  {
+   "answer": {
+    "c1": "علاقة تناسبية",
+    "c2": "علاقة غير تناسبية",
+    "c3": "علاقة غير تناسبية",
+    "c4": "علاقة تناسبية",
+    "c5": "علاقة غير تناسبية",
+    "c6": "علاقة تناسبية"
+   },
+   "cognitive": "knowing",
+   "confidence": 1,
+   "id": "M8-A5-004",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "A5",
+   "unambiguous": true
+  },
+  {
+   "answer": -2,
+   "cognitive": "knowing",
+   "confidence": 1,
+   "id": "M8-A5-005",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "A5",
+   "unambiguous": true
+  },
+  {
+   "answer": "D",
+   "cognitive": "applying",
+   "confidence": 1,
+   "id": "M8-A5-006",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "A5",
+   "unambiguous": true
+  },
+  {
+   "answer": [
+    [
+     0,
+     -1
+    ],
+    [
+     3,
+     5
+    ]
+   ],
+   "cognitive": "applying",
+   "confidence": 1,
+   "id": "M8-A5-007",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "A5",
+   "unambiguous": true
+  },
+  {
+   "answer": [
+    4,
+    5
+   ],
+   "cognitive": "applying",
+   "confidence": 1,
+   "id": "M8-A5-008",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "A5",
+   "unambiguous": true
+  }
+ ]
+}

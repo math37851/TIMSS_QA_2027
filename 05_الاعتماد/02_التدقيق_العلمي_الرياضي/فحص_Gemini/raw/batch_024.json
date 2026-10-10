@@ -1,0 +1,159 @@
+{
+ "batch": 24,
+ "ids": [
+  "M8-N3-013",
+  "M8-N3-014",
+  "M8-N3-015",
+  "M8-N3-016",
+  "M8-N4-001",
+  "M8-N4-002",
+  "M8-N4-003",
+  "M8-N4-004",
+  "M8-N4-005",
+  "M8-N4-006",
+  "M8-N4-007",
+  "M8-N4-008"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 10856,
+  "output_tokens": 3380,
+  "thinking_tokens": 2643,
+  "cache_read_tokens": 8123,
+  "total_tokens": 14236
+ },
+ "results": [
+  {
+   "answer": "A",
+   "cognitive": "knowing",
+   "confidence": 1,
+   "id": "M8-N3-013",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "N3",
+   "unambiguous": true
+  },
+  {
+   "answer": "A",
+   "cognitive": "reasoning",
+   "confidence": 1,
+   "id": "M8-N3-014",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "N3",
+   "unambiguous": true
+  },
+  {
+   "answer": 2.35,
+   "cognitive": "applying",
+   "confidence": 1,
+   "id": "M8-N3-015",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "N3",
+   "unambiguous": true
+  },
+  {
+   "answer": "لأن نصف المقام 7 هو 3.5، وبما أن البسط 3 أصغر من 3.5، فإن الكسر يكون أصغر من النصف.",
+   "cognitive": "reasoning",
+   "confidence": 1,
+   "id": "M8-N3-016",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "N3",
+   "unambiguous": true
+  },
+  {
+   "answer": 0.95,
+   "cognitive": "knowing",
+   "confidence": 1,
+   "id": "M8-N4-001",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "N4",
+   "unambiguous": true
+  },
+  {
+   "answer": "B",
+   "cognitive": "knowing",
+   "confidence": 1,
+   "id": "M8-N4-002",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "N4",
+   "unambiguous": true
+  },
+  {
+   "answer": 1,
+   "cognitive": "knowing",
+   "confidence": 1,
+   "id": "M8-N4-003",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "N4",
+   "unambiguous": true
+  },
+  {
+   "answer": "A",
+   "cognitive": "knowing",
+   "confidence": 1,
+   "id": "M8-N4-004",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "N4",
+   "unambiguous": true
+  },
+  {
+   "answer": 0.8,
+   "cognitive": "applying",
+   "confidence": 1,
+   "id": "M8-N4-005",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "N4",
+   "unambiguous": true
+  },
+  {
+   "answer": 45,
+   "cognitive": "applying",
+   "confidence": 1,
+   "id": "M8-N4-006",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "N4",
+   "unambiguous": true
+  },
+  {
+   "answer": "A",
+   "cognitive": "applying",
+   "confidence": 1,
+   "id": "M8-N4-007",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "N4",
+   "unambiguous": true
+  },
+  {
+   "answer": 0.45,
+   "cognitive": "applying",
+   "confidence": 1,
+   "id": "M8-N4-008",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "N4",
+   "unambiguous": true
+  }
+ ]
+}

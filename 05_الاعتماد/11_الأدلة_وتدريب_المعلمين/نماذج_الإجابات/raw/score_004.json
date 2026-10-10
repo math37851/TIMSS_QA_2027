@@ -1,0 +1,149 @@
+{
+ "results": [
+  {
+   "id": "M8-D1-018",
+   "scores": [
+    {
+     "n": 1,
+     "code": "1",
+     "reason": "Chooses 'No' and correctly explains that the y-axis starts at 880 and that the actual increase is only 60 thousand.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 2,
+     "code": "0",
+     "reason": "Chooses 'No' but the explanation does not refer to the y-axis or the specific numbers in the graph.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 3,
+     "code": "0",
+     "reason": "Chooses 'Yes', which is incorrect.",
+     "rubric_issue": ""
+    }
+   ]
+  },
+  {
+   "id": "M8-D1-020",
+   "scores": [
+    {
+     "n": 1,
+     "code": "1",
+     "reason": "Chooses 'No' and correctly calculates and compares the percentages (60% for both), showing they are equal.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 2,
+     "code": "0",
+     "reason": "Chooses 'No' but the explanation is not related to percentages or the difference in total group sizes.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 3,
+     "code": "0",
+     "reason": "Chooses 'Yes', which is incorrect.",
+     "rubric_issue": ""
+    }
+   ]
+  },
+  {
+   "id": "M8-D1-021",
+   "scores": [
+    {
+     "n": 1,
+     "code": "20",
+     "reason": "Correctly chooses all three representations (line graph, pie chart, scatter plot) and provides a valid explanation for all three.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 2,
+     "code": "70",
+     "reason": "Chooses only two correct representations (line graph and scatter plot) but provides a correct explanation for only one of them (line graph), missing the criteria for partial credit.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 3,
+     "code": "70",
+     "reason": "Chooses the line graph for all sets of data, which is incorrect.",
+     "rubric_issue": ""
+    }
+   ]
+  },
+  {
+   "id": "M8-D2-015",
+   "scores": [
+    {
+     "n": 1,
+     "code": "1",
+     "reason": "Chooses 'No' and correctly identifies 5 as the slope (increase per month) and 20 as the y-intercept (starting value).",
+     "rubric_issue": ""
+    },
+    {
+     "n": 2,
+     "code": "0",
+     "reason": "Chooses 'No' but provides an incorrect explanation regarding the slope and y-intercept.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 3,
+     "code": "0",
+     "reason": "Chooses 'Yes', which is incorrect.",
+     "rubric_issue": ""
+    }
+   ]
+  },
+  {
+   "id": "M8-D2-020",
+   "scores": [
+    {
+     "n": 1,
+     "code": "1",
+     "reason": "Chooses 'No' and correctly explains that the data is only for ages 2 to 8, making extrapolation for age 40 unreliable, and notes the height is unrealistic.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 2,
+     "code": "0",
+     "reason": "Chooses 'No' but provides an incorrect explanation claiming the calculation itself is wrong.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 3,
+     "code": "0",
+     "reason": "Chooses 'Yes', which is incorrect.",
+     "rubric_issue": ""
+    }
+   ]
+  },
+  {
+   "id": "M8-D2-021",
+   "scores": [
+    {
+     "n": 1,
+     "code": "20",
+     "reason": "Correctly identifies a positive correlation, rejects causation, and provides a valid common factor (summer heat).",
+     "rubric_issue": ""
+    },
+    {
+     "n": 2,
+     "code": "10",
+     "reason": "Identifies positive correlation and rejects causation, but fails to provide a common factor to explain the relationship.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 3,
+     "code": "70",
+     "reason": "Correctly identifies positive correlation but incorrectly accepts the causal conclusion.",
+     "rubric_issue": ""
+    }
+   ]
+  }
+ ],
+ "usage": {
+  "input_tokens": 11628,
+  "output_tokens": 4383,
+  "thinking_tokens": 3141,
+  "cache_read_tokens": 8128,
+  "total_tokens": 16011
+ }
+}

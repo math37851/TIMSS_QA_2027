@@ -1,0 +1,181 @@
+{
+ "batch": 13,
+ "ids": [
+  "M8-D3-007",
+  "M8-D3-008",
+  "M8-D3-009",
+  "M8-D3-010",
+  "M8-D3-011",
+  "M8-D3-012",
+  "M8-D3-013",
+  "M8-D3-014",
+  "M8-D3-015",
+  "M8-D3-016",
+  "M8-D3-017",
+  "M8-D3-018"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 20847,
+  "output_tokens": 8678,
+  "thinking_tokens": 6582,
+  "cache_read_tokens": 29337,
+  "total_tokens": 29525
+ },
+ "results": [
+  {
+   "id": "M8-D3-007",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D3-008",
+   "answer": "D",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D1",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D3-009",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D3",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D3-010",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D3-011",
+   "answer": 62,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D3-012",
+   "answer": [
+    28,
+    27.5
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D3-013",
+   "answer": "D",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D3",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D3-014",
+   "answer": 158,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D3-015",
+   "answer": [
+    "S",
+    "P",
+    "R",
+    "Q"
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D3-016",
+   "answer": {
+    "1": "c1",
+    "2": "c5",
+    "3": "c7",
+    "4": "c4",
+    "5": "c3"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D1",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D3-017",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D3",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D3-018",
+   "answer": {
+    "c1": "لا يتغير المتوسط الحسابي",
+    "c2": "لا يتغير المتوسط الحسابي",
+    "c3": "ينقص المتوسط الحسابي",
+    "c4": "ينقص المتوسط الحسابي",
+    "c5": "يزداد المتوسط الحسابي",
+    "c6": "يزداد المتوسط الحسابي",
+    "c7": "لا يتغير المتوسط الحسابي"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D3",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  }
+ ]
+}

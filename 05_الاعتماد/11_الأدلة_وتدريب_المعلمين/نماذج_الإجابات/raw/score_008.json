@@ -1,0 +1,149 @@
+{
+ "results": [
+  {
+   "id": "M8-G4-021",
+   "scores": [
+    {
+     "n": 1,
+     "code": "1",
+     "reason": "The student selected the correct box (C) and justified it by correctly calculating the volumes of both the cylinder (1130.4) and the rectangular prism (1200) to compare them.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 2,
+     "code": "0",
+     "reason": "The student selected the correct box but provided an incorrect justification relying only on height, without calculating the volumes as required by the scoring guide.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 3,
+     "code": "0",
+     "reason": "The student selected the incorrect box (B) and calculated the volume of the cylinder incorrectly by using the diameter (12) instead of the radius (6).",
+     "rubric_issue": ""
+    }
+   ]
+  },
+  {
+   "id": "M8-N3-012",
+   "scores": [
+    {
+     "n": 1,
+     "code": "1",
+     "reason": "The student correctly selected 'No' (B) and provided a valid justification based on place value, demonstrating that 0.80 is 80 hundredths which is greater than 75 hundredths.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 2,
+     "code": "0",
+     "reason": "The student selected 'No' but failed to provide a valid mathematical justification based on place value, simply restating that 0.8 is larger.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 3,
+     "code": "0",
+     "reason": "The student selected 'Yes' (A), incorrectly agreeing with the statement.",
+     "rubric_issue": ""
+    }
+   ]
+  },
+  {
+   "id": "M8-N3-016",
+   "scores": [
+    {
+     "n": 1,
+     "code": "10",
+     "reason": "The student provided a correct explanation by comparing the numerator 3 to half of the denominator 7 (which is 3.5), correctly deducing the fraction is less than half.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 2,
+     "code": "70",
+     "reason": "The student did not provide a valid explanation; they merely restated the inequality without demonstrating why it is true.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 3,
+     "code": "70",
+     "reason": "The student provided an incorrect mathematical justification, incorrectly generalizing that a larger denominator inherently makes the fraction smaller in this context.",
+     "rubric_issue": ""
+    }
+   ]
+  },
+  {
+   "id": "M8-N4-013",
+   "scores": [
+    {
+     "n": 1,
+     "code": "1",
+     "reason": "The student selected 'No' (B) and provided a correct numerical counterexample (10 x 0.5 = 5) showing that the product can be smaller than the first number.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 2,
+     "code": "0",
+     "reason": "The student selected 'No' but provided an incomplete and partially incorrect justification ('decimals make the number smaller') without specifying it must be a decimal between 0 and 1, and failed to provide an example.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 3,
+     "code": "0",
+     "reason": "The student selected 'Yes' (A) and incorrectly stated that multiplication always makes a number larger.",
+     "rubric_issue": ""
+    }
+   ]
+  },
+  {
+   "id": "M8-N4-016",
+   "scores": [
+    {
+     "n": 1,
+     "code": "20",
+     "reason": "The student successfully explained the error in the original calculation (adding numerators and denominators) and also provided the correct final answer (5/6).",
+     "rubric_issue": ""
+    },
+    {
+     "n": 2,
+     "code": "10",
+     "reason": "The student provided the correct final answer (5/6) but did not explain why the original student's answer was incorrect.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 3,
+     "code": "70",
+     "reason": "The student incorrectly agreed with the wrong methodology (adding numerators to numerators and denominators to denominators) and got a wrong answer.",
+     "rubric_issue": ""
+    }
+   ]
+  },
+  {
+   "id": "M8-N1-002",
+   "scores": [
+    {
+     "n": 1,
+     "code": "10",
+     "reason": "The student correctly stated the claim is false and provided a valid counterexample using the prime number 2 (2 + 3 = 5), which results in an odd sum.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 2,
+     "code": "70",
+     "reason": "The student stated the claim is not always true but failed to provide a specific correct counterexample involving the number 2 or a proper justification.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 3,
+     "code": "70",
+     "reason": "The student incorrectly agreed with the statement, falsely claiming that all prime numbers are odd.",
+     "rubric_issue": ""
+    }
+   ]
+  }
+ ],
+ "usage": {
+  "input_tokens": 10763,
+  "output_tokens": 4393,
+  "thinking_tokens": 2977,
+  "cache_read_tokens": 8125,
+  "total_tokens": 15156
+ }
+}

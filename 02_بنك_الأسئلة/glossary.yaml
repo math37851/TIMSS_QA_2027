@@ -1,0 +1,109 @@
+# ============================================================================
+# قاموس المصطلحات الموحّدة لبنك الأسئلة
+# status:
+#   confirmed_g7  = مؤكد من فهرس دليل المعلم للصف السابع (قطر 2026/2027)
+#   confirmed_g8  = مؤكد من الخطتين الفصليتين للصف الثامن (قطر 2026/2027)
+#   provisional   = مؤقت حتى المواءمة مع كتب الصف الثامن
+# build_bank.py يُنبّه (warning) عند ظهور أي صيغة من variants في نص البنود،
+# ويرفض (error) أي نمط من forbidden_patterns.
+# ============================================================================
+
+terms:
+  # --- الأعداد (مؤكد من الصف السابع) ---
+  - {ar: "الأعداد الصحيحة",        en: "integers",               status: confirmed_g7}
+  - {ar: "المعكوس",               en: "opposite",               status: confirmed_g7}
+  - {ar: "الأعداد النسبية",        en: "rational numbers",       status: confirmed_g7}
+  - {ar: "النسبة",                en: "ratio",                  status: confirmed_g7}
+  - {ar: "المعدل",                en: "rate",                   status: confirmed_g7}
+  - {ar: "معدل الوحدة",            en: "unit rate",              status: confirmed_g7}
+  - {ar: "النسب المتكافئة",        en: "equivalent ratios",      status: confirmed_g7}
+  - {ar: "علاقة التناسب",          en: "proportional relationship", status: confirmed_g7}
+  - {ar: "ثابت التناسب",           en: "constant of proportionality", status: confirmed_g7}
+  - {ar: "النسبة المئوية",         en: "percent",                status: confirmed_g7}
+  - {ar: "التغير المئوي",          en: "percent change",         status: confirmed_g7}
+  - {ar: "النسبة المئوية للخطأ",   en: "percent error",          status: confirmed_g7}
+  - {ar: "هامش الربح",             en: "markup",                 status: confirmed_g7}
+  - {ar: "الحسم",                 en: "discount",               status: confirmed_g7, variants: ["الخصم"]}
+  - {ar: "الفائدة البسيطة",        en: "simple interest",        status: confirmed_g7}
+  - {ar: "المقدار الجبري",         en: "algebraic expression",   status: confirmed_g7}
+  # --- الأعداد (مؤقت) ---
+  - {ar: "العدد الأولي",           en: "prime number",           status: provisional}
+  - {ar: "العامل",                en: "factor",                 status: provisional}
+  - {ar: "المضاعف",               en: "multiple",               status: provisional}
+  - {ar: "القاسم المشترك الأكبر",   en: "greatest common factor", status: provisional, variants: ["العامل المشترك الأكبر"]}
+  - {ar: "المضاعف المشترك الأصغر",  en: "least common multiple",  status: provisional}
+  - {ar: "الأس",                  en: "exponent",               status: provisional}
+  - {ar: "الجذر التربيعي",         en: "square root",            status: provisional}
+  - {ar: "الكسر",                 en: "fraction",               status: provisional}
+  - {ar: "العدد العشري",           en: "decimal",                status: provisional}
+  - {ar: "العدد الكسري",           en: "mixed number",           status: provisional}
+  - {ar: "مقياس الرسم",            en: "scale",                  status: provisional}
+  # --- الجبر (مؤقت) ---
+  - {ar: "الحد",                  en: "term",                   status: provisional}
+  - {ar: "المعامل",               en: "coefficient",            status: provisional}
+  - {ar: "الحدود المتشابهة",       en: "like terms",             status: confirmed_g8}
+  - {ar: "المعادلة",              en: "equation",               status: provisional}
+  - {ar: "المتباينة",             en: "inequality",             status: provisional}
+  - {ar: "نظام المعادلات الخطية",   en: "system of linear equations", status: confirmed_g8}
+  - {ar: "الدالة الخطية",          en: "linear function",        status: confirmed_g8}
+  - {ar: "الدالة غير الخطية",      en: "nonlinear function",     status: confirmed_g8}
+  - {ar: "الميل",                 en: "slope",                  status: confirmed_g8}
+  - {ar: "المقطع y",               en: "y-intercept (اكتب: المقطع $y$)", status: confirmed_g8, variants: ["المقطع الصادي"]}
+  - {ar: "معدل التغير",            en: "rate of change",         status: provisional}
+  - {ar: "النمط",                 en: "pattern",                status: provisional}
+  # --- الهندسة والقياس (مؤقت) ---
+  - {ar: "المستوى الإحداثي",       en: "coordinate plane",       status: provisional}
+  - {ar: "الزوج المرتب",           en: "ordered pair",           status: provisional}
+  - {ar: "الزاويتان المتتامتان",    en: "complementary angles",   status: provisional}
+  - {ar: "الزاويتان المتكاملتان",   en: "supplementary angles",   status: provisional}
+  - {ar: "الزاويتان المتقابلتان بالرأس", en: "vertical angles",   status: provisional}
+  - {ar: "القاطع",                en: "transversal",            status: confirmed_g8}
+  - {ar: "المثلث المتطابق الضلعين", en: "isosceles triangle",     status: provisional}
+  - {ar: "نظرية فيثاغورس",         en: "Pythagorean theorem",    status: confirmed_g8}
+  - {ar: "الإزاحة",               en: "translation",            status: confirmed_g8, variants: ["الانسحاب"]}
+  - {ar: "الانعكاس",              en: "reflection",             status: provisional}
+  - {ar: "الدوران",               en: "rotation",               status: provisional}
+  - {ar: "التمدد",                en: "dilation",               status: confirmed_g8}
+  - {ar: "المتطابقة",             en: "congruent",              status: confirmed_g8}
+  - {ar: "المتشابهة",             en: "similar",                status: confirmed_g8}
+  - {ar: "المنشور",               en: "prism",                  status: provisional}
+  - {ar: "الأسطوانة",             en: "cylinder",               status: confirmed_g8}
+  - {ar: "المخروط",               en: "cone",                   status: confirmed_g8}
+  - {ar: "الكرة",                 en: "sphere",                 status: confirmed_g8}
+  - {ar: "الهرم",                 en: "pyramid",                status: provisional}
+  - {ar: "المساحة السطحية",        en: "surface area",           status: confirmed_g8}
+  - {ar: "الحجم",                 en: "volume",                 status: confirmed_g8}
+  - {ar: "الشبكة",                en: "net",                    status: provisional}
+  - {ar: "الأعداد الحقيقية",        en: "real numbers",           status: confirmed_g8}
+  - {ar: "الأعداد غير النسبية",     en: "irrational numbers",     status: confirmed_g8}
+  - {ar: "الصيغة العلمية",          en: "scientific notation",    status: confirmed_g8}
+  - {ar: "الجذر التكعيبي",          en: "cube root",              status: confirmed_g8}
+  - {ar: "فترات التزايد والتناقص",  en: "intervals of increase/decrease", status: confirmed_g8}
+  - {ar: "تركيب التحويلات الهندسية", en: "composition of transformations", status: confirmed_g8}
+  - {ar: "الترابط الخطي",           en: "linear association",     status: confirmed_g8}
+  - {ar: "الجدول التكراري المزدوج",  en: "two-way frequency table", status: confirmed_g8}
+# --- البيانات والاحتمالات (مؤقت) ---
+  - {ar: "المتوسط الحسابي",        en: "mean",                   status: provisional, variants: ["الوسط الحسابي"]}
+  - {ar: "الوسيط",                en: "median",                 status: provisional}
+  - {ar: "المنوال",               en: "mode",                   status: provisional}
+  - {ar: "المدى",                 en: "range",                  status: provisional}
+  - {ar: "القيمة المتطرفة",        en: "outlier",                status: provisional}
+  - {ar: "المدرج التكراري",        en: "histogram",              status: provisional}
+  - {ar: "مخطط النقاط",            en: "dot plot",               status: provisional}
+  - {ar: "مخطط الانتشار",          en: "scatter plot",           status: confirmed_g8, variants: ["شكل الانتشار", "لوحة الانتشار"]}
+  - {ar: "التمثيل بالأعمدة",       en: "bar graph",              status: provisional}
+  - {ar: "التمثيل بالخطوط",        en: "line graph",             status: provisional}
+  - {ar: "التمثيل بالقطاعات الدائرية", en: "pie chart",          status: provisional}
+  - {ar: "الاحتمال النظري",        en: "theoretical probability", status: provisional}
+  - {ar: "الاحتمال التجريبي",      en: "experimental probability", status: provisional}
+  - {ar: "فضاء العينة",            en: "sample space",           status: provisional}
+  - {ar: "الناتج",                en: "outcome",                status: provisional}
+  - {ar: "الحدث",                 en: "event",                  status: provisional}
+
+# أنماط مرفوضة (تفضيلات المستخدم: الأرقام والرموز بالإنجليزية، والبدائل A–D)
+forbidden_patterns:
+  - {pattern: "[٠-٩]",        message: "أرقام هندية/مشرقية: استخدم 0–9"}
+  - {pattern: "[۰-۹]",        message: "أرقام فارسية: استخدم 0–9"}
+  - {pattern: "٪",            message: "علامة نسبة مئوية عربية: استخدم %"}
+  - {pattern: "٫",            message: "فاصلة عشرية عربية: استخدم النقطة ."}
+  - {pattern: "(^|\\s)[أبجد]\\)", message: "ترقيم بدائل عربي: استخدم A, B, C, D"}

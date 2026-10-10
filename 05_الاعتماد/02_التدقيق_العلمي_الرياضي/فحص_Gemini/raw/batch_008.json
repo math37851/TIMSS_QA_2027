@@ -1,0 +1,211 @@
+{
+ "batch": 8,
+ "ids": [
+  "M8-A6-005",
+  "M8-A6-006",
+  "M8-A6-007",
+  "M8-A6-008",
+  "M8-A6-009",
+  "M8-A6-010",
+  "M8-A6-011",
+  "M8-A6-012",
+  "M8-A6-013",
+  "M8-A6-014",
+  "M8-A6-015",
+  "M8-A6-016"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 24140,
+  "output_tokens": 10799,
+  "thinking_tokens": 8665,
+  "cache_read_tokens": 29891,
+  "total_tokens": 34939
+ },
+ "results": [
+  {
+   "id": "M8-A6-005",
+   "answer": {
+    "t2": "دالة غير خطية",
+    "e1": "دالة خطية",
+    "t1": "دالة خطية",
+    "e2": "دالة غير خطية",
+    "e3": "دالة خطية",
+    "t3": "دالة غير خطية"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A6",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A6-006",
+   "answer": [
+    [
+     -2,
+     4
+    ],
+    [
+     -1,
+     1
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A6",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A6-007",
+   "answer": "D",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A6",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A6-008",
+   "answer": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     10
+    ],
+    [
+     5,
+     15
+    ]
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A6",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A6-009",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A6",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A6-010",
+   "answer": [
+    2,
+    4
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A6",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A6-011",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A6",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A6-012",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A6",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A6-013",
+   "answer": "D",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A6",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A6-014",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A6",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A6-015",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A6",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A6-016",
+   "answer": "لا، فعله غير صحيح لأن الفروق بين قيم المساحة المتتالية ليست ثابتة (12، 20، 28) وبالتالي الدالة غير خطية ولا تمثل بمستقيم.",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A6",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  }
+ ]
+}

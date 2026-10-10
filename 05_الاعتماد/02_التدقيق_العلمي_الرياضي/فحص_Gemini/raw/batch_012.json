@@ -1,0 +1,166 @@
+{
+ "batch": 12,
+ "ids": [
+  "M8-D2-016",
+  "M8-D2-017",
+  "M8-D2-018",
+  "M8-D2-019",
+  "M8-D2-020",
+  "M8-D2-021",
+  "M8-D3-001",
+  "M8-D3-002",
+  "M8-D3-003",
+  "M8-D3-004",
+  "M8-D3-005",
+  "M8-D3-006"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 19413,
+  "output_tokens": 7066,
+  "thinking_tokens": 5062,
+  "cache_read_tokens": 29557,
+  "total_tokens": 26479
+ },
+ "results": [
+  {
+   "id": "M8-D2-016",
+   "answer": {
+    "s1": "تدعمها البيانات",
+    "s2": "تدعمها البيانات",
+    "s3": "تدعمها البيانات",
+    "s4": "لا تدعمها البيانات",
+    "s5": "لا تدعمها البيانات",
+    "s6": "لا تدعمها البيانات"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D2",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D2-017",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D2-018",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D2",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D2-019",
+   "answer": 180,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D2-020",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D2",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D2-021",
+   "answer": "يوجد ارتباط موجب بين المتغيرين، لكن المخطط لا يدعم استنتاج خالد لأن الارتباط لا يعني السببية، وقد يكون هناك عامل ثالث مثل درجة الحرارة يؤثر على كليهما.",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D2",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D3-001",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D3",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D3-002",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D3",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D3-003",
+   "answer": 10,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D3-004",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D3-005",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D3-006",
+   "answer": 8,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  }
+ ]
+}

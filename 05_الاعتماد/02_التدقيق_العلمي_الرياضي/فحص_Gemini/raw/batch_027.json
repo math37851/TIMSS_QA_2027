@@ -1,0 +1,170 @@
+{
+ "batch": 27,
+ "ids": [
+  "M8-N2-001",
+  "M8-N2-002",
+  "M8-N2-003",
+  "M8-N2-004",
+  "M8-N2-005",
+  "M8-N2-006",
+  "M8-N2-007",
+  "M8-N2-008",
+  "M8-N2-009",
+  "M8-N2-010",
+  "M8-N2-011",
+  "M8-N2-012"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 22819,
+  "output_tokens": 8228,
+  "thinking_tokens": 6239,
+  "cache_read_tokens": 25659,
+  "total_tokens": 31047
+ },
+ "results": [
+  {
+   "id": "M8-N2-001",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N2-002",
+   "answer": 5,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N2",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N2-003",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N2",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N2-004",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N2",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N2-005",
+   "answer": [
+    "moscow",
+    "oslo",
+    "ankara",
+    "doha"
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N2",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N2-006",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N2",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N2-007",
+   "answer": -7,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N2-008",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N2-009",
+   "answer": 370,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [
+    "ذكر الرصيد السالب للبنك (السحب على المكشوف) قد يثير حساسية في الثقافة الإسلامية لارتباطه بالفوائد الربوية. يُنصح بتغيير السياق إلى ديون تجارية بين أشخاص أو موردين لتجنب هذه الحساسية."
+   ]
+  },
+  {
+   "id": "M8-N2-010",
+   "answer": {
+    "1": "c1",
+    "2": "c2",
+    "3": "c3"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N2-011",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N2-012",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N2",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  }
+ ]
+}

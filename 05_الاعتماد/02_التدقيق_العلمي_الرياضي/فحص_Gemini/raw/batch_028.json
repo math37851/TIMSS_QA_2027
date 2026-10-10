@@ -1,0 +1,166 @@
+{
+ "batch": 28,
+ "ids": [
+  "M8-N2-013",
+  "M8-N2-014",
+  "M8-N2-015",
+  "M8-N2-016",
+  "M8-N5-001",
+  "M8-N5-002",
+  "M8-N5-003",
+  "M8-N5-004",
+  "M8-N5-005",
+  "M8-N5-006",
+  "M8-N5-007",
+  "M8-N5-008"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 19380,
+  "output_tokens": 5697,
+  "thinking_tokens": 3659,
+  "cache_read_tokens": 25124,
+  "total_tokens": 25077
+ },
+ "results": [
+  {
+   "id": "M8-N2-013",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N2",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N2-014",
+   "answer": 39,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N2-015",
+   "answer": "D",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N2",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N2-016",
+   "answer": "أخطأ كريم بطرح 3 بدلاً من سالب 3، والفرق الصحيح بين درجتي الحرارة هو 11 درجة.",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N2",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N5-001",
+   "answer": 15,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N5",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N5-002",
+   "answer": {
+    "c1": "تكافئ النسبة $4 : 6$",
+    "c2": "تكافئ النسبة $4 : 6$",
+    "c3": "لا تكافئ النسبة $4 : 6$",
+    "c4": "تكافئ النسبة $4 : 6$",
+    "c5": "لا تكافئ النسبة $4 : 6$",
+    "c6": "تكافئ النسبة $4 : 6$"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N5",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N5-003",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N5",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N5-004",
+   "answer": 1.5,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N5",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N5-005",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N5",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N5-006",
+   "answer": 750,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N5",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N5-007",
+   "answer": 16,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N5",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N5-008",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N5",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  }
+ ]
+}

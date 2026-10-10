@@ -1,0 +1,384 @@
+{
+  "communities": {
+    "0": [
+      "argparse",
+      "base64",
+      "collections",
+      "cryptography_hazmat_primitives",
+      "cryptography_hazmat_primitives_ciphers_aead",
+      "cryptography_hazmat_primitives_kdf_pbkdf2",
+      "datetime",
+      "json",
+      "os",
+      "pathlib",
+      "playwright_sync_api",
+      "re",
+      "scripts_build_obsidian_vault",
+      "scripts_build_obsidian_vault_main",
+      "scripts_build_obsidian_vault_md_table",
+      "scripts_build_obsidian_vault_rationale_2",
+      "scripts_build_obsidian_vault_safe",
+      "scripts_build_obsidian_vault_write",
+      "scripts_build_platform",
+      "scripts_build_platform_brand_info",
+      "scripts_build_platform_encrypt_form",
+      "scripts_build_platform_inline_katex_css",
+      "scripts_build_platform_inline_katex_css_repl",
+      "scripts_build_platform_js_safe",
+      "scripts_build_platform_load_codes",
+      "scripts_build_platform_main",
+      "scripts_build_platform_rationale_2",
+      "scripts_build_platform_read",
+      "scripts_test_platform",
+      "scripts_test_platform_check",
+      "scripts_test_platform_main",
+      "scripts_test_platform_rationale_2",
+      "secrets",
+      "shutil",
+      "subprocess",
+      "sys",
+      "yaml"
+    ],
+    "1": [
+      "csv",
+      "scripts_build_bank",
+      "scripts_build_bank_card_id",
+      "scripts_build_bank_coverage_report",
+      "scripts_build_bank_equal",
+      "scripts_build_bank_js_to_py",
+      "scripts_build_bank_linter",
+      "scripts_build_bank_linter_init",
+      "scripts_build_bank_linter_text",
+      "scripts_build_bank_load_yaml",
+      "scripts_build_bank_log",
+      "scripts_build_bank_log_err",
+      "scripts_build_bank_log_init",
+      "scripts_build_bank_log_warn",
+      "scripts_build_bank_main",
+      "scripts_build_bank_main_process",
+      "scripts_build_bank_mean",
+      "scripts_build_bank_median",
+      "scripts_build_bank_norm_cards",
+      "scripts_build_bank_num",
+      "scripts_build_bank_pct",
+      "scripts_build_bank_plain",
+      "scripts_build_bank_rationale_119",
+      "scripts_build_bank_rationale_2",
+      "scripts_build_bank_rationale_332",
+      "scripts_build_bank_rationale_63",
+      "scripts_build_bank_render_figures",
+      "scripts_build_bank_run_verify",
+      "scripts_build_bank_split_math",
+      "scripts_build_bank_to_public",
+      "scripts_build_bank_validate_item",
+      "scripts_build_bank_verify_item",
+      "scripts_figures_rationale_1142",
+      "scripts_figures_render",
+      "statistics",
+      "sympy"
+    ],
+    "2": [
+      "03_منصة_التدريب_etimss_src_js_40_screens",
+      "03_منصة_التدريب_etimss_src_js_40_screens_askcode",
+      "03_منصة_التدريب_etimss_src_js_40_screens_barrow",
+      "03_منصة_التدريب_etimss_src_js_40_screens_captureresponse",
+      "03_منصة_التدريب_etimss_src_js_40_screens_checkpractice",
+      "03_منصة_التدريب_etimss_src_js_40_screens_count",
+      "03_منصة_التدريب_etimss_src_js_40_screens_cyclefont",
+      "03_منصة_التدريب_etimss_src_js_40_screens_demoresponse",
+      "03_منصة_التدريب_etimss_src_js_40_screens_exitsession",
+      "03_منصة_التدريب_etimss_src_js_40_screens_finish",
+      "03_منصة_التدريب_etimss_src_js_40_screens_mdtohtml",
+      "03_منصة_التدريب_etimss_src_js_40_screens_navbar",
+      "03_منصة_التدريب_etimss_src_js_40_screens_newsession",
+      "03_منصة_التدريب_etimss_src_js_40_screens_previewitem",
+      "03_منصة_التدريب_etimss_src_js_40_screens_printworksheet",
+      "03_منصة_التدريب_etimss_src_js_40_screens_quickpractice",
+      "03_منصة_التدريب_etimss_src_js_40_screens_recordtime",
+      "03_منصة_التدريب_etimss_src_js_40_screens_refreshtopics",
+      "03_منصة_التدريب_etimss_src_js_40_screens_reviewitem",
+      "03_منصة_التدريب_etimss_src_js_40_screens_reviewscreen",
+      "03_منصة_التدريب_etimss_src_js_40_screens_saveactive",
+      "03_منصة_التدريب_etimss_src_js_40_screens_screen",
+      "03_منصة_التدريب_etimss_src_js_40_screens_showitem",
+      "03_منصة_التدريب_etimss_src_js_40_screens_starttimer",
+      "03_منصة_التدريب_etimss_src_js_40_screens_stoptimer",
+      "03_منصة_التدريب_etimss_src_js_40_screens_teacherbank",
+      "03_منصة_التدريب_etimss_src_js_40_screens_teacherclass",
+      "03_منصة_التدريب_etimss_src_js_40_screens_teacherdocs",
+      "03_منصة_التدريب_etimss_src_js_40_screens_teachermocks",
+      "03_منصة_التدريب_etimss_src_js_40_screens_teachersettings",
+      "03_منصة_التدريب_etimss_src_js_40_screens_topbar",
+      "03_منصة_التدريب_etimss_src_js_40_screens_updatereview",
+      "03_منصة_التدريب_etimss_src_js_40_screens_updatestrip"
+    ],
+    "3": [
+      "scripts_figures_all_int",
+      "scripts_figures_axes_frame",
+      "scripts_figures_axes_frame_y",
+      "scripts_figures_bar_chart",
+      "scripts_figures_coord",
+      "scripts_figures_coord_clip_line",
+      "scripts_figures_coord_x",
+      "scripts_figures_coord_y",
+      "scripts_figures_fmt",
+      "scripts_figures_histogram",
+      "scripts_figures_histogram_x",
+      "scripts_figures_line_chart",
+      "scripts_figures_nice_step",
+      "scripts_figures_pie",
+      "scripts_figures_rationale_42",
+      "scripts_figures_rationale_698",
+      "scripts_figures_scatter",
+      "scripts_figures_scatter_clamp_x",
+      "scripts_figures_scatter_x",
+      "scripts_figures_title"
+    ],
+    "4": [
+      "03_منصة_التدريب_etimss_src_js_30_items",
+      "03_منصة_التدريب_etimss_src_js_30_items_cardnode",
+      "03_منصة_التدريب_etimss_src_js_30_items_checkfn",
+      "03_منصة_التدريب_etimss_src_js_30_items_js_render",
+      "03_منصة_التدريب_etimss_src_js_30_items_js_render_cr_explain",
+      "03_منصة_التدريب_etimss_src_js_30_items_js_render_dragdrop_categorize",
+      "03_منصة_التدريب_etimss_src_js_30_items_js_render_dragdrop_order",
+      "03_منصة_التدريب_etimss_src_js_30_items_js_render_dragdrop_slots",
+      "03_منصة_التدريب_etimss_src_js_30_items_js_render_grid_plot",
+      "03_منصة_التدريب_etimss_src_js_30_items_js_render_mc",
+      "03_منصة_التدريب_etimss_src_js_30_items_js_render_multi_numeric",
+      "03_منصة_التدريب_etimss_src_js_30_items_js_render_numeric",
+      "03_منصة_التدريب_etimss_src_js_30_items_js_render_select_explain",
+      "03_منصة_التدريب_etimss_src_js_30_items_numeq",
+      "03_منصة_التدريب_etimss_src_js_30_items_ondrop",
+      "03_منصة_التدريب_etimss_src_js_30_items_render",
+      "03_منصة_التدريب_etimss_src_js_30_items_reveal",
+      "03_منصة_التدريب_etimss_src_js_30_items_set",
+      "03_منصة_التدريب_etimss_src_js_30_items_sync"
+    ],
+    "5": [
+      "scripts_figures_cone",
+      "scripts_figures_cylinder",
+      "scripts_figures_esc",
+      "scripts_figures_fraction_bar",
+      "scripts_figures_rationale_104",
+      "scripts_figures_sphere",
+      "scripts_figures_spinner",
+      "scripts_figures_svg",
+      "scripts_figures_svg_add",
+      "scripts_figures_svg_arrow",
+      "scripts_figures_svg_circle",
+      "scripts_figures_svg_init",
+      "scripts_figures_svg_line",
+      "scripts_figures_svg_path",
+      "scripts_figures_svg_polygon",
+      "scripts_figures_svg_rect",
+      "scripts_figures_svg_render",
+      "scripts_figures_svg_text"
+    ],
+    "6": [
+      "html",
+      "itertools",
+      "math",
+      "scripts_figures",
+      "scripts_figures_bag",
+      "scripts_figures_cuboid",
+      "scripts_figures_dim_label",
+      "scripts_figures_grid_model",
+      "scripts_figures_pyramid",
+      "scripts_figures_rationale_1012",
+      "scripts_figures_rationale_1042",
+      "scripts_figures_rationale_2",
+      "scripts_figures_rationale_543",
+      "scripts_figures_rationale_618",
+      "scripts_figures_rationale_640",
+      "scripts_figures_raw",
+      "scripts_figures_tri_prism"
+    ],
+    "7": [
+      "03_منصة_التدريب_etimss_src_js_20_widgets",
+      "03_منصة_التدريب_etimss_src_js_20_widgets_apply",
+      "03_منصة_التدريب_etimss_src_js_20_widgets_base",
+      "03_منصة_التدريب_etimss_src_js_20_widgets_build",
+      "03_منصة_التدريب_etimss_src_js_20_widgets_draw",
+      "03_منصة_التدريب_etimss_src_js_20_widgets_error",
+      "03_منصة_التدريب_etimss_src_js_20_widgets_fmt",
+      "03_منصة_التدريب_etimss_src_js_20_widgets_render",
+      "03_منصة_التدريب_etimss_src_js_20_widgets_zoneat"
+    ],
+    "8": [
+      "scripts_figures_geo",
+      "scripts_figures_geo_collect",
+      "scripts_figures_geo_extend",
+      "scripts_figures_geo_p",
+      "scripts_figures_polygon_fig",
+      "scripts_figures_rationale_317",
+      "scripts_figures_rationale_484"
+    ],
+    "9": [
+      "03_منصة_التدريب_etimss_src_js_00_util",
+      "03_منصة_التدريب_etimss_src_js_00_util_del",
+      "03_منصة_التدريب_etimss_src_js_00_util_fmttext",
+      "03_منصة_التدريب_etimss_src_js_00_util_get",
+      "03_منصة_التدريب_etimss_src_js_00_util_set",
+      "03_منصة_التدريب_etimss_src_js_00_util_splitmath"
+    ],
+    "10": [
+      "scripts_figures_icon",
+      "scripts_figures_legend",
+      "scripts_figures_pictograph",
+      "scripts_figures_rationale_135",
+      "scripts_figures_rationale_717",
+      "scripts_figures_text_w"
+    ],
+    "11": [
+      "scripts_figures_number_line",
+      "scripts_figures_number_line_x",
+      "scripts_figures_thermometer",
+      "scripts_figures_thermometer_y"
+    ],
+    "12": [
+      "03_منصة_التدريب_etimss_src_js_10_data",
+      "03_منصة_التدريب_etimss_src_js_10_data_orderfortest",
+      "03_منصة_التدريب_etimss_src_js_10_data_pick"
+    ],
+    "13": [
+      "scripts_figures_cube_stack",
+      "scripts_figures_cube_stack_iso",
+      "scripts_figures_rationale_670"
+    ],
+    "14": [
+      "scripts_figures_dot_plot",
+      "scripts_figures_dot_plot_x",
+      "scripts_figures_rationale_839"
+    ],
+    "15": [
+      "03_منصة_التدريب_etimss_src_js_90_main"
+    ]
+  },
+  "cohesion": {
+    "0": 0.08258258258258258,
+    "1": 0.09682539682539683,
+    "2": 0.14962121212121213,
+    "3": 0.18947368421052632,
+    "4": 0.1695906432748538,
+    "5": 0.16993464052287582,
+    "6": 0.11764705882352941,
+    "7": 0.3055555555555556,
+    "8": 0.3333333333333333,
+    "9": 0.3333333333333333,
+    "10": 0.3333333333333333,
+    "11": 0.3333333333333333,
+    "12": 0.6666666666666666,
+    "13": 0.6666666666666666,
+    "14": 0.6666666666666666,
+    "15": 1.0
+  },
+  "gods": [
+    {
+      "id": "scripts_figures_svg",
+      "label": "SVG",
+      "degree": 33
+    },
+    {
+      "id": "scripts_figures_fmt",
+      "label": "fmt()",
+      "degree": 12
+    },
+    {
+      "id": "03_منصة_التدريب_etimss_src_js_40_screens_showitem",
+      "label": "showItem()",
+      "degree": 11
+    },
+    {
+      "id": "03_منصة_التدريب_etimss_src_js_30_items_js_render",
+      "label": "RENDER",
+      "degree": 10
+    },
+    {
+      "id": "scripts_build_bank_verify_item",
+      "label": "verify_item()",
+      "degree": 9
+    },
+    {
+      "id": "03_منصة_التدريب_etimss_src_js_40_screens_finish",
+      "label": "finish()",
+      "degree": 9
+    },
+    {
+      "id": "03_منصة_التدريب_etimss_src_js_40_screens_reviewscreen",
+      "label": "reviewScreen()",
+      "degree": 9
+    },
+    {
+      "id": "scripts_figures_axes_frame",
+      "label": "_axes_frame()",
+      "degree": 9
+    },
+    {
+      "id": "scripts_figures_bar_chart",
+      "label": "bar_chart()",
+      "degree": 9
+    },
+    {
+      "id": "scripts_figures_histogram",
+      "label": "histogram()",
+      "degree": 9
+    }
+  ],
+  "surprises": [
+    {
+      "source": "main()",
+      "target": "render()",
+      "source_files": [
+        "scripts/build_bank.py",
+        "scripts/figures.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "render_figures()",
+      "target": "render()",
+      "source_files": [
+        "scripts/build_bank.py",
+        "scripts/figures.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `SVG` connect `Community 5` to `Community 3`, `Community 6`, `Community 8`, `Community 10`, `Community 11`, `Community 13`, `Community 14`?",
+      "why": "High betweenness centrality (0.074) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `geo()` connect `Community 8` to `Community 5`, `Community 6`?",
+      "why": "High betweenness centrality (0.025) - this node is a cross-community bridge."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.08258258258258258 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 1` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.09682539682539683 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 2` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.14962121212121213 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 6` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

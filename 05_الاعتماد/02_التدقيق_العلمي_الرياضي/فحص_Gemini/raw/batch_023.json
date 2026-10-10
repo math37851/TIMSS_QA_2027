@@ -1,0 +1,173 @@
+{
+ "batch": 23,
+ "ids": [
+  "M8-N3-001",
+  "M8-N3-002",
+  "M8-N3-003",
+  "M8-N3-004",
+  "M8-N3-005",
+  "M8-N3-006",
+  "M8-N3-007",
+  "M8-N3-008",
+  "M8-N3-009",
+  "M8-N3-010",
+  "M8-N3-011",
+  "M8-N3-012"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 22712,
+  "output_tokens": 8187,
+  "thinking_tokens": 6034,
+  "cache_read_tokens": 25472,
+  "total_tokens": 30899
+ },
+ "results": [
+  {
+   "id": "M8-N3-001",
+   "answer": [
+    "c4",
+    "c1",
+    "c3",
+    "c2"
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N3",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N3-002",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N3",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N3-003",
+   "answer": {
+    "c1": "يكافئ $\\frac{3}{4}$",
+    "c2": "يكافئ $\\frac{3}{4}$",
+    "c3": "لا يكافئ $\\frac{3}{4}$",
+    "c4": "لا يكافئ $\\frac{3}{4}$",
+    "c5": "يكافئ $\\frac{3}{4}$",
+    "c6": "لا يكافئ $\\frac{3}{4}$"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N3",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N3-004",
+   "answer": 3.5,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N3-005",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N3",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N3-006",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N3-007",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N3-008",
+   "answer": 98,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N4",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N3-009",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N3-010",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N3-011",
+   "answer": 0.375,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N3",
+   "cognitive": "applying",
+   "issues": [
+    "يطلب السؤال كتابة الإجابة كسراً أو عدداً عشرياً، ولكن نوع السؤال (numeric) في الأنظمة الإلكترونية عادةً لا يقبل إدخال رمز الكسر (/)، مما قد يمنع الطالب من إدخال الإجابة بصورة كسر."
+   ],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N3-012",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N3",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  }
+ ]
+}

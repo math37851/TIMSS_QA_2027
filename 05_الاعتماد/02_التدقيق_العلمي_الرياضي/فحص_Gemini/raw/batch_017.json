@@ -1,0 +1,159 @@
+{
+ "batch": 17,
+ "ids": [
+  "M8-G1-013",
+  "M8-G1-014",
+  "M8-G1-015",
+  "M8-G1-016",
+  "M8-G1-017",
+  "M8-G1-018",
+  "M8-G1-019",
+  "M8-G1-020",
+  "M8-G1-021",
+  "M8-G2-001",
+  "M8-G2-002",
+  "M8-G2-003"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 14587,
+  "output_tokens": 10418,
+  "thinking_tokens": 9703,
+  "cache_read_tokens": 8135,
+  "total_tokens": 25005
+ },
+ "results": [
+  {
+   "answer": 135,
+   "cognitive": "applying",
+   "confidence": 1,
+   "id": "M8-G1-013",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "G1",
+   "unambiguous": true
+  },
+  {
+   "answer": 101,
+   "cognitive": "applying",
+   "confidence": 1,
+   "id": "M8-G1-014",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "G1",
+   "unambiguous": true
+  },
+  {
+   "answer": "C",
+   "cognitive": "applying",
+   "confidence": 1,
+   "id": "M8-G1-015",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "G1",
+   "unambiguous": true
+  },
+  {
+   "answer": "B",
+   "cognitive": "reasoning",
+   "confidence": 1,
+   "id": "M8-G1-016",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "G1",
+   "unambiguous": true
+  },
+  {
+   "answer": "B",
+   "cognitive": "applying",
+   "confidence": 1,
+   "id": "M8-G1-017",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "G1",
+   "unambiguous": true
+  },
+  {
+   "answer": "C",
+   "cognitive": "applying",
+   "confidence": 1,
+   "id": "M8-G1-018",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "G1",
+   "unambiguous": true
+  },
+  {
+   "answer": "D",
+   "cognitive": "applying",
+   "confidence": 1,
+   "id": "M8-G1-019",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "G1",
+   "unambiguous": true
+  },
+  {
+   "answer": "A",
+   "cognitive": "reasoning",
+   "confidence": 1,
+   "id": "M8-G1-020",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "G1",
+   "unambiguous": true
+  },
+  {
+   "answer": "قياس الزاوية x يساوي 68 درجة.",
+   "cognitive": "reasoning",
+   "confidence": 1,
+   "id": "M8-G1-021",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "G1",
+   "unambiguous": true
+  },
+  {
+   "answer": "B",
+   "cognitive": "applying",
+   "confidence": 1,
+   "id": "M8-G2-001",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "G2",
+   "unambiguous": true
+  },
+  {
+   "answer": "C",
+   "cognitive": "knowing",
+   "confidence": 1,
+   "id": "M8-G2-002",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "G2",
+   "unambiguous": true
+  },
+  {
+   "answer": 65,
+   "cognitive": "applying",
+   "confidence": 1,
+   "id": "M8-G2-003",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "G2",
+   "unambiguous": true
+  }
+ ]
+}

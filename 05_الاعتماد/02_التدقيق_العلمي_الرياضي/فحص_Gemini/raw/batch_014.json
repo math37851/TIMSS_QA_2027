@@ -1,0 +1,172 @@
+{
+ "batch": 14,
+ "ids": [
+  "M8-D3-019",
+  "M8-D3-020",
+  "M8-D3-021",
+  "M8-D4-001",
+  "M8-D4-002",
+  "M8-D4-003",
+  "M8-D4-004",
+  "M8-D4-005",
+  "M8-D4-006",
+  "M8-D4-007",
+  "M8-D4-008",
+  "M8-D4-009"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 11703,
+  "output_tokens": 10527,
+  "thinking_tokens": 9513,
+  "cache_read_tokens": 8126,
+  "total_tokens": 22230
+ },
+ "results": [
+  {
+   "answer": "لا أوافق، فمتوسط الفصل الأول (32) أكبر من متوسط الثاني (30) بسبب القيمتين المتطرفتين (100)، لكن وسيط الثاني (30) أكبر من وسيط الأول (20) مما يعكس تبرعات أكبر لمعظم الطلاب.",
+   "cognitive": "reasoning",
+   "confidence": 1,
+   "id": "M8-D3-019",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "D3",
+   "unambiguous": true
+  },
+  {
+   "answer": "المتوسط الجديد في الحالة الأولى 17، وفي الثانية 75؛ وتنطبق القاعدتان دائماً لأن جمع أو ضرب كل القيم في ثابت يؤدي لجمع أو ضرب المجموع في نفس الثابت، فيتأثر المتوسط بالعملية ذاتها.",
+   "cognitive": "reasoning",
+   "confidence": 1,
+   "id": "M8-D3-020",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "D3",
+   "unambiguous": true
+  },
+  {
+   "answer": "B",
+   "cognitive": "reasoning",
+   "confidence": 1,
+   "id": "M8-D3-021",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "D3",
+   "unambiguous": true
+  },
+  {
+   "answer": "B",
+   "cognitive": "applying",
+   "confidence": 1,
+   "id": "M8-D4-001",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "D4",
+   "unambiguous": true
+  },
+  {
+   "answer": "D",
+   "cognitive": "knowing",
+   "confidence": 1,
+   "id": "M8-D4-002",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "D4",
+   "unambiguous": true
+  },
+  {
+   "answer": {
+    "c1": "مؤكد",
+    "c2": "مستحيل",
+    "c3": "ممكن وغير مؤكد",
+    "c4": "مؤكد",
+    "c5": "ممكن وغير مؤكد",
+    "c6": "مستحيل"
+   },
+   "cognitive": "knowing",
+   "confidence": 1,
+   "id": "M8-D4-003",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "D4",
+   "unambiguous": true
+  },
+  {
+   "answer": "B",
+   "cognitive": "knowing",
+   "confidence": 1,
+   "id": "M8-D4-004",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "D4",
+   "unambiguous": true
+  },
+  {
+   "answer": 0.32,
+   "cognitive": "applying",
+   "confidence": 1,
+   "id": "M8-D4-005",
+   "issues": [],
+   "language_issues": [
+    "خطأ نحوي في عبارة 'ككسر أو عدداً عشرياً'، والصواب 'كسراً أو عدداً عشرياً' أو 'ككسرٍ أو عددٍ عشريّ'."
+   ],
+   "sensitivity_issues": [],
+   "topic": "D4",
+   "unambiguous": true
+  },
+  {
+   "answer": 0.625,
+   "cognitive": "applying",
+   "confidence": 1,
+   "id": "M8-D4-006",
+   "issues": [],
+   "language_issues": [
+    "خطأ نحوي في عبارة 'ككسر أو عدداً عشرياً'، والصواب 'كسراً أو عدداً عشرياً' أو 'ككسرٍ أو عددٍ عشريّ'."
+   ],
+   "sensitivity_issues": [],
+   "topic": "D4",
+   "unambiguous": true
+  },
+  {
+   "answer": "C",
+   "cognitive": "applying",
+   "confidence": 1,
+   "id": "M8-D4-007",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "D4",
+   "unambiguous": true
+  },
+  {
+   "answer": "A",
+   "cognitive": "applying",
+   "confidence": 1,
+   "id": "M8-D4-008",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": [],
+   "topic": "D4",
+   "unambiguous": true
+  },
+  {
+   "answer": 0.58,
+   "cognitive": "applying",
+   "confidence": 1,
+   "id": "M8-D4-009",
+   "issues": [],
+   "language_issues": [
+    "خطأ نحوي في عبارة 'ككسر أو عدداً عشرياً'، والصواب 'كسراً أو عدداً عشرياً' أو 'ككسرٍ أو عددٍ عشريّ'."
+   ],
+   "sensitivity_issues": [],
+   "topic": "D4",
+   "unambiguous": true
+  }
+ ]
+}

@@ -1,0 +1,170 @@
+{
+ "batch": 25,
+ "ids": [
+  "M8-N4-009",
+  "M8-N4-010",
+  "M8-N4-011",
+  "M8-N4-012",
+  "M8-N4-013",
+  "M8-N4-014",
+  "M8-N4-015",
+  "M8-N4-016",
+  "M8-N1-001",
+  "M8-N1-002",
+  "M8-N1-003",
+  "M8-N1-004"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 22403,
+  "output_tokens": 8757,
+  "thinking_tokens": 6602,
+  "cache_read_tokens": 25462,
+  "total_tokens": 31160
+ },
+ "results": [
+  {
+   "id": "M8-N4-009",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N4",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N4-010",
+   "answer": 8.4,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N4",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N4-011",
+   "answer": {
+    "1": "c1",
+    "2": "c2",
+    "3": "c3"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N4",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N4-012",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N4",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N4-013",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N4",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N4-014",
+   "answer": 450,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N4",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N4-015",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N4",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N4-016",
+   "answer": "إجابة الطالب غير صحيحة لأنه قام بجمع البسوط معاً والمقامات معاً، والناتج الصحيح هو 5/6.",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N4",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N1-001",
+   "answer": {
+    "1": "c1",
+    "2": "c5",
+    "3": "c2",
+    "4": "c3"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N1",
+   "cognitive": "reasoning",
+   "issues": [
+    "يوجد أكثر من ترتيب صحيح للبطاقات (مثل 2×6 = 3×4 أو 4×3 = 6×2) مما يستوجب التأكد من برمجة جميع البدائل الصحيحة في نموذج الإجابة للتصحيح الآلي."
+   ],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N1-002",
+   "answer": "خالد ليس على صواب، لأن العدد 2 عدد أولي، وعند جمعه مع عدد أولي آخر مثل 3 يكون الناتج 5 وهو عدد فردي وليس زوجياً.",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N1",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N1-003",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N1",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N1-004",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N1",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  }
+ ]
+}

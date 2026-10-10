@@ -1,0 +1,238 @@
+# ============================================================================
+# مخطط بنك أسئلة TIMSS 2027 — رياضيات الصف الثامن — دولة قطر
+# المرجع: TIMSS 2027 Assessment Frameworks, Chapter 1 (Philpot & Aldrich, 2025)
+# بيانات قطر: TIMSS 2023 International Results, Exhibits 1.2.4 / 1.2.13 / 1.2.14
+# هذا الملف مصدر الحقيقة لأهداف التغطية، ويتحقق منه build_bank.py آلياً.
+# ============================================================================
+
+meta:
+  title_ar: "بنك أسئلة TIMSS 2027 — رياضيات الصف الثامن"
+  framework: "TIMSS 2027 Assessment Frameworks — Grade 8 Mathematics"
+  country: "Qatar"
+  qatar_2023: {average: 451, change_from_2019: 8, benchmarks_pct: {advanced: 5, high: 17, intermediate: 40, low: 68}}
+  intl_median_2023_benchmarks_pct: {advanced: 7, high: 28, intermediate: 55, low: 81}
+
+domains:
+  number:               {ar: "الأعداد",               timss_pct: 30, qatar_2023: 448, qatar_diff: -3}
+  algebra:              {ar: "الجبر",                 timss_pct: 30, qatar_2023: 459, qatar_diff: 8}
+  geometry_measurement: {ar: "الهندسة والقياس",        timss_pct: 20, qatar_2023: 441, qatar_diff: -10}
+  data_probability:     {ar: "البيانات والاحتمالات",   timss_pct: 20, qatar_2023: 443, qatar_diff: -9}
+
+cognitive_domains:
+  knowing:   {ar: "المعرفة",   timss_pct: 35, qatar_2023: 455, qatar_diff: 3,
+              areas: {recall: "تذكّر", identify: "تعرّف", order: "رتّب وصنّف", compute: "احسب"}}
+  applying:  {ar: "التطبيق",   timss_pct: 40, qatar_2023: 445, qatar_diff: -6,
+              areas: {formulate: "صُغ", implement: "نفّذ", represent: "مثّل"}}
+  reasoning: {ar: "الاستدلال", timss_pct: 25, qatar_2023: 445, qatar_diff: -6,
+              areas: {analyze: "حلّل", integrate: "ادمج واربط", generalize: "عمّم", justify: "برّر"}}
+
+benchmarks:   # International Benchmarks (TIMSS scale)
+  low:          {ar: "المستوى المنخفض",  score: 400}
+  intermediate: {ar: "المستوى المتوسط",  score: 475}
+  high:         {ar: "المستوى المرتفع",  score: 550}
+  advanced:     {ar: "المستوى المتقدم",  score: 625}
+
+difficulty_levels:   # target average percent correct (TIMSS 2027 block difficulty goals + very-easy blocks)
+  foundation: {ar: "تأسيسي",         target_p: 0.80}
+  easy:       {ar: "سهل",            target_p: 0.70}
+  medium:     {ar: "متوسط الصعوبة",  target_p: 0.55}
+  hard:       {ar: "صعب",            target_p: 0.40}
+
+formats:
+  mc:                  {ar: "اختيار من متعدد",            group: mc}
+  numeric:             {ar: "إدخال رقمي",                 group: numeric}
+  multi_numeric:       {ar: "إدخال رقمي متعدد الخانات",    group: numeric}
+  dragdrop_slots:      {ar: "سحب وإفلات إلى خانات",        group: dragdrop}
+  dragdrop_order:      {ar: "سحب وترتيب",                 group: dragdrop}
+  dragdrop_categorize: {ar: "سحب وتصنيف",                 group: dragdrop}
+  grid_plot:           {ar: "رسم وتعيين على المستوى الإحداثي", group: grid}
+  select_explain:      {ar: "اختر وبرّر",                  group: explain}
+  cr_explain:          {ar: "إجابة مفتوحة",               group: explain}
+
+contexts:
+  qatar: "سياق قطري"
+  real:  "سياق واقعي عام"
+  pure:  "رياضي مجرد"
+
+# ----------------------------------------------------------------------------
+# الموضوعات العشرون (كل موضوع ≈ 5% من اختبار TIMSS)
+# bank_target: عدد بنود التدريب المستهدفة (وزن أعلى لمجالي الضعف: الهندسة والبيانات)
+# ----------------------------------------------------------------------------
+topics:
+  N1:
+    domain: number
+    area: integers
+    area_ar: "الأعداد الصحيحة"
+    ar: "خصائص الأعداد والعمليات: المضاعفات والعوامل والأعداد الأولية والقوى والجذور التربيعية"
+    en: "Recognize and use properties of numbers and operations; find and use multiples and factors, recognize prime numbers, and evaluate positive integer powers of numbers and square roots resulting in integers."
+    bank_target: 16
+  N2:
+    domain: number
+    area: integers
+    area_ar: "الأعداد الصحيحة"
+    ar: "جمع الأعداد الموجبة والسالبة وطرحها (خط الأعداد، مقياس الحرارة، المكسب والخسارة)"
+    en: "Add and subtract positive and negative numbers, including through movement and position on a number line or using various models (e.g., thermometers, losses and gains)."
+    bank_target: 16
+  N3:
+    domain: number
+    area: fractions_decimals
+    area_ar: "الكسور والأعداد العشرية"
+    ar: "مقارنة الكسور والأعداد العشرية وتحديد المتكافئ منها وتقريب الأعداد العشرية باستخدام النماذج والتمثيلات"
+    en: "Using various models and representations, compare fractions and decimals, identify equivalent fractions and decimals, and round decimals."
+    bank_target: 16
+  N4:
+    domain: number
+    area: fractions_decimals
+    area_ar: "الكسور والأعداد العشرية"
+    ar: "جمع الكسور والأعداد العشرية وطرحها وضربها، وقسمتها على عدد كلي"
+    en: "Add, subtract, and multiply with fractions and decimals, and divide fractions and decimals by a whole number."
+    bank_target: 16
+  N5:
+    domain: number
+    area: ratios_percents
+    area_ar: "التناسب والنسب والنسب المئوية"
+    ar: "تحديد التناسب والنسب بين الكميات (المعدلات، مقياس الرسم في الخرائط، الوصفات)"
+    en: "Determine proportions and ratios of quantities (e.g., rates, scales on maps, recipes)."
+    bank_target: 16
+  N6:
+    domain: number
+    area: ratios_percents
+    area_ar: "التناسب والنسب والنسب المئوية"
+    ar: "تطبيق النسب المئوية وإيجادها، والتحويل بين النسب المئوية والكسور والأعداد العشرية"
+    en: "Apply or find percentages; convert between percentages and fractions or decimals."
+    bank_target: 16
+  A1:
+    domain: algebra
+    area: expressions_equations
+    area_ar: "المقادير والعمليات والمعادلات"
+    ar: "إيجاد قيمة مقدار جبري أو صيغة بمعلومية قيم المتغيرات"
+    en: "Find the value of an expression or a formula given the values of the variables."
+    bank_target: 16
+  A2:
+    domain: algebra
+    area: expressions_equations
+    area_ar: "المقادير والعمليات والمعادلات"
+    ar: "تبسيط المقادير الجبرية (مجموع، ضرب، فرق، قوى صحيحة موجبة) ومقارنة المقادير لتحديد تكافئها"
+    en: "Simplify algebraic expressions involving sums, products, differences, and positive integer powers; compare expressions to decide if they are equivalent."
+    bank_target: 16
+  A3:
+    domain: algebra
+    area: expressions_equations
+    area_ar: "المقادير والعمليات والمعادلات"
+    ar: "كتابة مقادير أو معادلات أو متباينات تمثل مواقف حياتية"
+    en: "Write expressions, equations, or inequalities to represent problem situations."
+    bank_target: 16
+  A4:
+    domain: algebra
+    area: expressions_equations
+    area_ar: "المقادير والعمليات والمعادلات"
+    ar: "حل المعادلات الخطية (أو التحقق من الحلول)، والمتباينات الخطية البسيطة، وأنظمة المعادلات الخطية البسيطة في متغيرين"
+    en: "Solve (or validate potential solutions to) linear equations; solve simple linear inequalities and simple simultaneous linear equations in two variables, including validating values as solutions."
+    bank_target: 16
+  A5:
+    domain: algebra
+    area: relationships_functions
+    area_ar: "العلاقات والدوال"
+    ar: "تفسير تمثيلات الدوال الخطية (جداول، رسوم، كلمات) والربط بينها وإنشاؤها؛ الميل والمقطع؛ تعميم الأنماط الخطية"
+    en: "Interpret, relate, and generate representations of linear functions in tables, graphs, or words; recognize properties of linear functions, including slope and intercepts; generalize linear patterns or sequences using words or algebraic expressions."
+    bank_target: 16
+  A6:
+    domain: algebra
+    area: relationships_functions
+    area_ar: "العلاقات والدوال"
+    ar: "تفسير تمثيلات الدوال غير الخطية البسيطة (مثل التربيعية) والربط بينها؛ تعميم الأنماط غير الخطية"
+    en: "Interpret, relate, and generate representations of simple nonlinear functions (e.g., quadratic) in tables, graphs, or words; and generalize nonlinear patterns or sequences using words or algebraic expressions."
+    bank_target: 16
+  G1:
+    domain: geometry_measurement
+    area: geometry_measurement
+    area_ar: "الهندسة والقياس"
+    ar: "الزوايا وأزواج المستقيمات والعلاقات بين الزوايا على المستقيمات وفي الأشكال؛ قراءة النقاط وتعيينها في المستوى الإحداثي"
+    en: "Recognize and draw types of angles and pairs of lines and use the relationships between angles on lines and in geometric figures, including those involving the measures of angles and line segments; read and plot points in the Cartesian plane."
+    bank_target: 21
+  G2:
+    domain: geometry_measurement
+    area: geometry_measurement
+    area_ar: "الهندسة والقياس"
+    ar: "الأشكال الثنائية الأبعاد وخصائصها (مجموع زوايا المثلث والرباعي، المثلث المتطابق الضلعين) وحساب الأطوال والمساحات ونظرية فيثاغورس"
+    en: "Recognize two-dimensional shapes and use their geometric properties (e.g., sums of interior angles of triangles and quadrilaterals, properties of isosceles triangles), including calculating length and area, and use the Pythagorean Theorem."
+    bank_target: 21
+  G3:
+    domain: geometry_measurement
+    area: geometry_measurement
+    area_ar: "الهندسة والقياس"
+    ar: "نتائج التحويلات الهندسية (الإزاحة، الانعكاس، الدوران) في المستوى؛ خصائص المثلثات والمستطيلات المتطابقة والمتشابهة"
+    en: "Determine the results of geometric transformations (i.e., translations, reflections, and rotations) in the plane; recognize and use properties of congruent and similar triangles and rectangles."
+    bank_target: 21
+  G4:
+    domain: geometry_measurement
+    area: geometry_measurement
+    area_ar: "الهندسة والقياس"
+    ar: "الأشكال الثلاثية الأبعاد: حساب المساحة السطحية والحجم، وربطها بتمثيلاتها الثنائية الأبعاد (الشبكات والمناظر)"
+    en: "Recognize three-dimensional objects and use their properties to calculate surface area and volume; relate three-dimensional objects with their two-dimensional representations."
+    bank_target: 21
+  D1:
+    domain: data_probability
+    area: data
+    area_ar: "البيانات"
+    ar: "تنظيم البيانات وتمثيلها (المدرج التكراري، مخطط النقاط، مخطط الانتشار، الأعمدة المجمّعة والمكدّسة، الإنفوجرافيك…)"
+    en: "Organize and represent data in histograms, dot plots, scatter plots, clustered and stacked bar charts, and infographics, in addition to representations included at fourth grade (i.e., tables, pictographs, bar graphs, line graphs, and pie charts)."
+    bank_target: 21
+  D2:
+    domain: data_probability
+    area: data
+    area_ar: "البيانات"
+    ar: "تفسير البيانات من مصدر أو أكثر: الاستنتاج، الاستكمال الداخلي والخارجي، النمذجة (الاتجاهات والتنبؤات)"
+    en: "Interpret data from one or more sources, including making inferences, interpolating and extrapolating, and modeling (e.g., trends, predictions, productivity)."
+    bank_target: 21
+  D3:
+    domain: data_probability
+    area: data
+    area_ar: "البيانات"
+    ar: "تلخيص توزيعات البيانات: حساب المتوسط الحسابي والوسيط واستخدامهما وتفسيرهما، وأثر الانتشار والقيم المتطرفة"
+    en: "Summarize data distributions; calculate, use, or interpret mean and median; recognize the effect of spread and outliers."
+    bank_target: 21
+  D4:
+    domain: data_probability
+    area: probability
+    area_ar: "الاحتمالات"
+    ar: "الاحتمال النظري بناءً على نسبة النواتج الممكنة، والاحتمال التجريبي بناءً على نتائج التجارب"
+    en: "Determine theoretical probability based on proportions of favorable outcomes (e.g., rolling a fair die or drawing marbles of a particular color from a bag); estimate empirical probability based on experimental outcomes."
+    bank_target: 21
+
+# ----------------------------------------------------------------------------
+# أهداف التوزيع داخل بنك التدريب (360 بنداً)
+# ----------------------------------------------------------------------------
+targets:
+  practice_total: 360
+  # توزيع المستويات المعرفية لكل موضوع حسب حجمه (المجموع: 30% معرفة / 40% تطبيق / 30% استدلال)
+  cognitive_by_topic_size:
+    16: {knowing: 5, applying: 6, reasoning: 5}
+    21: {knowing: 6, applying: 9, reasoning: 6}
+  # توزيع الصعوبة لكل موضوع حسب حجمه (≈ 10% تأسيسي / 30% سهل / 35% متوسط / 25% صعب)
+  difficulty_by_topic_size:
+    16: {foundation: 2, easy: 5, medium: 5, hard: 4}
+    21: {foundation: 2, easy: 6, medium: 8, hard: 5}
+  # نسب مجموعات الأنواع على مستوى البنك (± tolerance_pct)
+  format_groups_pct: {mc: 45, numeric: 20, dragdrop: 12, grid: 8, explain: 15}
+  format_tolerance_pct: 4
+  # السياق: ≈ 85% في سياق (نصفه قطري تقريباً)، ≈ 15% رياضي مجرد
+  context_pct: {contextual_min: 78, pure_min: 10, qatar_min_of_contextual: 40}
+  # حد أدنى لكل موضوع
+  per_topic_min: {explain: 2, non_mc: 5}
+
+# ----------------------------------------------------------------------------
+# مواصفات النماذج (الاختبارات)
+# ----------------------------------------------------------------------------
+forms:
+  mock:
+    count: 3
+    blocks: 2
+    items_per_block: 16
+    minutes: 45
+    content:   {number: 10, algebra: 10, geometry_measurement: 6, data_probability: 6}
+    cognitive: {knowing: 11, applying: 13, reasoning: 8}
+  diagnostic:
+    items: 32
+    minutes: 45
+    rule: "كل موضوع من الموضوعات العشرين ممثل ببند أو بندين، مع مزيج من الصعوبات"

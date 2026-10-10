@@ -1,0 +1,168 @@
+{
+ "batch": 29,
+ "ids": [
+  "M8-N5-009",
+  "M8-N5-010",
+  "M8-N5-011",
+  "M8-N5-012",
+  "M8-N5-013",
+  "M8-N5-014",
+  "M8-N5-015",
+  "M8-N5-016",
+  "M8-N6-001",
+  "M8-N6-002",
+  "M8-N6-003",
+  "M8-N6-004"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 24503,
+  "output_tokens": 9793,
+  "thinking_tokens": 7604,
+  "cache_read_tokens": 25790,
+  "total_tokens": 34296
+ },
+ "results": [
+  {
+   "id": "M8-N5-009",
+   "answer": 72,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N5",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N5-010",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N5",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N5-011",
+   "answer": 200,
+   "confidence": 0.9,
+   "unambiguous": false,
+   "topic": "N5",
+   "cognitive": "applying",
+   "issues": [
+    "ارتباط الأسماء (أحمد وسالم) بأرقام النسبة (5 : 4) قد يكون غير واضح للطلاب بسبب اختلاف اتجاه القراءة بين النص العربي والرموز الرياضية، مما قد يسبب لبساً حول ما إذا كان نصيب أحمد يقابله العدد 5 أم 4."
+   ],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N5-012",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N5",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N5-013",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N5",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N5-014",
+   "answer": 45,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N5",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N5-015",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N5",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N5-016",
+   "answer": "المحل الثاني أرخص، وتبرير ناصر غير كافٍ رياضياً لأنه يجب عليه حساب ومقارنة سعر العلبة الواحدة (معدل الوحدة) في كلا المحلين بدلاً من مقارنة التكلفة الإضافية فقط.",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N5",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N6-001",
+   "answer": 90,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N6",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N6-002",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N6",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N6-003",
+   "answer": {
+    "c1": "يساوي $25\\%$",
+    "c2": "يساوي $25\\%$",
+    "c3": "يساوي $25\\%$",
+    "c4": "لا يساوي $25\\%$",
+    "c5": "لا يساوي $25\\%$",
+    "c6": "لا يساوي $25\\%$"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N6",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-N6-004",
+   "answer": 60,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N6",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  }
+ ]
+}

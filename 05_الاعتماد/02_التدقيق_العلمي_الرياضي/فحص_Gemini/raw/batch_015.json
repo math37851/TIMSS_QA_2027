@@ -1,0 +1,179 @@
+{
+ "batch": 15,
+ "ids": [
+  "M8-D4-010",
+  "M8-D4-011",
+  "M8-D4-012",
+  "M8-D4-013",
+  "M8-D4-014",
+  "M8-D4-015",
+  "M8-D4-016",
+  "M8-D4-017",
+  "M8-D4-018",
+  "M8-D4-019",
+  "M8-D4-020",
+  "M8-D4-021"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 19921,
+  "output_tokens": 8426,
+  "thinking_tokens": 6270,
+  "cache_read_tokens": 29916,
+  "total_tokens": 28347
+ },
+ "results": [
+  {
+   "id": "M8-D4-010",
+   "answer": 30,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D4",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D4-011",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D4",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D4-012",
+   "answer": [
+    "gold",
+    "green",
+    "blue",
+    "red"
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D4",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D4-013",
+   "answer": 0.15,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D4",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [
+    "يوجد خطأ نحوي في عبارة «أو عدداً عشرياً»، والصواب «أو عددٍ عشريّ» لأنها معطوفة على مجرور (ككسرٍ)."
+   ],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D4-014",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D4",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D4-015",
+   "answer": [
+    "s12",
+    "s4",
+    "s7",
+    "even",
+    "gt4"
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D4",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D4-016",
+   "answer": "D",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D4",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D4-017",
+   "answer": {
+    "g1": "عادلة",
+    "g2": "غير عادلة",
+    "g3": "عادلة",
+    "g4": "غير عادلة",
+    "g5": "عادلة",
+    "g6": "غير عادلة"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D4",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D4-018",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D4",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D4-019",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D4",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D4-020",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D4",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D4-021",
+   "answer": "نعم تدعم قوله، حيث يقترب الاحتمال التجريبي من الاحتمال النظري (0.25) كلما زاد عدد الدورات.",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D4",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  }
+ ]
+}

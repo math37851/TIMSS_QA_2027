@@ -1,0 +1,184 @@
+{
+ "batch": 3,
+ "ids": [
+  "M8-A2-009",
+  "M8-A2-010",
+  "M8-A2-011",
+  "M8-A2-012",
+  "M8-A2-013",
+  "M8-A2-014",
+  "M8-A2-015",
+  "M8-A2-016",
+  "M8-A3-001",
+  "M8-A3-002",
+  "M8-A3-003",
+  "M8-A3-004"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 24545,
+  "output_tokens": 10392,
+  "thinking_tokens": 8174,
+  "cache_read_tokens": 25416,
+  "total_tokens": 34937
+ },
+ "results": [
+  {
+   "id": "M8-A2-009",
+   "answer": [
+    4,
+    -7
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A2-010",
+   "answer": 12,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A2",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A2-011",
+   "answer": {
+    "1": "c3",
+    "2": "c2"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A2-012",
+   "answer": {
+    "c1": "تبسيط خاطئ",
+    "c2": "تبسيط صحيح",
+    "c3": "تبسيط خاطئ",
+    "c4": "تبسيط صحيح",
+    "c5": "تبسيط خاطئ",
+    "c6": "تبسيط صحيح"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A2",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A2-013",
+   "answer": [
+    "e1",
+    "e2",
+    "e3",
+    "e4"
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A2-014",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A2",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A2-015",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A2",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A2-016",
+   "answer": "مجموع أرقام المقاعد الثلاثة هو 3n + 3، وبأخذ العامل المشترك يصبح 3(n + 1) مما يؤكد أنه يقبل القسمة دائماً على 3.",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A2",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A3-001",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A3",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A3-002",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A3-003",
+   "answer": {
+    "p1": "2(n - 5)",
+    "p2": "2n - 5",
+    "p3": "5 - 2n",
+    "p4": "2(n - 5)",
+    "p5": "2n - 5",
+    "p6": "5 - 2n"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A3-004",
+   "answer": "D",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  }
+ ]
+}

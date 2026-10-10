@@ -1,0 +1,65 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "tag:#number",
+      "color": {
+        "a": 1,
+        "rgb": 1783389
+      }
+    },
+    {
+      "query": "tag:#algebra",
+      "color": {
+        "a": 1,
+        "rgb": 9049400
+      }
+    },
+    {
+      "query": "tag:#geometry",
+      "color": {
+        "a": 1,
+        "rgb": 12756553
+      }
+    },
+    {
+      "query": "tag:#data",
+      "color": {
+        "a": 1,
+        "rgb": 2785167
+      }
+    },
+    {
+      "query": "path:مفاهيم_خاطئة",
+      "color": {
+        "a": 1,
+        "rgb": 12986408
+      }
+    },
+    {
+      "query": "path:شيفرة",
+      "color": {
+        "a": 1,
+        "rgb": 8029849
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 0.06047224140110657,
+  "close": true
+}

@@ -1,0 +1,171 @@
+{
+ "batch": 22,
+ "ids": [
+  "M8-G4-010",
+  "M8-G4-011",
+  "M8-G4-012",
+  "M8-G4-013",
+  "M8-G4-014",
+  "M8-G4-015",
+  "M8-G4-016",
+  "M8-G4-017",
+  "M8-G4-018",
+  "M8-G4-019",
+  "M8-G4-020",
+  "M8-G4-021"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 30516,
+  "output_tokens": 13007,
+  "thinking_tokens": 10987,
+  "cache_read_tokens": 30276,
+  "total_tokens": 43523
+ },
+ "results": [
+  {
+   "id": "M8-G4-010",
+   "answer": 254.34,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G4",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G4-011",
+   "answer": {
+    "1": "half",
+    "2": "three",
+    "3": "two",
+    "4": "four"
+   },
+   "confidence": 1.0,
+   "unambiguous": false,
+   "topic": "G4",
+   "cognitive": "applying",
+   "issues": [
+    "الضرب عملية إبدالية، لذا يوجد أكثر من ترتيب صحيح للبطاقات في الخانات، مما قد يربك التصحيح الآلي."
+   ],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G4-012",
+   "answer": "D",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G4",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G4-013",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G4",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G4-014",
+   "answer": 3052.08,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G4",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G4-015",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G4",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G4-016",
+   "answer": [
+    "cone",
+    "cyl6",
+    "sphere",
+    "cyl12"
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G4",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G4-017",
+   "answer": "الخطأ هو استخدام قطر القاعدة (8) بدلاً من نصف القطر (4)، والحجم الصحيح هو 64π.",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G4",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G4-018",
+   "answer": 75,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G4",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G4-019",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G4",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G4-020",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G4",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G4-021",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G4",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  }
+ ]
+}

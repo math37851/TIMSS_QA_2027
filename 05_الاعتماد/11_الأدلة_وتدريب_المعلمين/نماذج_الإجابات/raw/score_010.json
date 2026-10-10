@@ -1,0 +1,149 @@
+{
+ "results": [
+  {
+   "id": "M8-N6-016",
+   "scores": [
+    {
+     "n": 1,
+     "code": "20",
+     "reason": "The student correctly calculates the cost for both offers (60 riyals each) and concludes that they are equal.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 2,
+     "code": "10",
+     "reason": "The student correctly calculates the cost of the first offer (60 riyals) but provides an incomplete/vague justification for the second offer without an exact calculation.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 3,
+     "code": "70",
+     "reason": "The student draws an incorrect conclusion and incorrectly calculates the discount as a flat 25 riyals instead of a percentage.",
+     "rubric_issue": ""
+    }
+   ]
+  },
+  {
+   "id": "M8-PSI1-05",
+   "scores": [
+    {
+     "n": 1,
+     "code": "20",
+     "reason": "The student chooses the first offer for 130 students with correct calculations (1640 vs 1820) and correctly shows that the second offer becomes cheaper for 80 students with calculations (1240 vs 1120).",
+     "rubric_issue": ""
+    },
+    {
+     "n": 2,
+     "code": "10",
+     "reason": "The student correctly calculates and chooses the first offer for 130 students, achieving the first part of the task, but fails to properly analyze and calculate the situation for 80 students.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 3,
+     "code": "70",
+     "reason": "The student chooses the first offer without providing any calculations for either the 130 or 80 students scenario.",
+     "rubric_issue": ""
+    }
+   ]
+  },
+  {
+   "id": "M8-PSI2-05",
+   "scores": [
+    {
+     "n": 1,
+     "code": "1",
+     "reason": "The student correctly chooses 'No' and calculates the exact amount of growth for both plants (18 cm vs 12 cm) to justify their answer.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 2,
+     "code": "0",
+     "reason": "The student chooses 'No' but fails to provide a numerical justification based on the amount of growth.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 3,
+     "code": "0",
+     "reason": "The student incorrectly chooses 'Yes'.",
+     "rubric_issue": ""
+    }
+   ]
+  },
+  {
+   "id": "M8-PSI3-05",
+   "scores": [
+    {
+     "n": 1,
+     "code": "1",
+     "reason": "The student correctly chooses 'No' and calculates/compares the percentage increases (100% vs 4/6) to show they are not equal.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 2,
+     "code": "1",
+     "reason": "The student correctly chooses 'No' and explains that the base starting numbers are different, which changes the percentage even if the absolute increase is the same.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 3,
+     "code": "0",
+     "reason": "The student incorrectly chooses 'Yes'.",
+     "rubric_issue": ""
+    }
+   ]
+  },
+  {
+   "id": "M8-PSI4-05",
+   "scores": [
+    {
+     "n": 1,
+     "code": "20",
+     "reason": "The student chooses the second offer and correctly compares the cost of the exact same total quantity for both offers (80 riyals vs 75 riyals).",
+     "rubric_issue": ""
+    },
+    {
+     "n": 2,
+     "code": "10",
+     "reason": "The student correctly calculates the cost of the first offer (80 riyals) but chooses the second offer without providing a calculation for it.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 3,
+     "code": "70",
+     "reason": "The student incorrectly concludes that the offers are equal based on a flawed assumption about the percentage discount.",
+     "rubric_issue": ""
+    }
+   ]
+  },
+  {
+   "id": "M8-PSI5-05",
+   "scores": [
+    {
+     "n": 1,
+     "code": "1",
+     "reason": "The student chooses 'No' and correctly justifies it quantitatively by comparing the maximum expected deficit in 12 hours (2400 m³) to the total capacity of the tank (2512 m³).",
+     "rubric_issue": ""
+    },
+    {
+     "n": 2,
+     "code": "0",
+     "reason": "The student chooses 'No' but does not provide any quantitative comparison or calculations.",
+     "rubric_issue": ""
+    },
+    {
+     "n": 3,
+     "code": "0",
+     "reason": "The student incorrectly chooses 'Yes'.",
+     "rubric_issue": ""
+    }
+   ]
+  }
+ ],
+ "usage": {
+  "input_tokens": 12529,
+  "output_tokens": 4174,
+  "thinking_tokens": 2816,
+  "cache_read_tokens": 8130,
+  "total_tokens": 16703
+ }
+}

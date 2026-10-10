@@ -1,0 +1,830 @@
+# ============================================================================
+# الأعداد ← التناسب والنسب والنسب المئوية | N5 التناسب والمعدلات ومقياس الرسم · N6 النسب المئوية
+# الأهداف: 16 بنداً لكل موضوع (معرفة 5 / تطبيق 6 / استدلال 5 — تأسيسي 2 / سهل 5 / متوسط 5 / صعب 4)
+# ============================================================================
+
+# ---------------------------------------------------------------- N5
+- id: M8-N5-001
+  topic: N5
+  cognitive: knowing
+  area: compute
+  difficulty: foundation
+  benchmark: low
+  format: numeric
+  context: real
+  time: 50
+  stem: |
+    في نادي الشطرنج بالمدرسة، النسبة بين عدد البنين وعدد البنات $3 : 2$.
+    إذا كان عدد البنات 10، فكم عدد البنين؟
+  answer: {value: 15, unit: "طالباً"}
+  verify: "Rational(3, 2) * 10"
+  solution: |
+    كل بنتين يقابلهما 3 بنين. $10 = 2 \times 5$ ، إذن عدد البنين $3 \times 5 = 15$.
+  remediation: |
+    استعمل جدول نسب: $(3, 2) \rightarrow (6, 4) \rightarrow (9, 6) \rightarrow (12, 8) \rightarrow (15, 10)$.
+  misconceptions: [additive-ratio-reasoning]
+  qatar_link: "الصف السابع — الوحدة 2: الدرس 2-3 النسب المتكافئة (7.2.2)"
+
+- id: M8-N5-002
+  topic: N5
+  cognitive: knowing
+  area: identify
+  difficulty: easy
+  benchmark: intermediate
+  format: dragdrop_categorize
+  context: pure
+  time: 100
+  stem: |
+    اسحب كل نسبة إلى المجموعة المناسبة.
+  categories: ['تكافئ النسبة $4 : 6$', 'لا تكافئ النسبة $4 : 6$']
+  cards: ['$2 : 3$', '$6 : 9$', '$8 : 10$', '$10 : 15$', '$6 : 8$', '$12 : 18$']
+  key:
+    '$2 : 3$': 'تكافئ النسبة $4 : 6$'
+    '$6 : 9$': 'تكافئ النسبة $4 : 6$'
+    '$10 : 15$': 'تكافئ النسبة $4 : 6$'
+    '$12 : 18$': 'تكافئ النسبة $4 : 6$'
+    '$8 : 10$': 'لا تكافئ النسبة $4 : 6$'
+    '$6 : 8$': 'لا تكافئ النسبة $4 : 6$'
+  verify: "all(Rational(a, b) == Rational(4, 6) for a, b in [(2, 3), (6, 9), (10, 15), (12, 18)]) and all(Rational(a, b) != Rational(4, 6) for a, b in [(8, 10), (6, 8)])"
+  solution: |
+    $4 : 6 = 2 : 3$ بقسمة الحدين على $2$. النسب المكافئة ناتجة عن ضرب الحدين في العدد نفسه: $6 : 9$ ، $10 : 15$ ، $12 : 18$.
+    أما $8 : 10$ و $6 : 8$ فناتجتان عن إضافة العدد نفسه إلى الحدين، وهذا لا يحافظ على النسبة.
+  remediation: |
+    ميّز بين التفكير الضربي (صحيح) والتفكير الجمعي (خطأ): إضافة $2$ إلى الحدين ($6 : 8$) لا تحافظ على النسبة.
+  misconceptions: [additive-ratio-reasoning]
+  qatar_link: "الصف السابع — الدرس 2-3"
+
+- id: M8-N5-003
+  topic: N5
+  cognitive: knowing
+  area: recall
+  difficulty: easy
+  benchmark: intermediate
+  format: mc
+  context: real
+  time: 60
+  stem: |
+    مقياس رسم خريطة هو $1 : 50\,000$. ماذا يعني ذلك؟
+  options:
+    - 'كل $1\,\text{cm}$ على الخريطة يمثل $50\,\text{m}$ على الأرض'
+    - 'كل $1\,\text{cm}$ على الخريطة يمثل $500\,\text{m}$ على الأرض'
+    - 'كل $1\,\text{cm}$ على الخريطة يمثل $5\,\text{km}$ على الأرض'
+    - 'كل $1\,\text{cm}$ على الخريطة يمثل $50\,\text{km}$ على الأرض'
+  key: B
+  verify: "50000 / 100 == 500"
+  rationale:
+    A: 'قسم على $1000$ بدلاً من $100$ عند التحويل من cm إلى m.'
+    C: "أخطأ في التحويل إلى الكيلومتر."
+    D: 'اعتبر أن $50\,000\,\text{cm}$ تساوي $50\,\text{km}$.'
+  solution: |
+    $1\,\text{cm}$ على الخريطة يمثل $50\,000\,\text{cm}$ على الأرض.
+    وبما أن $1\,\text{m} = 100\,\text{cm}$ ، فإن $50\,000\,\text{cm} = 500\,\text{m}$.
+  remediation: |
+    درّب على سلسلة التحويل: من cm إلى m بالقسمة على $100$، ومن m إلى km بالقسمة على $1000$، واستعمل جدولاً للوحدات.
+  misconceptions: [unit-conversion-error]
+  qatar_link: "الرسم بمقياس — الصفان 7 و 8"
+
+- id: M8-N5-004
+  topic: N5
+  cognitive: knowing
+  area: compute
+  difficulty: foundation
+  benchmark: low
+  format: numeric
+  context: real
+  time: 45
+  stem: |
+    سعر 6 زجاجات ماء 9 ريالات. ما سعر الزجاجة الواحدة بالريال؟
+  answer: {value: 1.5, tol: 0.001, unit: "ريال"}
+  verify: "Rational(9, 6)"
+  solution: |
+    سعر الزجاجة $= 9 \div 6 = 1.5$ ريال.
+  remediation: |
+    معدل الوحدة = الكمية الكلية ÷ عدد الوحدات. تحقق: $1.5 \times 6 = 9$.
+  misconceptions: [divide-wrong-order]
+  qatar_link: "الصف السابع — الدرس 2-1 معدلات الوحدة (7.2.1)"
+
+- id: M8-N5-005
+  topic: N5
+  cognitive: knowing
+  area: identify
+  difficulty: easy
+  benchmark: intermediate
+  format: mc
+  context: pure
+  time: 80
+  stem: |
+    أيّ مجموعات الأزواج المرتبة $(x, y)$ الآتية تمثّل علاقة تناسب؟
+  options: ['$(1, 4),\ (2, 8),\ (3, 12)$', '$(1, 3),\ (2, 5),\ (3, 7)$', '$(1, 2),\ (2, 4),\ (3, 7)$', '$(2, 1),\ (4, 3),\ (6, 5)$']
+  key: A
+  verify: "all(Rational(y, x) == 4 for x, y in [(1, 4), (2, 8), (3, 12)]) and len(set(Rational(y, x) for x, y in [(1, 3), (2, 5), (3, 7)])) > 1 and len(set(Rational(y, x) for x, y in [(1, 2), (2, 4), (3, 7)])) > 1 and len(set(Rational(y, x) for x, y in [(2, 1), (4, 3), (6, 5)])) > 1"
+  rationale:
+    B: 'القيم تزيد بمقدار ثابت (2)، لكن النسبة $\frac{y}{x}$ غير ثابتة.'
+    C: "النسبة ثابتة في الزوجين الأولين فقط."
+    D: 'الفرق بين $x$ و $y$ ثابت، لكن النسبة غير ثابتة.'
+  solution: |
+    في علاقة التناسب تكون النسبة $\frac{y}{x}$ ثابتة: $\frac{4}{1} = \frac{8}{2} = \frac{12}{3} = 4$.
+    في المجموعات الأخرى تتغير هذه النسبة.
+  remediation: |
+    احسب $\frac{y}{x}$ لكل زوج؛ إذا تساوت كل النسب فالعلاقة تناسب، وتلك القيمة هي ثابت التناسب.
+  misconceptions: [constant-difference-as-proportional]
+  qatar_link: "الصف السابع — الدرسان 2-3 و 2-4 (ثابت التناسب)"
+
+- id: M8-N5-006
+  topic: N5
+  cognitive: applying
+  area: implement
+  difficulty: easy
+  benchmark: intermediate
+  format: numeric
+  context: qatar
+  time: 70
+  stem: |
+    تحتاج وصفة «الهريس» لـ 4 أشخاص إلى $300\,\text{g}$ من القمح.
+    كم غراماً من القمح تحتاج لإعداد الوصفة نفسها لـ 10 أشخاص؟
+  answer: {value: 750, unit: "g"}
+  verify: "Rational(300, 4) * 10"
+  solution: |
+    لكل شخص $300 \div 4 = 75\,\text{g}$ ، ولـ 10 أشخاص $75 \times 10 = 750\,\text{g}$.
+  remediation: |
+    استعمل معدل الوحدة (لشخص واحد) أو جدول نسب: 4 أشخاص ← $300$ ، شخصان ← $150$ ، 10 أشخاص ← $750$.
+  misconceptions: [additive-scaling]
+  qatar_link: "الصف السابع — الدرس 2-6 التبرير التناسبي"
+
+- id: M8-N5-007
+  topic: N5
+  cognitive: applying
+  area: implement
+  difficulty: medium
+  benchmark: high
+  format: numeric
+  context: qatar
+  time: 100
+  stem: |
+    على خريطة مقياس رسمها $1 : 200\,000$ ، المسافة بين الدوحة والوكرة $8\,\text{cm}$.
+    ما المسافة الحقيقية بينهما بالكيلومترات؟
+  answer: {value: 16, unit: "km"}
+  verify: "8 * 200000 / 100000"
+  solution: |
+    المسافة الحقيقية $= 8 \times 200\,000 = 1\,600\,000\,\text{cm}$.
+    وبما أن $1\,\text{km} = 100\,000\,\text{cm}$ ، فالمسافة $= 16\,\text{km}$.
+  remediation: |
+    حوّل المقياس أولاً إلى جملة مفهومة: $1\,\text{cm}$ على الخريطة يمثل $2\,\text{km}$ ، ثم اضرب في $8$.
+  misconceptions: [unit-conversion-error]
+  qatar_link: "الرسم بمقياس — الصف الثامن"
+
+- id: M8-N5-008
+  topic: N5
+  cognitive: applying
+  area: formulate
+  difficulty: medium
+  benchmark: intermediate
+  format: mc
+  context: qatar
+  time: 110
+  stem: |
+    في أحد المجمعات التجارية في الدوحة تُباع علب العصير بالأحجام والأسعار المبيّنة في الجدول.
+    أيّ العروض أرخص سعراً للّتر الواحد؟
+  table:
+    headers: ['العرض', 'A', 'B', 'C', 'D']
+    rows:
+      - ['الحجم', '250 mL', '1 L', '1.5 L', '2 L']
+      - ['السعر (ريال)', '1.50', '5.00', '8.00', '11.00']
+    row_headers: true
+  options: ["العرض A", "العرض B", "العرض C", "العرض D"]
+  key: B
+  verify: "min([Rational(150, 100) / Rational(25, 100), 5, Rational(8, 1) / Rational(3, 2), Rational(11, 2)]) == 5 and len(set([Rational(6, 1), Rational(5, 1), Rational(16, 3), Rational(11, 2)])) == 4"
+  rationale:
+    A: "اختار أقل سعر للعلبة دون حساب سعر اللتر (سعر اللتر فيه 6 ريالات)."
+    C: 'سعر اللتر فيه نحو $5.33$ ريال، أي أعلى من العرض B.'
+    D: "ظن أن العبوة الأكبر أوفر دائماً (سعر اللتر 5.50 ريال)."
+  solution: |
+    سعر اللتر: A: $1.50 \div 0.25 = 6$ ، B: $5$ ، C: $8 \div 1.5 \approx 5.33$ ، D: $11 \div 2 = 5.50$ ريال.
+    الأرخص العرض B.
+  remediation: |
+    علّم مقارنة معدل الوحدة (السعر لكل لتر) بدلاً من السعر الكلي، وانتبه لتحويل mL إلى L ($1\,\text{L} = 1000\,\text{mL}$).
+  misconceptions: [compare-total-price, bigger-is-cheaper]
+  qatar_link: "الصف السابع — الدرس 2-1 معدلات الوحدة"
+
+- id: M8-N5-009
+  topic: N5
+  cognitive: applying
+  area: implement
+  difficulty: medium
+  benchmark: high
+  format: numeric
+  context: qatar
+  time: 90
+  stem: |
+    قطع قطار في مترو الدوحة مسافة $18\,\text{km}$ في 15 دقيقة.
+    ما سرعته المتوسطة بالكيلومتر في الساعة؟
+  answer: {value: 72, unit: "km/h"}
+  verify: "18 * 60 / 15"
+  solution: |
+    15 دقيقة تساوي $\frac{1}{4}$ ساعة، إذن السرعة $= 18 \div \frac{1}{4} = 18 \times 4 = 72\,\text{km/h}$.
+  remediation: |
+    استعمل جدول نسبة: 15 دقيقة ← $18\,\text{km}$ ، 60 دقيقة ← $72\,\text{km}$. أو حوّل الدقائق إلى ساعات قبل القسمة.
+  misconceptions: [time-unit-error, divide-by-minutes]
+  qatar_link: "المعدلات — الصف السابع"
+
+- id: M8-N5-010
+  topic: N5
+  cognitive: applying
+  area: represent
+  difficulty: easy
+  benchmark: intermediate
+  format: mc
+  context: qatar
+  time: 90
+  stem: |
+    سعر الكيلوغرام من التمر في أحد المحلات 20 ريالاً.
+    أيّ التمثيلات البيانية الآتية يبيّن العلاقة بين كتلة التمر (kg) وسعرها (ريال)؟
+  options:
+    - figure: {type: line, x: ['0', '1', '2', '3', '4'], values: [0, 20, 40, 60, 80], y_max: 100, y_step: 20, y_label: "السعر (ريال)", x_label: "الكتلة (kg)", width: 300, height: 230, inset: false}
+    - figure: {type: line, x: ['0', '1', '2', '3', '4'], values: [10, 30, 50, 70, 90], y_max: 100, y_step: 20, y_label: "السعر (ريال)", x_label: "الكتلة (kg)", width: 300, height: 230, inset: false}
+    - figure: {type: line, x: ['0', '1', '2', '3', '4'], values: [0, 5, 10, 15, 20], y_max: 100, y_step: 20, y_label: "السعر (ريال)", x_label: "الكتلة (kg)", width: 300, height: 230, inset: false}
+    - figure: {type: line, x: ['0', '1', '2', '3', '4'], values: [0, 20, 30, 35, 38], y_max: 100, y_step: 20, y_label: "السعر (ريال)", x_label: "الكتلة (kg)", width: 300, height: 230, inset: false}
+  key: A
+  verify: "all(20 * k == [0, 20, 40, 60, 80][k] for k in range(5))"
+  rationale:
+    B: 'الخط لا يمر بنقطة الأصل، مع أن $0\,\text{kg}$ سعرها 0 ريال.'
+    C: "يمثل 5 ريالات لكل كيلوغرام."
+    D: "التمثيل غير خطي؛ السعر لا يزداد بمقدار ثابت."
+  solution: |
+    العلاقة علاقة تناسب: السعر $= 20 \times$ الكتلة.
+    فالتمثيل خط مستقيم يمر بنقطة الأصل ويرتفع 20 ريالاً لكل كيلوغرام، وهو التمثيل A.
+  remediation: |
+    اطلب من الطلاب إنشاء جدول بالأزواج $(0, 0)$ و $(1, 20)$ و $(2, 40)$ ثم تعيين النقاط، ولاحظ أن علاقة التناسب تمر بنقطة الأصل.
+  misconceptions: [proportional-not-through-origin, rate-inverted]
+  qatar_link: "الصف السابع — الدرس 2-5 التمثيل البياني لعلاقات التناسب (7.2.3)"
+
+- id: M8-N5-011
+  topic: N5
+  cognitive: applying
+  area: implement
+  difficulty: medium
+  benchmark: intermediate
+  format: numeric
+  context: real
+  time: 90
+  stem: |
+    تقاسم أحمد وسالم مبلغ 360 ريالاً، بحيث تكون نسبة نصيب أحمد إلى نصيب سالم $5 : 4$. كم ريالاً نصيب أحمد؟
+  answer: {value: 200, unit: "ريال"}
+  verify: "360 * Rational(5, 9)"
+  solution: |
+    مجموع الأجزاء $5 + 4 = 9$ ، وقيمة الجزء الواحد $360 \div 9 = 40$ ريالاً.
+    نصيب أحمد $5 \times 40 = 200$ ريال، ونصيب سالم $4 \times 40 = 160$ ريالاً.
+  remediation: |
+    استعمل نموذج الشريط: 9 أجزاء متساوية، منها 5 لأحمد و 4 لسالم.
+  misconceptions: [ratio-part-as-whole, divide-by-part]
+  qatar_link: "الصف السابع — الوحدة 2"
+
+- id: M8-N5-012
+  topic: N5
+  cognitive: reasoning
+  area: analyze
+  difficulty: hard
+  benchmark: high
+  format: mc
+  context: real
+  time: 110
+  stem: |
+    خلطت نورة 3 أكواب من الطلاء الأزرق مع كوبين من الطلاء الأصفر.
+    وخلطت مها 5 أكواب من الطلاء الأزرق مع 4 أكواب من الطلاء الأصفر.
+    أيّ الخليطين لونه أكثر زرقة؟
+  options: ["خليط نورة", "خليط مها", "اللونان متماثلان", "لا يمكن المعرفة"]
+  key: A
+  verify: "Rational(3, 5) > Rational(5, 9)"
+  rationale:
+    B: 'قارن عدد أكواب الأزرق فقط ($5 > 3$).'
+    C: "لاحظ أن الأزرق يزيد على الأصفر بكوب واحد في الخليطين (تفكير جمعي)."
+    D: "ظن أن الخليطين بكميات مختلفة لا يمكن مقارنتهما."
+  solution: |
+    نسبة الأزرق إلى الخليط كله: عند نورة $\frac{3}{5} = 0.6$ ، وعند مها $\frac{5}{9} \approx 0.56$.
+    إذن خليط نورة أكثر زرقة.
+  remediation: |
+    قارن نسبة الأزرق إلى الكل (أو الأزرق إلى الأصفر: $1.5$ مقابل $1.25$) لا الفرق بين الكميتين.
+  misconceptions: [additive-ratio-reasoning, compare-one-quantity]
+  qatar_link: "الصف السابع — الدرس 2-6"
+
+- id: M8-N5-013
+  topic: N5
+  cognitive: reasoning
+  area: justify
+  difficulty: medium
+  benchmark: high
+  format: select_explain
+  context: real
+  time: 120
+  stem: |
+    صورة أبعادها $4\,\text{cm} \times 6\,\text{cm}$ ، كُبّرت بحيث أصبح عرضها $8\,\text{cm}$ مع المحافظة على شكلها.
+    قال عمر: «سيصبح طولها $10\,\text{cm}$ ، لأننا أضفنا 4 إلى العرض، فنضيف 4 إلى الطول».
+    هل عمر على صواب؟ اختر، ثم برّر إجابتك.
+  options: ["نعم، على صواب", "لا، ليس على صواب"]
+  key: B
+  points: 1
+  rubric:
+    full: 'يختار «لا» ويبرّر بأن العرض تضاعف (من $4$ إلى $8$) فيجب أن يتضاعف الطول أيضاً فيصبح $12\,\text{cm}$ ، أو يستعمل النسبة $\frac{6}{4} = \frac{12}{8}$.'
+    zero: 'يختار «نعم»، أو يختار «لا» دون تبرير صحيح؛ وذكر الطول الصحيح وحده دون بيان التضاعف أو النسبة لا يكفي.'
+    examples:
+      correct: ['لا، العرض ضُرب في 2 فيُضرب الطول في 2 ويصبح 12 cm.']
+      incorrect: ['نعم، لأننا أضفنا 4 للبعدين.', 'لا، لأن الطول يصبح 14 cm.']
+  verify: "Rational(6, 4) * 8 == 12"
+  solution: |
+    التكبير مع المحافظة على الشكل يعني ضرب كل الأبعاد في العدد نفسه.
+    العرض ضُرب في $2$ ($4 \times 2 = 8$)، فالطول $6 \times 2 = 12\,\text{cm}$ وليس $10\,\text{cm}$.
+  remediation: |
+    ارسم الصورتين على شبكة لتظهر أن إضافة 4 إلى البعدين تشوّه الشكل، بينما الضرب يحافظ عليه.
+  misconceptions: [additive-scaling]
+  qatar_link: "التشابه والتكبير — الصف الثامن"
+
+- id: M8-N5-014
+  topic: N5
+  cognitive: reasoning
+  area: integrate
+  difficulty: hard
+  benchmark: advanced
+  format: numeric
+  context: real
+  time: 150
+  stem: |
+    على خريطة مقياس رسمها $1 : 500\,000$ ، المسافة بين مدينتين $12\,\text{cm}$.
+    تسير سيارة بين المدينتين بسرعة ثابتة $80\,\text{km/h}$. كم دقيقة تستغرق الرحلة؟
+  answer: {value: 45, unit: "دقيقة"}
+  verify: "(12 * 500000 / 100000) / 80 * 60"
+  solution: |
+    المسافة الحقيقية $= 12 \times 500\,000 = 6\,000\,000\,\text{cm} = 60\,\text{km}$.
+    الزمن $= 60 \div 80 = 0.75$ ساعة $= 0.75 \times 60 = 45$ دقيقة.
+  remediation: |
+    قسّم المسألة إلى خطوتين واكتب الوحدة بعد كل خطوة: من المقياس إلى km، ثم من المسافة والسرعة إلى الزمن، ثم إلى الدقائق.
+  misconceptions: [unit-conversion-error, time-hours-minutes]
+  qatar_link: "المعدلات والرسم بمقياس — الصفان 7 و 8"
+
+- id: M8-N5-015
+  topic: N5
+  cognitive: reasoning
+  area: generalize
+  difficulty: hard
+  benchmark: advanced
+  format: mc
+  context: pure
+  time: 100
+  stem: |
+    إذا كانت النسبة $a : b = 2 : 3$ ، حيث $a$ و $b$ عددان موجبان، فأيّ العبارات الآتية صحيحة **دائماً**؟
+  options: ['$b - a = 1$', '$3a = 2b$', '$a + b = 5$', '$a = 2$ و $b = 3$']
+  key: B
+  verify: "all(3 * (2 * k) == 2 * (3 * k) for k in range(1, 20)) and any((3 * k) - (2 * k) != 1 for k in range(1, 5)) and any(5 * k != 5 for k in range(2, 5))"
+  rationale:
+    A: 'صحيحة فقط عندما $a = 2$ و $b = 3$؛ مثلاً $4 : 6$ تكافئ $2 : 3$ لكن $6 - 4 = 2$.'
+    C: "صحيحة في حالة واحدة فقط."
+    D: "النسبة لا تحدد القيمتين، بل العلاقة بينهما."
+  solution: |
+    $\frac{a}{b} = \frac{2}{3}$ ، وبضرب الطرفين في $3b$ نحصل على $3a = 2b$.
+    هذه العلاقة صحيحة لكل الأزواج المكافئة مثل $(2, 3)$ و $(4, 6)$ و $(10, 15)$.
+  remediation: |
+    اطلب من الطلاب كتابة عدة أزواج تحقق النسبة، ثم اختبار كل عبارة عليها.
+  misconceptions: [ratio-as-fixed-values, additive-ratio-reasoning]
+  qatar_link: "الصف السابع — الوحدة 2"
+
+- id: M8-N5-016
+  topic: N5
+  cognitive: reasoning
+  area: justify
+  difficulty: hard
+  benchmark: high
+  format: cr_explain
+  context: qatar
+  time: 160
+  stem: |
+    يبيع محل في الريان 3 علب بسكويت بـ 10 ريالات، ويبيع محل آخر 4 علب من النوع نفسه بـ 13 ريالاً.
+    قال ناصر: «المحل الثاني أرخص، لأنك تدفع 3 ريالات فقط زيادة وتحصل على علبة إضافية».
+    أيّ المحلين أرخص للعلبة الواحدة؟ وهل تبرير ناصر كافٍ؟ وضّح إجابتك.
+  points: 2
+  rubric:
+    codes:
+      - {code: 20, points: 2, desc: 'يحسب سعر العلبة في المحلين ($10 \div 3 \approx 3.33$ و $13 \div 4 = 3.25$) ويستنتج أن المحل الثاني أرخص، ويوضح أن تبرير ناصر غير كافٍ لأنه لا يقارن سعر العلبة الواحدة.'}
+      - {code: 10, points: 1, desc: 'يقارن سعر العلبة صحيحاً ويستنتج أن المحل الثاني أرخص، دون الحكم على تبرير ناصر (أو يحكم على التبرير دون مقارنة صحيحة).'}
+      - {code: 70, points: 0, desc: 'استنتاج غير صحيح، أو دون أي حساب لسعر العلبة.'}
+    examples:
+      correct: ['الأول $3.33$ للعلبة والثاني $3.25$ فالثاني أرخص؛ لكن كلام ناصر ليس دليلاً لأنه لم يحسب سعر العلبة.']
+      incorrect: ['الأول أرخص لأن 10 أقل من 13.']
+  model_answer: 'المحل الأول: $10 \div 3 \approx 3.33$ ريال للعلبة، والمحل الثاني: $13 \div 4 = 3.25$ ريال. إذن المحل الثاني أرخص للعلبة الواحدة. تبرير ناصر غير كافٍ؛ فالمقارنة الصحيحة تكون بسعر العلبة الواحدة لا بالفرق في المبلغ الكلي.'
+  verify: "Rational(13, 4) < Rational(10, 3)"
+  solution: |
+    سعر العلبة: المحل الأول $10 \div 3 \approx 3.33$ ريال، والمحل الثاني $13 \div 4 = 3.25$ ريال، فالثاني أرخص.
+    تبرير ناصر وصل إلى الاستنتاج الصحيح مصادفة؛ فلو كان سعر العلب الأربع 14 ريالاً لبقي كلامه كما هو مع أن المحل الثاني يصبح أغلى ($3.50$ للعلبة).
+  remediation: |
+    درّب الطلاب على المقارنة بمعدل الوحدة، وعلى تقييم التبريرات: هل يكفي هذا الدليل دائماً؟
+  misconceptions: [compare-total-price, reasoning-by-coincidence]
+  qatar_link: "الصف السابع — الدرس 2-1"
+
+# ---------------------------------------------------------------- N6
+- id: M8-N6-001
+  topic: N6
+  cognitive: applying
+  area: implement
+  difficulty: easy
+  benchmark: intermediate
+  format: numeric
+  context: qatar
+  time: 75
+  stem: |
+    في تخفيضات اليوم الوطني، كان سعر حقيبة مدرسية 120 ريالاً وعليها حسم $25\%$.
+    كم ريالاً يدفع أحمد ثمناً للحقيبة بعد الحسم؟
+  answer: {value: 90, unit: "ريال"}
+  verify: "120 * (1 - Rational(25, 100))"
+  solution: |
+    قيمة الحسم $= 25\% \times 120 = 0.25 \times 120 = 30$ ريالاً.
+    السعر بعد الحسم $= 120 - 30 = 90$ ريالاً.
+    أو مباشرة: يدفع أحمد $75\%$ من السعر: $0.75 \times 120 = 90$.
+  remediation: |
+    استعمل نموذج الشريط: شريط يمثل $100\%$ مقسم إلى 4 أجزاء متساوية (كل جزء $25\%$ = 30 ريالاً).
+    فرّق بين «قيمة الحسم» و«السعر بعد الحسم»، واطلب من الطلاب قراءة السؤال مرتين.
+  misconceptions: [answer-discount-not-price, subtract-percent-as-riyals]
+  hint: "احسب أولاً قيمة الحسم بالريال."
+  qatar_link: "الصف السابع — الوحدة 3: الدرس 3-5 هامش الربح والحسم (7.3.3)"
+
+- id: M8-N6-002
+  topic: N6
+  cognitive: knowing
+  area: compute
+  difficulty: foundation
+  benchmark: low
+  format: mc
+  context: pure
+  time: 45
+  stem: |
+    ما قيمة $20\%$ من $150$ ؟
+  options: ['$7.5$', '$30$', '$75$', '$130$']
+  option_values: [7.5, 30, 75, 130]
+  key: B
+  verify: "Rational(20, 100) * 150"
+  rationale:
+    A: 'قسم $150$ على $20$.'
+    C: "حسب نصف العدد."
+    D: 'طرح $20$ من $150$.'
+  solution: |
+    $20\% = \frac{20}{100} = 0.2$ ، و $0.2 \times 150 = 30$.
+    أو: $10\%$ من $150$ هي $15$، فتكون $20\%$ هي $30$.
+  remediation: |
+    استعمل «10%» مرجعاً: قسّم على 10 ثم اضرب في عدد العشرات المطلوبة.
+  misconceptions: [percent-as-divisor, subtract-percent-as-number]
+  qatar_link: "الصف السابع — الدرس 3-1 تحليل النسب المئوية (7.3.1)"
+
+- id: M8-N6-003
+  topic: N6
+  cognitive: knowing
+  area: identify
+  difficulty: easy
+  benchmark: intermediate
+  format: dragdrop_categorize
+  context: pure
+  time: 90
+  stem: |
+    اسحب كل عدد إلى المجموعة المناسبة.
+  categories: ['يساوي $25\%$', 'لا يساوي $25\%$']
+  cards: ['$\frac{1}{4}$', '$0.25$', '$\frac{25}{100}$', '$0.025$', '$2.5$', '$\frac{1}{25}$']
+  key:
+    '$\frac{1}{4}$': 'يساوي $25\%$'
+    '$0.25$': 'يساوي $25\%$'
+    '$\frac{25}{100}$': 'يساوي $25\%$'
+    '$0.025$': 'لا يساوي $25\%$'
+    '$2.5$': 'لا يساوي $25\%$'
+    '$\frac{1}{25}$': 'لا يساوي $25\%$'
+  verify: "all(num(v) == Rational(1, 4) for v in ['1/4', '0.25', '25/100']) and all(num(v) != Rational(1, 4) for v in ['0.025', '2.5', '1/25'])"
+  solution: |
+    $25\% = \frac{25}{100} = \frac{1}{4} = 0.25$.
+    أما $0.025 = 2.5\%$ و $2.5 = 250\%$ و $\frac{1}{25} = 4\%$.
+  remediation: |
+    «في المئة» تعني «من 100»: اكتب النسبة المئوية كسراً مقامه 100 ثم بسّطه أو حوّله إلى عدد عشري.
+  misconceptions: [percent-decimal-shift, digits-in-denominator]
+  qatar_link: "الصف السابع — الدرس 3-1"
+
+- id: M8-N6-004
+  topic: N6
+  cognitive: knowing
+  area: compute
+  difficulty: easy
+  benchmark: intermediate
+  format: numeric
+  context: pure
+  time: 50
+  stem: |
+    اكتب $\frac{3}{5}$ على صورة نسبة مئوية.
+  answer: {value: 60, unit: "%"}
+  verify: "Rational(3, 5) * 100"
+  solution: |
+    $\frac{3}{5} = \frac{3 \times 20}{5 \times 20} = \frac{60}{100} = 60\%$.
+  remediation: |
+    حوّل المقام إلى $100$ إن أمكن، أو اقسم البسط على المقام ثم اضرب في $100$.
+  misconceptions: [percent-conversion-error]
+  qatar_link: "الصف السابع — الدرس 3-1"
+
+- id: M8-N6-005
+  topic: N6
+  cognitive: knowing
+  area: identify
+  difficulty: foundation
+  benchmark: low
+  format: mc
+  context: real
+  time: 45
+  stem: |
+    قُسّمت لوحة في معرض فني مدرسي إلى 100 مربع متساوٍ، ولُوّن بعضها كما في الشكل.
+    ما النسبة المئوية للجزء الملوّن من اللوحة؟
+  figure: {type: grid_model, rows: 10, cols: 10, shaded: 35, cell: 20, alt: "شبكة من 100 مربع، 35 منها ملوّنة"}
+  options: ['$35\%$', '$65\%$', '$3.5\%$', '$0.35\%$']
+  option_values: [35, 65, 3.5, 0.35]
+  key: A
+  verify: "35"
+  rationale:
+    B: "حسب الجزء غير الملوّن."
+    C: "أخطأ في العلاقة بين الكسر العشري والنسبة المئوية."
+    D: 'كتب الكسر العشري $0.35$ وأضاف إليه علامة %.'
+  solution: |
+    عدد المربعات الملوّنة $35$ من $100$ ، أي $\frac{35}{100} = 35\%$.
+  remediation: |
+    اربط النسبة المئوية بشبكة المئة مباشرة: كل مربع يمثل $1\%$.
+  misconceptions: [complement-confusion, percent-decimal-shift]
+  qatar_link: "النسبة المئوية — الصف السادس"
+
+- id: M8-N6-006
+  topic: N6
+  cognitive: knowing
+  area: compute
+  difficulty: easy
+  benchmark: intermediate
+  format: numeric
+  context: real
+  time: 60
+  stem: |
+    أجاب طالب في مسابقة عن 18 سؤالاً إجابة صحيحة من أصل 72 سؤالاً.
+    ما النسبة المئوية لإجاباته الصحيحة؟
+  answer: {value: 25, unit: "%"}
+  verify: "Rational(18, 72) * 100"
+  solution: |
+    $\frac{18}{72} = \frac{1}{4} = 25\%$.
+  remediation: |
+    اكتب الجزء على الكل كسراً ثم بسّطه أو اقسم بالحاسبة واضرب في $100$.
+  misconceptions: [part-whole-inverted]
+  qatar_link: "الصف السابع — الدرس 3-2 النسبة المئوية والتناسب"
+
+- id: M8-N6-007
+  topic: N6
+  cognitive: applying
+  area: implement
+  difficulty: medium
+  benchmark: high
+  format: mc
+  context: qatar
+  time: 90
+  stem: |
+    ارتفع سعر تذكرة الدخول إلى إحدى المدن الترفيهية في الدوحة من 80 ريالاً إلى 100 ريال.
+    ما النسبة المئوية للزيادة في السعر؟
+  options: ['$20\%$', '$25\%$', '$80\%$', '$125\%$']
+  option_values: [20, 25, 80, 125]
+  key: B
+  verify: "Rational(100 - 80, 80) * 100"
+  rationale:
+    A: "قسم مقدار الزيادة على السعر الجديد (100) بدلاً من السعر الأصلي."
+    C: "حسب السعر القديم نسبةً من السعر الجديد."
+    D: "حسب السعر الجديد نسبةً من السعر القديم."
+  solution: |
+    مقدار الزيادة $= 100 - 80 = 20$ ريالاً.
+    النسبة المئوية للزيادة $= \frac{20}{80} \times 100 = 25\%$ (نقسم على السعر الأصلي).
+  remediation: |
+    ذكّر بقاعدة التغير المئوي: التغير ÷ القيمة الأصلية × 100، واكتب «القيمة الأصلية» بوضوح قبل الحساب.
+  misconceptions: [percent-wrong-base]
+  qatar_link: "الصف السابع — الدرس 3-4 التغير المئوي (7.3.3)"
+
+- id: M8-N6-008
+  topic: N6
+  cognitive: applying
+  area: formulate
+  difficulty: medium
+  benchmark: intermediate
+  format: mc
+  context: qatar
+  time: 80
+  stem: |
+    سعر حقيبة 240 ريالاً، وعليها حسم $15\%$.
+    أيّ مما يأتي يعطي سعر الحقيبة بعد الحسم؟
+  options: ['$240 \times 0.85$', '$240 \times 0.15$', '$240 - 15$', '$240 \div 0.85$']
+  option_values: ["240*0.85", "240*0.15", "240-15", "240/0.85"]
+  key: A
+  verify: "240 * (1 - Rational(15, 100))"
+  rationale:
+    B: "يعطي قيمة الحسم فقط، لا السعر بعد الحسم."
+    C: "طرح 15 ريالاً بدلاً من 15%."
+    D: "قسم على النسبة المتبقية بدلاً من الضرب فيها."
+  solution: |
+    بعد حسم $15\%$ يبقى $100\% - 15\% = 85\%$ من السعر، أي $240 \times 0.85 = 204$ ريالات.
+  remediation: |
+    استعمل نموذج الشريط لتوضيح أن السعر الجديد هو $85\%$ من الأصلي، واربطه بالضرب في $0.85$.
+  misconceptions: [answer-discount-not-price, subtract-percent-as-riyals]
+  qatar_link: "الصف السابع — الدرس 3-5"
+
+- id: M8-N6-009
+  topic: N6
+  cognitive: applying
+  area: implement
+  difficulty: medium
+  benchmark: intermediate
+  format: numeric
+  context: qatar
+  time: 90
+  stem: |
+    أودع خالد 5000 ريال في حساب ادخار بفائدة بسيطة $3\%$ سنوياً.
+    كم ريالاً تبلغ الفائدة بعد 4 سنوات؟
+  answer: {value: 600, unit: "ريال"}
+  verify: "5000 * Rational(3, 100) * 4"
+  solution: |
+    الفائدة في السنة الواحدة $= 0.03 \times 5000 = 150$ ريالاً.
+    الفائدة في 4 سنوات $= 150 \times 4 = 600$ ريال (الفائدة البسيطة تُحسب على المبلغ الأصلي فقط).
+  remediation: |
+    استعمل صيغة الفائدة البسيطة: الفائدة = المبلغ × النسبة × عدد السنوات، وميّز بين الفائدة والمبلغ الكلي (5600 ريال).
+  misconceptions: [interest-vs-total, one-year-only]
+  qatar_link: "الصف السابع — الدرس 3-6 الفائدة البسيطة (7.3.4)"
+
+- id: M8-N6-010
+  topic: N6
+  cognitive: applying
+  area: implement
+  difficulty: easy
+  benchmark: intermediate
+  format: numeric
+  context: qatar
+  time: 60
+  stem: |
+    في إحدى المدارس 240 طالباً، يأتي $35\%$ منهم إلى المدرسة بالحافلة.
+    كم طالباً يأتي إلى المدرسة بالحافلة؟
+  answer: {value: 84, unit: "طالباً"}
+  verify: "240 * Rational(35, 100)"
+  solution: |
+    $35\% \times 240 = 0.35 \times 240 = 84$ طالباً.
+    أو: $10\%$ هي $24$ ، و $30\%$ هي $72$ ، و $5\%$ هي $12$ ، والمجموع $84$.
+  remediation: |
+    فكّك النسبة المئوية إلى أجزاء مألوفة ($10\%$ و $5\%$) لتسهيل الحساب الذهني والتحقق.
+  misconceptions: [percent-as-divisor]
+  qatar_link: "الصف السابع — الدرس 3-3 المعادلة المئوية"
+
+- id: M8-N6-011
+  topic: N6
+  cognitive: applying
+  area: implement
+  difficulty: hard
+  benchmark: high
+  format: numeric
+  context: qatar
+  time: 120
+  stem: |
+    سعر جهاز لوحي 400 ريال. في التخفيضات حُسم $20\%$ من سعره، ثم حُسم $10\%$ إضافية من السعر الجديد.
+    كم أصبح سعر الجهاز النهائي؟
+  answer: {value: 288, unit: "ريالاً"}
+  verify: "400 * Rational(8, 10) * Rational(9, 10)"
+  solution: |
+    بعد الحسم الأول: $400 \times 0.8 = 320$ ريالاً.
+    بعد الحسم الثاني (من 320): $320 \times 0.9 = 288$ ريالاً.
+  remediation: |
+    نبّه إلى أن الحسم الثاني من السعر الجديد، فلا نجمع النسبتين ($30\%$ تعطي 280 ريالاً، وهي إجابة خاطئة).
+  misconceptions: [add-successive-percents]
+  qatar_link: "الصف السابع — الدرس 3-5"
+
+- id: M8-N6-012
+  topic: N6
+  cognitive: reasoning
+  area: analyze
+  difficulty: hard
+  benchmark: advanced
+  format: mc
+  context: real
+  time: 100
+  stem: |
+    ارتفع سعر سلعة بنسبة $10\%$ ، ثم انخفض السعر الجديد بنسبة $10\%$.
+    كيف يكون السعر النهائي مقارنةً بالسعر الأصلي؟
+  options: ["أكبر من السعر الأصلي", "أقل من السعر الأصلي", "مساوٍ للسعر الأصلي", "لا يمكن المعرفة دون معرفة السعر الأصلي"]
+  key: B
+  verify: "Rational(11, 10) * Rational(9, 10) < 1"
+  rationale:
+    A: "ظن أن الزيادة أولاً تجعل الأثر النهائي زيادة."
+    C: "ظن أن الزيادة والنقصان بالنسبة نفسها يلغي أحدهما الآخر."
+    D: "لم يدرك أن النتيجة لا تعتمد على قيمة السعر الأصلي."
+  solution: |
+    السعر النهائي $= 1.1 \times 0.9 = 0.99$ من السعر الأصلي، أي أقل منه بـ $1\%$.
+    مثال: $100 \to 110 \to 99$. النقصان حُسب من سعر أكبر فكان مقداره أكبر من مقدار الزيادة.
+  remediation: |
+    جرّب مع الطلاب أسعاراً مختلفة ($100$، $200$، $50$) ولاحظوا النمط، ثم فسّروه بالضرب في $1.1$ ثم في $0.9$.
+  misconceptions: [percent-changes-cancel]
+  qatar_link: "الصف السابع — الدرس 3-4"
+
+- id: M8-N6-013
+  topic: N6
+  cognitive: reasoning
+  area: justify
+  difficulty: medium
+  benchmark: high
+  format: select_explain
+  context: qatar
+  time: 120
+  stem: |
+    في الشعبة «أ» اختار 12 طالباً من أصل 30 الانضمام إلى نادي الروبوت، وفي الشعبة «ب» اختار ذلك 15 طالباً من أصل 40.
+    قال سالم: «نسبة من اختاروا نادي الروبوت في الشعبة «ب» أكبر، لأن 15 أكبر من 12».
+    هل سالم على صواب؟ اختر، ثم برّر إجابتك.
+  options: ["نعم، على صواب", "لا، ليس على صواب"]
+  key: B
+  points: 1
+  rubric:
+    full: 'يختار «لا» ويبرّر بحساب النسبتين: $\frac{12}{30} = 40\%$ و $\frac{15}{40} = 37.5\%$ ، أو بمقارنة الكسرين بطريقة صحيحة.'
+    zero: 'يختار «نعم»، أو يختار «لا» دون حساب أو تبرير صحيح؛ والاكتفاء بأن عدد الطلاب في الشعبتين مختلف لا يكفي، لأنه لا يبيّن أي النسبتين أكبر.'
+    examples:
+      correct: ['لا؛ في «أ» $40\%$ وفي «ب» $37.5\%$.']
+      incorrect: ['نعم، لأن 15 أكبر.', 'لا، لأن 30 أقل من 40.']
+  verify: "Rational(12, 30) > Rational(15, 40)"
+  solution: |
+    النسبة في الشعبة «أ»: $\frac{12}{30} = 0.4 = 40\%$ ، وفي الشعبة «ب»: $\frac{15}{40} = 0.375 = 37.5\%$.
+    إذن النسبة في الشعبة «أ» أكبر، وسالم ليس على صواب.
+  remediation: |
+    ذكّر بأن المقارنة العادلة تكون بالنسبة إلى الكل (النسبة المئوية)، لا بالعدد الفعلي، عندما يختلف حجم المجموعتين.
+  misconceptions: [compare-counts-not-rates]
+  qatar_link: "الصف السابع — الدرس 3-2"
+
+- id: M8-N6-014
+  topic: N6
+  cognitive: reasoning
+  area: integrate
+  difficulty: medium
+  benchmark: high
+  format: numeric
+  context: real
+  time: 120
+  stem: |
+    حصلت عائشة على 42 درجة من 60 في الاختبار الأول، وعلى 54 درجة من 75 في الاختبار الثاني.
+    بكم نقطة مئوية كانت نسبتها المئوية في الاختبار الثاني أعلى منها في الاختبار الأول؟
+  answer: {value: 2, unit: "نقطة مئوية"}
+  verify: "Rational(54, 75) * 100 - Rational(42, 60) * 100"
+  solution: |
+    الاختبار الأول: $\frac{42}{60} = 70\%$ ، والاختبار الثاني: $\frac{54}{75} = 72\%$.
+    الفرق $72 - 70 = 2$ نقطة مئوية.
+  remediation: |
+    حوّل كل درجة إلى نسبة مئوية قبل المقارنة، وميّز بين «نقطة مئوية» (فرق بين نسبتين) و«نسبة مئوية للتغير».
+  misconceptions: [compare-raw-scores]
+  qatar_link: "النسبة المئوية — الصف السابع"
+
+- id: M8-N6-015
+  topic: N6
+  cognitive: reasoning
+  area: analyze
+  difficulty: hard
+  benchmark: advanced
+  format: mc
+  context: pure
+  time: 120
+  stem: |
+    العدد $a$ أكبر من العدد $b$ بنسبة $50\%$.
+    بأيّ نسبة مئوية يكون $b$ أصغر من $a$ ؟
+  options: ['$50\%$', '$33\frac{1}{3}\%$', '$25\%$', '$150\%$']
+  option_values: ["50", "100/3", "25", "150"]
+  key: B
+  verify: "(1 - 1 / Rational(3, 2)) * 100"
+  rationale:
+    A: "افترض أن النسبة واحدة في الاتجاهين."
+    C: "خمّن نصف النسبة الأولى."
+    D: 'حسب $a$ نسبةً من $b$.'
+  solution: |
+    إذا كان $b = 100$ فإن $a = 150$. الفرق $50$ ، ونسبته من $a$: $\frac{50}{150} = \frac{1}{3} \approx 33.3\%$.
+    إذن $b$ أصغر من $a$ بنسبة $33\frac{1}{3}\%$.
+  remediation: |
+    اختر قيمة سهلة لـ $b$ (مثل 100) واحسب، ثم انتبه إلى أن الأساس (القيمة التي نقسم عليها) تغيّر.
+  misconceptions: [percent-wrong-base, percent-symmetry]
+  qatar_link: "الصف السابع — الدرس 3-4"
+
+- id: M8-N6-016
+  topic: N6
+  cognitive: reasoning
+  area: justify
+  difficulty: hard
+  benchmark: high
+  format: cr_explain
+  context: qatar
+  time: 150
+  stem: |
+    يقدّم متجر العرض: «اشترِ 3 قطع واحصل على الرابعة مجاناً»، ويقدّم متجر آخر حسماً $25\%$ على كل القطع.
+    أراد عبدالله شراء 4 قطع سعر كل منها 20 ريالاً. هل العرضان متساويان؟ وضّح إجابتك.
+  points: 2
+  rubric:
+    codes:
+      - {code: 20, points: 2, desc: 'يحسب المبلغ في العرضين ($3 \times 20 = 60$ ريالاً، و $4 \times 20 \times 0.75 = 60$ ريالاً) ويستنتج أنهما متساويان، أو يوضح أن دفع ثمن 3 من 4 يعني دفع $75\%$ أي حسماً $25\%$.'}
+      - {code: 10, points: 1, desc: 'يحسب أحد المبلغين صحيحاً فقط، أو يستنتج التساوي بتبرير ناقص.'}
+      - {code: 70, points: 0, desc: 'استنتاج غير صحيح أو دون أي حساب أو تبرير.'}
+    examples:
+      correct: ['متساويان: الأول 60 ريالاً والثاني 80 ناقص 20 = 60 ريالاً.']
+      incorrect: ['الحسم أفضل لأن 25% كثير.', 'العرض الأول أفضل لأن القطعة مجانية.']
+  model_answer: 'العرض الأول: يدفع ثمن 3 قطع $= 3 \times 20 = 60$ ريالاً. العرض الثاني: $4 \times 20 = 80$ ريالاً، والحسم $25\%$ منها $20$ ريالاً، فيدفع $60$ ريالاً. العرضان متساويان عند شراء 4 قطع.'
+  verify: "3 * 20 == 4 * 20 * Rational(75, 100)"
+  solution: |
+    العرض الأول: $3 \times 20 = 60$ ريالاً. العرض الثاني: $4 \times 20 \times 0.75 = 60$ ريالاً. إذن العرضان متساويان.
+    السبب: الحصول على قطعة مجانية من أربع يعني دفع $\frac{3}{4} = 75\%$ من ثمنها، أي حسماً $25\%$.
+  remediation: |
+    شجّع الطلاب على تحويل العروض التجارية إلى نسب مئوية للمقارنة، وجرّب معهم شراء 3 قطع فقط أو 5 قطع (يتغير الحكم).
+  misconceptions: [free-item-vs-percent]
+  qatar_link: "الصف السابع — الدرس 3-5"

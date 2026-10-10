@@ -1,0 +1,166 @@
+{
+ "batch": 2,
+ "ids": [
+  "M8-A1-013",
+  "M8-A1-014",
+  "M8-A1-015",
+  "M8-A1-016",
+  "M8-A2-001",
+  "M8-A2-002",
+  "M8-A2-003",
+  "M8-A2-004",
+  "M8-A2-005",
+  "M8-A2-006",
+  "M8-A2-007",
+  "M8-A2-008"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 23234,
+  "output_tokens": 8508,
+  "thinking_tokens": 6400,
+  "cache_read_tokens": 25481,
+  "total_tokens": 31742
+ },
+ "results": [
+  {
+   "id": "M8-A1-013",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A1",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A1-014",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A1",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A1-015",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A1",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A1-016",
+   "answer": "في الصف 50 يوجد 151 علماً، وكل صف يزيد بمقدار 3 أعلام عن الصف الذي قبله لأن العلاقة خطية بمعدل زيادة ثابت (معامل n).",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A5",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A2-001",
+   "answer": {
+    "c1": "مكافئ للمقدار 3(x + 2)",
+    "c2": "غير مكافئ للمقدار 3(x + 2)",
+    "c3": "مكافئ للمقدار 3(x + 2)",
+    "c4": "مكافئ للمقدار 3(x + 2)",
+    "c5": "غير مكافئ للمقدار 3(x + 2)",
+    "c6": "مكافئ للمقدار 3(x + 2)"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A2",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A2-002",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A2",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A2-003",
+   "answer": "D",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A2-004",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A2-005",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A2-006",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A2-007",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A2",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A2-008",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A2",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  }
+ ]
+}

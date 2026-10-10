@@ -1,0 +1,218 @@
+{
+ "batch": 10,
+ "ids": [
+  "M8-D1-013",
+  "M8-D1-014",
+  "M8-D1-015",
+  "M8-D1-016",
+  "M8-D1-017",
+  "M8-D1-018",
+  "M8-D1-019",
+  "M8-D1-020",
+  "M8-D1-021",
+  "M8-D2-001",
+  "M8-D2-002",
+  "M8-D2-003"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 22273,
+  "output_tokens": 9853,
+  "thinking_tokens": 7766,
+  "cache_read_tokens": 29829,
+  "total_tokens": 32126
+ },
+ "results": [
+  {
+   "id": "M8-D1-013",
+   "answer": {
+    "1": "c3",
+    "2": "c2",
+    "3": "c6",
+    "4": "c7"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D1",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D1-014",
+   "answer": [
+    [
+     2,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     7,
+     3
+    ],
+    [
+     8,
+     4
+    ],
+    [
+     10,
+     5
+    ]
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D1",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D1-015",
+   "answer": [
+    [
+     1,
+     9
+    ],
+    [
+     2,
+     8
+    ],
+    [
+     3,
+     8
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     6,
+     3
+    ],
+    [
+     8,
+     2
+    ]
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D1",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D1-016",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D2",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D1-017",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D3",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D1-018",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D2",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D1-019",
+   "answer": 30,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D1-020",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D2",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D1-021",
+   "answer": "يمثل التمثيل بالخطوط تغير درجات الحرارة عبر الزمن، والقطاعات الدائرية نسبة كل مصدر طاقة من الكل، ومخطط الانتشار العلاقة بين ساعات التشغيل وقيمة الفاتورة.",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D1",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D2-001",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D2-002",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D2",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-D2-003",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  }
+ ]
+}

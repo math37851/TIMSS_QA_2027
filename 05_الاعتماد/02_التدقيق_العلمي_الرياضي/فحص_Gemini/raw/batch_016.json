@@ -1,0 +1,205 @@
+{
+ "batch": 16,
+ "ids": [
+  "M8-G1-001",
+  "M8-G1-002",
+  "M8-G1-003",
+  "M8-G1-004",
+  "M8-G1-005",
+  "M8-G1-006",
+  "M8-G1-007",
+  "M8-G1-008",
+  "M8-G1-009",
+  "M8-G1-010",
+  "M8-G1-011",
+  "M8-G1-012"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 24096,
+  "output_tokens": 9294,
+  "thinking_tokens": 6902,
+  "cache_read_tokens": 29765,
+  "total_tokens": 33390
+ },
+ "results": [
+  {
+   "id": "M8-G1-001",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G1",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G1-002",
+   "answer": 142,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G1",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G1-003",
+   "answer": "D",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G1",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G1-004",
+   "answer": {
+    "c1": "زاوية حادة",
+    "c2": "زاوية حادة",
+    "c3": "زاوية قائمة",
+    "c4": "زاوية منفرجة",
+    "c5": "زاوية منفرجة",
+    "c6": "زاوية مستقيمة"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G1",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G1-005",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G1",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G1-006",
+   "answer": 200,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G1",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G1-007",
+   "answer": [
+    [
+     -3,
+     2
+    ],
+    [
+     2,
+     -4
+    ]
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G1",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G1-008",
+   "answer": [
+    [
+     2,
+     -1
+    ],
+    [
+     -4,
+     3
+    ]
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G1",
+   "cognitive": "applying",
+   "issues": [
+    "لا يمكن تحديد أي الرأسين هو B وأيهما D بشكل قاطع (يحتمل التبادل بينهما)، مما قد يتطلب مرونة في التصحيح الآلي."
+   ],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G1-009",
+   "answer": [
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     -2
+    ]
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G1",
+   "cognitive": "applying",
+   "issues": [
+    "لا يمكن تحديد أي الرأسين هو B وأيهما D بشكل قاطع (يحتمل التبادل بينهما)، مما قد يتطلب مرونة في التصحيح الآلي."
+   ],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G1-010",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G1",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G1-011",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G1",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-G1-012",
+   "answer": {
+    "c1": "قياسها $115^\\circ$",
+    "c2": "قياسها $115^\\circ$",
+    "c3": "قياسها $65^\\circ$",
+    "c4": "قياسها $65^\\circ$",
+    "c5": "قياسها $115^\\circ$",
+    "c6": "قياسها $115^\\circ$",
+    "c7": "قياسها $65^\\circ$"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G1",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  }
+ ]
+}

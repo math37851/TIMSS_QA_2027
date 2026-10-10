@@ -1,0 +1,149 @@
+{
+ "results": [
+  {
+   "id": "M8-A3-012",
+   "responses": [
+    {
+     "level": "full",
+     "text": "لا، المعادلة غير صحيحة. الترتيب في الطرح غلط لأن 3 أمثال سعر الكتاب هي $3x$ ونطرح منها 5، فالمفروض تكون $3x - 5 = 22$.",
+     "intended_code": "1",
+     "reason": "Chooses the correct option and correctly identifies that the order of subtraction is reversed."
+    },
+    {
+     "level": "partial",
+     "text": "لا، المعادلة غير صحيحة. لأن سعر القميص هو 22 ريال وماجد أخطأ في الكتابة.",
+     "intended_code": "0",
+     "reason": "Chooses the correct option but provides an invalid and insufficient justification."
+    },
+    {
+     "level": "incorrect",
+     "text": "نعم، المعادلة صحيحة. لأن أقل من 3 أمثال بمقدار 5 تنكتب $5 - 3x$.",
+     "intended_code": "0",
+     "reason": "Chooses the incorrect option based on the misconception of directly translating 'less than' in a reversed order."
+    }
+   ]
+  },
+  {
+   "id": "M8-A3-015",
+   "responses": [
+    {
+     "level": "full",
+     "text": "كلتا المعادلتين تمثل الموقف. سعيد خلى $x$ هو العدد الصغير، ورنا خلت $y$ هو العدد الأوسط واللي قبله $y-1$ واللي بعده $y+1$، وكلهم يساوون 48.",
+     "intended_code": "1",
+     "reason": "Chooses the correct option and provides a complete explanation of what the variables represent in both valid equations."
+    },
+    {
+     "level": "partial",
+     "text": "كلتا المعادلتين تمثل الموقف. لأن الناتج في النهاية هو 48 في المعادلتين.",
+     "intended_code": "0",
+     "reason": "Chooses the correct option but provides a weak justification that just repeats the sum without explaining the algebraic structures."
+    },
+    {
+     "level": "incorrect",
+     "text": "معادلة سعيد فقط تمثل الموقف. لأن الأعداد المتتالية لازم دايما نبدأ بـ $x$ وبعدين نزيد 1 وبعدين نزيد 2.",
+     "intended_code": "0",
+     "reason": "Chooses the incorrect option due to the single-valid-model belief, thinking there is only one way to represent consecutive integers."
+    }
+   ]
+  },
+  {
+   "id": "M8-A3-016",
+   "responses": [
+    {
+     "level": "full",
+     "text": "(1) $15n - 600 \\ge 1800$. (2) المعلم غير محق، لأن لو ضربنا $15 \\times 150 = 2250$ ريال، وننقص منها التكلفة 600 يطلع الربح 1650 ريال بس، وهذا أقل من 1800 المطلوبة.",
+     "intended_code": "20",
+     "reason": "Writes a correct inequality and correctly evaluates n=150 to show the profit is insufficient, concluding the teacher is wrong."
+    },
+    {
+     "level": "partial",
+     "text": "(1) ربح 150 تذكرة هو $150 \\times 15 = 2250$ وناقص التكلفة 600 يطلع 1650. (2) إذن المعلم غير محق لأن الربح لازم يكون 1800.",
+     "intended_code": "10",
+     "reason": "Provides a correct mathematical justification for why the teacher is wrong, but fails to write the required inequality."
+    },
+    {
+     "level": "incorrect",
+     "text": "(1) $15n \\le 1800$. (2) نعم المعلم محق لأن $15 \\times 150 = 2250$ ريال وهذا المبلغ أكبر من 1800 بكثير.",
+     "intended_code": "70",
+     "reason": "Writes an incorrect inequality (ignoring the cost and reversing the sign) and incorrectly concludes the teacher is right based on flawed logic."
+    }
+   ]
+  },
+  {
+   "id": "M8-A4-013",
+   "responses": [
+    {
+     "level": "full",
+     "text": "لا، لن يتساوى المبلغان أبداً. لأن كلاهما يضيف 10 ريالات كل أسبوع، فالزيادة متساوية والفرق بينهم سيظل 30 ريال دائماً.",
+     "intended_code": "1",
+     "reason": "Chooses the correct option and gives a complete explanation based on the identical rates of change keeping the difference constant."
+    },
+    {
+     "level": "partial",
+     "text": "لا، لن يتساوى المبلغان أبداً. لأن بدر بدأ بمبلغ 80 ريال بينما علي بدأ بمبلغ 50 ريال فقط فبدر دائماً أكثر.",
+     "intended_code": "0",
+     "reason": "Chooses the correct option but the explanation is incomplete as it only focuses on the starting amounts, ignoring the rates of change."
+    },
+    {
+     "level": "incorrect",
+     "text": "نعم، سيتساوى المبلغان بعد عدد من الأسابيع. لأنهم يضيفون نفس المبلغ 10 ريالات كل أسبوع فأكيد بيوصلون لنفس الرقم في النهاية.",
+     "intended_code": "0",
+     "reason": "Chooses the incorrect option, falsely assuming that adding the same amount will eventually cause the totals to intersect."
+    }
+   ]
+  },
+  {
+   "id": "M8-A4-014",
+   "responses": [
+    {
+     "level": "full",
+     "text": "لا، حلّ ريم غير صحيح. ريم نسيت تضرب 3 في 6 وقت التوزيع، المفروض الخطوة الثانية تكون $3x + 18 = 60$.",
+     "intended_code": "1",
+     "reason": "Chooses the correct option and precisely identifies the algebraic error (distributing only to the first term)."
+    },
+    {
+     "level": "partial",
+     "text": "لا، حلّ ريم غير صحيح. لأن الجواب النهائي المفروض ما يكون $x = 18$ إذا تأكدنا من الحل.",
+     "intended_code": "0",
+     "reason": "Chooses the correct option but fails to pinpoint the error in the steps or provide the correct calculation as proof."
+    },
+    {
+     "level": "incorrect",
+     "text": "نعم، حلّ ريم صحيح. لأنها ضربت الرقم اللي برا القوس في المتغير $x$ بس ونزلت الـ 6 وكملت الحل صح.",
+     "intended_code": "0",
+     "reason": "Chooses the incorrect option due to the misconception that only the first term inside the parentheses should be multiplied."
+    }
+   ]
+  },
+  {
+   "id": "M8-A4-015",
+   "responses": [
+    {
+     "level": "full",
+     "text": "مريم ليست على صواب، لأن 6 رحلات في الخيار الأول تكلف $3 \\times 6 = 18$ ريال، وفي الخيار الثاني $12 + 6 = 18$ ريال، فهما متساويان وليس الخيار 2 أرخص. أقل عدد عشان يكون الخيار 2 أرخص هو 7 رحلات.",
+     "intended_code": "20",
+     "reason": "Correctly determines Maryam is wrong with valid calculations showing equality at 6 trips, and states 7 trips as the minimum."
+    },
+    {
+     "level": "partial",
+     "text": "مريم خطأ، لأن الخيار الأول يساوي $3 \\times 6 = 18$ ريال والخيار الثاني $12 + 6 = 18$ ريال فهما متساويين في السعر.",
+     "intended_code": "10",
+     "reason": "Provides a correct justification for why Maryam is wrong, but misses answering the second part of the question (7 trips)."
+    },
+    {
+     "level": "incorrect",
+     "text": "نعم مريم على صواب، لأن $12 + 6 = 18$ ريال، وهذا يعتبر مبلغ رخيص جدا لمواصلات أسبوع كامل.",
+     "intended_code": "70",
+     "reason": "Incorrectly concludes Maryam is right based on flawed reasoning that ignores the comparison with Option 1."
+    }
+   ]
+  }
+ ],
+ "usage": {
+  "input_tokens": 19304,
+  "output_tokens": 5432,
+  "thinking_tokens": 3352,
+  "cache_read_tokens": 0,
+  "total_tokens": 24736
+ }
+}

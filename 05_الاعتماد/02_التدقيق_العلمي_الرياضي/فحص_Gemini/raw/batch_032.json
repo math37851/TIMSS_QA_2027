@@ -1,0 +1,183 @@
+{
+ "batch": 32,
+ "ids": [
+  "M8-PSI3-03",
+  "M8-PSI3-04",
+  "M8-PSI3-05",
+  "M8-PSI4-01",
+  "M8-PSI4-02",
+  "M8-PSI4-03",
+  "M8-PSI4-04",
+  "M8-PSI4-05",
+  "M8-PSI5-01",
+  "M8-PSI5-02",
+  "M8-PSI5-03",
+  "M8-PSI5-04"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 26555,
+  "output_tokens": 9282,
+  "thinking_tokens": 7116,
+  "cache_read_tokens": 29998,
+  "total_tokens": 35837
+ },
+ "results": [
+  {
+   "id": "M8-PSI3-03",
+   "answer": {
+    "1": "m24",
+    "2": "t624",
+    "3": "t648"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N1",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-PSI3-04",
+   "answer": 21,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A4",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-PSI3-05",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N6",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-PSI4-01",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D3",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-PSI4-02",
+   "answer": 10,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N6",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-PSI4-03",
+   "answer": [
+    "sukkari",
+    "khalas",
+    "khanizi",
+    "barhi"
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-PSI4-04",
+   "answer": "D",
+   "confidence": 0.9,
+   "unambiguous": false,
+   "topic": "D4",
+   "cognitive": "applying",
+   "issues": [
+    "يوجد افتراض رياضي غير دقيق واقعياً، وهو أن سحب 'تمرة واحدة عشوائياً' له نفس احتمالات نسب المبيعات بالكتلة (الكيلوغرام). أنواع التمور تختلف في كتلة الحبة الواحدة، مما يجعل الاحتمال المبني على الكتلة مختلفاً عن الاحتمال المبني على عدد الحبات. كان من الأفضل صياغة السؤال حول سحب عينة بالوزن أو افتراض أن جميع التمور لها نفس الوزن."
+   ],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-PSI4-05",
+   "answer": "العرض الثاني أفضل لأن تكلفته 75 ريالاً، بينما تكلفة العرض الأول 80 ريالاً.",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N6",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-PSI5-01",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N1",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-PSI5-02",
+   "answer": 2512,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G4",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-PSI5-03",
+   "answer": [
+    [
+     0,
+     2
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     8,
+     6
+    ]
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A5",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-PSI5-04",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "D2",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  }
+ ]
+}

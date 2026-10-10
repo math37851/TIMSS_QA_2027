@@ -1,0 +1,185 @@
+{
+ "batch": 31,
+ "ids": [
+  "M8-PSI1-01",
+  "M8-PSI1-02",
+  "M8-PSI1-03",
+  "M8-PSI1-04",
+  "M8-PSI1-05",
+  "M8-PSI2-01",
+  "M8-PSI2-02",
+  "M8-PSI2-03",
+  "M8-PSI2-04",
+  "M8-PSI2-05",
+  "M8-PSI3-01",
+  "M8-PSI3-02"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 30820,
+  "output_tokens": 14569,
+  "thinking_tokens": 12455,
+  "cache_read_tokens": 30275,
+  "total_tokens": 45389
+ },
+ "results": [
+  {
+   "id": "M8-PSI1-01",
+   "answer": 4,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N5",
+   "cognitive": "applying",
+   "issues": [
+    "يُفترض رياضياً قسمة عدد الطلاب على سعة الحافلة، ولكن واقعياً الرحلات المدرسية تتطلب وجود مشرفين أو معلمين لم يُذكروا في المسألة."
+   ],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-PSI1-02",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N6",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-PSI1-03",
+   "answer": 131,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N6",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-PSI1-04",
+   "answer": {
+    "1": "t945",
+    "2": "t1045",
+    "3": "t1115"
+   },
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N1",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-PSI1-05",
+   "answer": "العرض الأول هو الأقل تكلفة لـ 130 طالباً (1640 ريالاً مقابل 1820 ريالاً)، ولا يبقى الاختيار صحيحاً لـ 80 طالباً لأن العرض الثاني يصبح الأقل تكلفة (1120 ريالاً مقابل 1240 ريالاً).",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A5",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-PSI2-01",
+   "answer": "D",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N5",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-PSI2-02",
+   "answer": [
+    88,
+    1980
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-PSI2-03",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G2",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-PSI2-04",
+   "answer": [
+    [
+     1,
+     1
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     1,
+     4
+    ]
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "G2",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-PSI2-05",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A5",
+   "cognitive": "reasoning",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-PSI3-01",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N5",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-PSI3-02",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "N5",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  }
+ ]
+}

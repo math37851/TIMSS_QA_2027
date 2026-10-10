@@ -1,0 +1,182 @@
+{
+ "batch": 5,
+ "ids": [
+  "M8-A4-001",
+  "M8-A4-002",
+  "M8-A4-003",
+  "M8-A4-004",
+  "M8-A4-005",
+  "M8-A4-006",
+  "M8-A4-007",
+  "M8-A4-008",
+  "M8-A4-009",
+  "M8-A4-010",
+  "M8-A4-011",
+  "M8-A4-012"
+ ],
+ "missing": [],
+ "usage": {
+  "input_tokens": 26344,
+  "output_tokens": 10324,
+  "thinking_tokens": 8294,
+  "cache_read_tokens": 25990,
+  "total_tokens": 36668
+ },
+ "results": [
+  {
+   "id": "M8-A4-001",
+   "answer": [
+    7,
+    3
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A4",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A4-002",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A4",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [
+    "عبارة 'وعلبة أقلام بسعر 9 ريالات' قد توهم بأن السعر يعود للدفاتر والعلبة معاً، والأفضل 'وعلبة أقلام سعرها 9 ريالات' لتجنب اللبس."
+   ],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A4-003",
+   "answer": "D",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A4",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A4-004",
+   "answer": 4,
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A4",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A4-005",
+   "answer": "A",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A4",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A4-006",
+   "answer": "C",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A4",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A4-007",
+   "answer": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A4",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A4-008",
+   "answer": "B",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A3",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A4-009",
+   "answer": [
+    [
+     2,
+     4
+    ]
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A4",
+   "cognitive": "applying",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A4-010",
+   "answer": [
+    11,
+    25
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A4",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A4-011",
+   "answer": [
+    5,
+    2
+   ],
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A4",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [],
+   "sensitivity_issues": []
+  },
+  {
+   "id": "M8-A4-012",
+   "answer": "D",
+   "confidence": 1.0,
+   "unambiguous": true,
+   "topic": "A4",
+   "cognitive": "knowing",
+   "issues": [],
+   "language_issues": [
+    "كلمة 'النظامات' غير صحيحة لغوياً، الجمع الصحيح هو 'الأنظمة'."
+   ],
+   "sensitivity_issues": []
+  }
+ ]
+}
